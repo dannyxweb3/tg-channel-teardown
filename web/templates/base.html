@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}拆解{% endblock %} · Channel Teardown</title>
+  <!-- 这些报告不该被搜索引擎收录：正文里引用了被拆频道的原始文案和落地信息 -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+{% if not hide_nav %}
+<header class="top">
+  <span class="brand">Channel&nbsp;Teardown <span class="brand-cn">频道拆解</span></span>
+  <nav>
+    {% set p = request.url.path %}
+    <a href="/reports" class="{{ 'active' if p == '/' or p.startswith('/reports') }}">全部拆解</a>
+  </nav>
+  <span class="spacer"></span>
+  <a href="/logout" class="muted small">退出</a>
+</header>
+{% endif %}
+
+<main>
+  {% if msg %}<div class="flash ok">{{ msg }}</div>{% endif %}
+  {% if err %}<div class="flash err">{{ err }}</div>{% endif %}
+  {% block body %}{% endblock %}
+</main>
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,142 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "awesomeRSSHub",
+  "username": "awesomeRSSHub",
+  "url": "https://t.me/awesomeRSSHub",
+  "title": "RSSHub News",
+  "category": "RSSHub新路由自动播报(开源项目feed)",
+  "growth_short": "开源项目附属feed",
+  "one_liner": "300 条消息以同一句开头(『RSSHub has new routes』)、300 条外链指向同一域名(docs.rsshub.app)。转发总计 16、反应 12。它不是内容号,是 RSSHub 开源项目的路由更新播报机器人——每天 14 点用 1 秒间隔把当日新增路由一次性倾倒(205/300 条在 14 点)。",
+  "analyzed_at": "2026-09-13T13:00:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/awesomeRSSHub.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2026-04-02",
+      "2026-09-12"
+    ],
+    "note": "跨度 163 天、1.8 条/天,全自动"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 12262,
+    "median_views": 208,
+    "mean_views": 811,
+    "p10_views": 85,
+    "p90_views": 2579,
+    "err_pct": 1.7,
+    "mature_posts": 291,
+    "reactions_total": 12,
+    "forwards_total": 16,
+    "forwards_per_post": 0.1,
+    "er_pct": 0.01,
+    "posts_per_day": 1.84,
+    "views_available": true,
+    "media_mix": {
+      "empty": 300
+    },
+    "deleted_pct": 35.2,
+    "activity_note": "帖龄分桶极反常:21-28 天档有 202 条(占样本 2/3)但中位阅读仅 114,而 56-63 天档是 2,594。原因在投放方式——某天 14 点用 1 秒间隔连发 200 多条,瞬时刷屏让订阅者直接划过,单条阅读被稀释到 100 出头。这是可量化的教训:同样内容分散发能拿 2,500 阅读,一次性倒 200 条只能拿 114,差 20 倍以上而内容毫无区别。用内容号标准衡量它没有意义:订阅者不是读者,是『想知道 RSSHub 支持了哪些新站点的人』,需求是按需查询式而非每日阅读式。",
+    "forwards_median": 0
+  },
+  "implementation": {
+    "publish_identity": "channel",
+    "post_structure": "完全机械化:300/300 条开头为『RSSHub has new routes』,正文中位 40 字(就是路由名称),300 条全部纯文本无图无文件。标签 0、t.me 0、@提及 0、bot 0。",
+    "delivery": "300/300 条外链指向 docs.rsshub.app。内容即路由清单,覆盖面极广(Android Pixel 公告、日本厚生労働省統計、鹰角网络明日方舟、浙江省政府采购、个人博客),正是 RSSHub 项目的价值——给没有 RSS 的网站生成 RSS。",
+    "curation": "零人工:脚本监听RSSHub仓库新路由自动播报",
+    "schedule": "cron 播报器:14 点 205 条(68%),秒聚集 :03(26 次)、分钟集中 :07-:13,间隔中位 1 秒、<10 秒占 72%。",
+    "ad_injection": "0 条广告帖(商务/合作/置顶 各 1 次均非招商语境)。",
+    "note": "35.2% 删除率,id 差分布里有 114 与 41 两处大跳跃,说明有两次批量删除或抓取时段外的发布被清理,其余 293 次差为 1。"
+  },
+  "growth": {
+    "strategy": "RSSHub 项目品牌的自然沉淀,频道本身无任何运营",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "RSSHub 项目知名度",
+        "evidence": "全量外链 docs.rsshub.app",
+        "note": "订阅是项目声誉的沉淀,不是频道运营的结果"
+      },
+      {
+        "name": "无任何运营动作",
+        "evidence": "0 标签、0 互推、0 bot、0 @提及",
+        "note": "纯机器"
+      }
+    ],
+    "signals": {
+      "subscribers": 12262,
+      "err_pct": 1.7,
+      "forwards_per_post": 0.1
+    },
+    "assessment": "1.2 万订阅是 RSSHub 开源项目的品牌带来的,与频道本身无关;ERR 1.70% 说明订阅者大多只是『关注了一下』不逐条阅读,完全符合项目通知渠道的定位,不是问题。唯一可改进的是投放方式:一次性倒 200 条让阅读掉到 114,分散推送同样内容曝光能高 20 倍。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      0,
+      30
+    ],
+    "onetime_cny": [
+      0,
+      0
+    ],
+    "items": [
+      {
+        "name": "【启动】播报脚本 + 频道",
+        "cny_onetime": [
+          0,
+          0
+        ],
+        "note": "监听 RSSHub 仓库的路由变更"
+      },
+      {
+        "name": "脚本托管",
+        "cny_month": [
+          0,
+          30
+        ],
+        "note": "极轻量"
+      },
+      {
+        "name": "人力",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "全自动零人工。本轮成本最接近绝对零的样本"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "est_scope": "本频道",
+    "model": "零变现且不可能变现",
+    "streams": [
+      {
+        "name": "无",
+        "evidence": "0 条广告帖、0 联盟、0 导流",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "中位阅读 208、转发 16 次——这个曝光量没有任何广告价值,按 CPM ¥50 折算每天一条广告月价值不到 ¥600,还会破坏它作为项目附属通知渠道的性质。"
+  },
+  "risk": {
+    "level": "low",
+    "notes": [
+      "开源项目 RSSHub 的路由更新自动播报,全量外链指向项目官方文档站,内容为技术路由名称,零商业变现",
+      "无任何灰产、成人、侵权要素",
+      "RSSHub 本身抓取网页生成 RSS 的行为在部分站点服务条款下存在争议,但那是项目本身的问题,与这个播报频道无关",
+      "UI 上不应与灰产样本同框标红"
+    ]
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "group",
+  "slug": "Python",
+  "username": "Python",
+  "url": "https://t.me/Python",
+  "title": "Python",
+  "category": "Python 编程社区群(国际,对照组)",
+  "growth_short": "编程刚需社区",
+  "one_liner": "9.6 万成员是本轮最大的群,而它是本轮唯一一个 300 条消息里一个中文字都没有的样本——纯英文的国际 Python 社区。内容质量与本轮所有中文技术群都不同:正文中位 97 字、105 条超过 150 字、124 条是真实提问(Alembic 数据库迁移、flask_login 的 Proxy 对象类型提示、DDD 架构下的依赖注入)。但它同时删掉了 85.4% 的消息——2,050 个号位只活下来 300 条。",
+  "analyzed_at": "2026-09-13T14:30:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_batch_dump.py",
+    "dump": "data/recon/Python.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2026-08-29",
+      "2026-09-13"
+    ],
+    "note": "群无per-message阅读;online未取(会话占用)"
+  },
+  "metrics": {
+    "confidence": "high",
+    "kind_note": "group",
+    "members": 96150,
+    "online": null,
+    "online_pct": null,
+    "subscribers": null,
+    "median_views": null,
+    "err_pct": null,
+    "views_available": false,
+    "views_note": "群无 per-message 阅读,ERR 不适用",
+    "messages_per_day": 21,
+    "reactions_total": 156,
+    "deleted_ratio_pct": 85.4,
+    "activity_note": "『9.6 万成员但只有 20.6 条/天』与本轮所有中文大群相反:Loon0x00 3.96 万→508.5 条/天、GoogleFans 4.54 万→287.9、QuanXApp 5.36 万→276.6、EmbyPublic 5.45 万→230.2,而 Python 9.62 万→20.6——成员是第二名的 1.8 倍,消息量却只有二十四分之一。两个原因:消息质量高(人们在写完整的问题不是刷『?』),以及 85.4% 的内容被清理。正文长度分布:150 字以上 105 条(35%)、125-149 字 26、100-124 字 19、75-99 字 23、50-74 字 45、25-49 字 44、0-24 字 38;对照 Loon0x00 中位 6 字、QuanXApp 6 字、EmbyPublic 7 字,它的中位数是它们的十六倍。124 条(41%)包含问号或 how/why/anyone/help。转发 0:技术问答是场景绑定的,别人的 flask_login 问题对你没有价值。",
+    "forwards_total": 0,
+    "deleted_pct": 85.4,
+    "median_text_len": 97,
+    "median_gap_sec": 153,
+    "comments_total": 168,
+    "comments_posts": 50
+  },
+  "implementation": {
+    "publish_identity": "user",
+    "chat_type": "megagroup",
+    "post_structure": "纯文本 298(99.3%)、图片 1、网页预览 1,零文件零视频——一个 9.6 万人的群 14.6 天里只发了 1 张图,与本轮所有中文群(大量表情包、截图、视频)形成极端对比。26 条消息包含代码特征(三引号代码块、四空格缩进、def、import),人们在群里贴代码。",
+    "ad_injection": "几乎无(变现关键词仅aff1)",
+    "delivery": "外链不到 25 个且全部是官方文档、GitHub 与代码粘贴站:github 5、docs.python.org 4、t.me 3、pythonbooks.org 2、flask.palletsprojects.com 2、hastebin.com 2、medium/docs.github/openweathermap/flask-login.readthedocs 各 1。没有一个落地页、没有一个 aff 参数、没有一个网盘链接。hastebin.com 出现 2 次是好信号——那是代码粘贴服务,说明群里有『别贴大段代码,用 pastebin』的规范。真正的 Telegram 账号只有四个,构成很有意思:@pythonofftopic 5(同体系的闲聊分流群)、@PythonRes 2(资源频道)、@arabipython 2、@azepug 2(阿塞拜疆 Python 用户组)、@pythonzh 2(中文 Python 群)——它是一个按语言/地区分支的国际 Python 社区网络的主群。@pythonofftopic 的存在说明它有话题纪律:闲聊被分流到另一个群,这是 85.4% 删除率的另一部分来源。",
+    "schedule": "全球时区叠加:峰值同时出现在 21 点(53 条)与凌晨 3 点(46 条),若以 UTC+8 为基准凌晨 3 点是欧洲的晚上 8 点、美东的下午 3 点。分/秒无任何聚集(分钟最高 :01 仅 11 次、秒最高 :59 仅 11 次),零自动化;间隔中位 153 秒、<10 秒只有 3%,对话是慢节奏的——人们在打字写完整问题不是快速刷屏。",
+    "curation": "本轮唯一的高质量技术群。样本内的真实提问是连续追问 + 贴代码的形态:同一个人在追问一个完整的技术问题链——Alembic 数据库迁移集成、flask_login 的 current_user 是 Proxy 对象没有类型提示、login_user 后所有字段存进 session cookie 的机制、DDD 结构下的依赖注入。这种形态在本轮所有中文群里一次都没有出现过。",
+    "note": "一次关键词误报的教科书案例:@提及统计的前三名 @login_manager 6、@login_required 6、@auth_bp 4 根本不是 Telegram 账号,是 Flask 的标准 Python 装饰器语法;抓取脚本按 @\\w+ 提取『提及』,把代码片段当成了账号。这个误报有一般性——编程类群的 @decorator 语法、邮箱的 @gmail、财经号的分词切错(本轮 FinanceNewsDaily 的 #Open+#AI)、代理工具号的『节点/代理/机场/订阅』产品术语(本轮 Loon0x00、NobyDa、NewlearnerChannel、QuanXNews)。在本轮 106 份深度报告里『关键词命中 ≠ 灰产』这条已经出现过五次以上,Python 群是其中最干净、最容易验证的一例。"
+  },
+  "growth": {
+    "strategy": "通用名称的搜索红利 + 话题纪律 + 社区自答",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "通用名称",
+        "evidence": "群名就叫 Python、用户名就是 Python",
+        "note": "TG 内搜『Python』的第一命中,这是它做到 9.6 万的主要原因"
+      },
+      {
+        "name": "多语言分支网络",
+        "evidence": "阿拉伯语 / 阿塞拜疆语 / 中文分群",
+        "note": "主群保英文,分流非英语用户"
+      },
+      {
+        "name": "话题纪律",
+        "evidence": "@pythonofftopic 分流闲聊 + 85.4% 清理",
+        "note": "保持信噪比"
+      },
+      {
+        "name": "高质量问答",
+        "evidence": "中位 97 字、124 条真实提问",
+        "note": "值得留下的理由"
+      },
+      {
+        "name": "社区自答",
+        "evidence": "运营者不需要回答",
+        "note": "可无限扩张"
+      },
+      {
+        "name": "无任何主动手段",
+        "evidence": "转发 0、互推 0、外链 25 个、买粉 0",
+        "note": "完全被动"
+      }
+    ],
+    "signals": {
+      "members": 96150,
+      "messages_per_day": 21,
+      "deleted_pct": 85.4
+    },
+    "assessment": "『Python』这个用户名本身就是它最大的资产。对照本轮 GoogleFans(用户名与群名完全无关,靠搜索红利 + 矩阵导流做到 4.5 万),Python 群是名副其实的那一个:名字是 Python,内容也真的是 Python。增长天花板不在获客而在信噪比:9.6 万人只产生 20.6 条/天的留存消息,说明绝大多数成员从不发言;这在技术群里是健康的(潜水者也在读),但也意味着活跃层可能只有几百人。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      30,
+      150
+    ],
+    "onetime_cny": [
+      500,
+      3000
+    ],
+    "items": [
+      {
+        "name": "【启动】建群",
+        "cny_onetime": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "【启动】反垃圾 bot",
+        "cny_onetime": [
+          500,
+          3000
+        ],
+        "note": "85.4% 删除率必须靠自动化"
+      },
+      {
+        "name": "群管理",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "20-50 小时/月。每天约 140 条原始消息里要删掉 120 条,还要维护跑题分流规则"
+      },
+      {
+        "name": "技术答疑",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "运营者 0 小时——提问由其他成员回答,这是它与本轮所有支持群的关键区别"
+      },
+      {
+        "name": "bot / VPS",
+        "cny_month": [
+          30,
+          150
+        ]
+      }
+    ],
+    "note": "本轮『规模最大 / 运营投入最低』的组合。关键在于技术答疑成本为零:Loon0x00(30-80 小时管理 + 20-50 小时答疑)、NobyDa(40-100 小时答疑)、agentONE_R(40-100 小时工单)都要运营者亲自回答,因为问的是『你的产品坏了』;Python 群问的是『我的代码坏了』,社区自己会答。这是通用技术社区相对于产品支持群的结构性优势。"
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "est_scope": "实测",
+    "model": "零变现,且主动清理广告",
+    "streams": [
+      {
+        "name": "广告帖",
+        "evidence": "0 条。变现关键词只有 aff 1 次命中",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "导流 / 联盟",
+        "evidence": "外链不到 25 个,全是官方文档与 GitHub",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "付费 / 收款",
+        "evidence": "无任何入口",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "关联频道",
+        "evidence": "@PythonRes(资源频道)被提及 2 次",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "low",
+        "note": "无现金"
+      }
+    ],
+    "note": "群无 per-message 阅读无法按 CPM 估算。但 9.6 万国际开发者是极高价值的受众——开发者工具、云服务、招聘、在线课程都是高单价品类,同类国际技术群的置顶广告位常见 $300-2,000/月(约 ¥2,100-14,000)。区间宽的三个原因:(1)群曝光完全不可测量(转发 0、反应 156);(2)国际受众的定价基准与中文市场差异很大,且成员分散在多个时区与国家,广告主难以定向;(3)14.6 天窗口不足以覆盖波动。它不变现的可能原因:这类由社区志愿者维护的语言/技术群通常没有商业主体也没有收款渠道;@PythonRes 是唯一可能的商业化出口,但样本内只被提及 2 次看不出运营力度。",
+    "ad_capacity_cny_month": [
+      2100,
+      14000
+    ]
+  },
+  "risk": {
+    "level": "low",
+    "notes": [
+      "国际 Python 开发者的技术问答社区,全英文,内容为编程问题、框架用法与学习资源讨论。零广告、零收款、零导流变现,外链不到 25 个且全部指向官方文档、GitHub 与代码粘贴站,零文件托管",
+      "内容审核表现良好:85.4% 的删除率下样本内 0 条博彩、0 条色情、0 个代收款账号、0 条机场广告、变现关键词仅 aff 1 次命中。一个 9.6 万成员的国际群能保持这种清洁度说明反垃圾机制有效,这一点上它与 blacktechsharing 并列为本轮群类样本的最佳",
+      "关于 @ 提及的说明(非风险,防误判):自动化扫描会把 Python 装饰器语法(@login_required、@login_manager、@auth_bp)识别为 Telegram 账号提及。这些是代码不是账号,任何基于 @提及数量的风险评分都会在这个样本上给出错误结论",
+      "学习资源的著作权(很轻):样本内有一条提到某机器学习教材的书名与简介,另有 pythonbooks.org 链接与 @PythonRes(『视频课程、pdf 书籍』)频道的推荐。样本内没有出现任何具体的盗版下载链接或网盘地址;@PythonRes 的实际内容不在本次抓取范围内,这是唯一的不确定项但量级很轻",
+      "不适用:不涉及帮助信息网络犯罪活动罪(0 个收款账号、0 条灰产导流);不涉及非法经营罪(零收入、无经营行为);不涉及传播淫秽物品罪(0 条成人内容);不涉及规避技术措施(0 个破解包、0 个激活工具、0 个绕过工具)。UI 上不应与灰产样本同框标红"
+    ]
+  }
+}

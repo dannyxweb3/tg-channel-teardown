@@ -1,0 +1,175 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "beautifultgtheme",
+  "username": "beautifultgtheme",
+  "url": "https://t.me/beautifultgtheme",
+  "title": "那些好看的Tg主题",
+  "category": "Telegram主题分享(对照组)",
+  "growth_short": "主题互推网络",
+  "one_liner": "ERR 68.58% 位列本轮第二,原因不在内容多好而在交付方式——t.me/addtheme/ 深链 240 次,用户点一下就直接把主题装进 Telegram,中间零摩擦。更罕见的是稳定性:3 年 5 个月里月阅读中位始终在 6,700-12,800 摆动,无增长也无衰减,是本轮唯一一条真正的水平线。",
+  "analyzed_at": "2026-09-13T13:00:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/beautifultgtheme.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2023-04-20",
+      "2026-09-12"
+    ],
+    "note": "跨度 1241 天、0.2 条/天"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 12881,
+    "median_views": 8834,
+    "mean_views": 8961,
+    "p10_views": 6667,
+    "p90_views": 11361,
+    "err_pct": 68.58,
+    "mature_posts": 293,
+    "reactions_total": 1296,
+    "forwards_total": 4530,
+    "forwards_per_post": 15.1,
+    "forwards_median": 13,
+    "er_pct": 0.05,
+    "posts_per_day": 0.24,
+    "views_available": true,
+    "media_mix": {
+      "photo": 249,
+      "webpage": 38,
+      "document": 5
+    },
+    "deleted_pct": 25.9,
+    "activity_note": "41 个月里月阅读中位始终在 6,700-12,800 之间摆动,最高最低仅差 1.9 倍且无方向性趋势,转发中位同样稳定在 6-21——这在本轮是唯一的(其他号要么在涨要么在跌:geekshare -54%、AWAvenue -70%、jichangdl -92%)。原因:主题是低频消耗品,用户换一次能用几个月,需求不随时间增减;供给侧也稳定。这个品类既不会因热点爆发,也不会因审查萎缩。"
+  },
+  "implementation": {
+    "publish_identity": "channel",
+    "post_structure": "正文中位 129 字,249 photo(预览图)+ 38 链接卡。大量使用缅甸文配花体拉丁字母与装饰符号排版——受众是全球 Telegram 主题爱好者,缅甸/东南亚制作社群活跃,不是中文号。标签为配色与风格描述:#dark 56+46、#theme 41+30、#black 32、#android 30、#white 20、#light 20、#Blue 18、#art 16、#pink 15。",
+    "delivery": "零摩擦交付是 ERR 的直接来源:t.me/addtheme/ 官方主题安装深链 240 次(其次 bg 壁纸深链 55),点击后客户端直接弹出『应用此主题』,不需下载文件、不需跳转外站、不需任何设置。样本内 .attheme 文件只有 1 个——几乎不发文件全靠官方深链,这也是零存储成本的原因。",
+    "curation": "圈内规范良好:转发榜可见明确署名(by @TSthemes、@MeowThemes by #meow),与 SomeACG 的署名文化类似而与 pixiv_top50 的无源搬运相反。",
+    "schedule": "深夜成组瞬发:间隔中位 0 秒、<10 秒占 68%、<60 秒占 70%;小时双峰 23 点(54)与 0 点(44),另有 21 点 33、19 点 23。一次发若干套主题(预览图+深链各一条)。",
+    "ad_injection": "无。变现关键词 300 条只命中 2 次(频道主 1、aff 1)且均非招商语境。",
+    "note": "交付摩擦与 ERR 高度负相关:beautifultgtheme(点一下即生效)68.58% > Legado(复制 json→打开 App→导入)68.57% > KaiPanshare(点网盘→输提取码→转存→下载)5.52% > Aliyun_4K_Movies 0.51%。每多一步操作就流失一批人。另有 boost 相关链接 12 次——向订阅者求 Telegram Premium 加成,是一种非现金变现(用用户 Premium 权益换频道功能)。"
+  },
+  "growth": {
+    "strategy": "零摩擦交付 + 品类需求恒定 + 主题圈互推",
+    "paid_acquisition": "exchange",
+    "mechanisms": [
+      {
+        "name": "零摩擦交付",
+        "evidence": "addtheme 深链 240 次",
+        "note": "ERR 68.58% 的直接来源"
+      },
+      {
+        "name": "品类需求恒定",
+        "evidence": "3.4 年月阅读无趋势",
+        "note": "主题是低频消耗品,需求不随时间变化"
+      },
+      {
+        "name": "主题圈互推",
+        "evidence": "ThemesWall 20、AloneSnowflake 21、MeowThemes 7 等 8+ 个号",
+        "note": "圈内换量,带原作者署名"
+      },
+      {
+        "name": "Boost 求助",
+        "evidence": "12 次",
+        "note": "用用户 Premium 换频道功能"
+      }
+    ],
+    "signals": {
+      "subscribers": 12881,
+      "err_pct": 68.58,
+      "forwards_per_post": 15.1
+    },
+    "assessment": "它的『增长』其实是『维持』:1.29 万订阅是这个细分品类在中文/东南亚 TG 圈的稳态规模。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      0,
+      0
+    ],
+    "onetime_cny": [
+      0,
+      0
+    ],
+    "items": [
+      {
+        "name": "【启动】频道创建",
+        "cny_onetime": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "选主题与排版",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "5-15 小时/月,主要工作是找好看的主题并做预览图排版"
+      },
+      {
+        "name": "存储",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "只有 1 个 attheme 文件,其余全靠官方深链"
+      },
+      {
+        "name": "服务器 / bot",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "无自建 bot、无外部站点。本轮成本结构最极端的一个:现金严格为零"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "est_scope": "本频道",
+    "model": "完全不变现",
+    "streams": [
+      {
+        "name": "无",
+        "evidence": "变现关键词 300 条只命中 2 次且非招商语境;机场/网盘/联盟全 0",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "Telegram Boost",
+        "evidence": "12 次求 Boost",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "medium",
+        "note": "非现金,换频道功能"
+      }
+    ],
+    "note": "潜在价值:1.29 万订阅、8,834 中位阅读、ERR 68.58%,但受众是国际化主题爱好者(商业价值低于科技/金融人群),按 CPM ¥20-60 折算每月 4 条约 ¥700-2,100/月——金额不大,这可能正是它不变现的现实原因:对纯兴趣号来说两千块不值得牺牲体验。",
+    "potential_ad_value_cny_month": [
+      700,
+      2100
+    ]
+  },
+  "risk": {
+    "level": "low",
+    "notes": [
+      "Telegram 主题分享,交付走官方 addtheme 深链,内容为界面配色方案,本身不涉及任何版权作品的复制(主题文件是配色参数不是美术作品)",
+      "转发时普遍带原作者署名,圈内规范良好;零商业变现、无灰产、无成人、无侵权分发",
+      "唯一边缘项:主题预览图中可能使用受版权保护的壁纸/插画(bg 深链 55 次涉壁纸),属主题分享圈通行做法,量级与性质都很轻",
+      "UI 上不应与灰产样本同框标红"
+    ]
+  }
+}

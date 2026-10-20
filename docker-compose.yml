@@ -1,0 +1,25 @@
+services:
+  site:
+    build: .
+    image: channel-teardown
+    container_name: channel-teardown
+    restart: unless-stopped
+    env_file: .env
+    # 只映射到宿主机 127.0.0.1。报告含 criminal 级样本与个人信息警示，
+    # 远程访问走 SSH 隧道：ssh -L 8090:127.0.0.1:8090 user@server
+    ports:
+      - "127.0.0.1:8090:8090"
+    environment:
+      # 容器内必须绑 0.0.0.0 才能被端口映射转进来，
+      # 对外暴露面由上面的 127.0.0.1 绑定控制
+      WEB_HOST: "0.0.0.0"
+      WEB_PORT: "8090"
+    volumes:
+      # 报告挂出来：加一份新拆解不用重建镜像
+      - ./report:/app/report:ro
+      - ./logs:/app/logs
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

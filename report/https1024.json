@@ -1,0 +1,174 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "https1024",
+  "username": "https1024",
+  "url": "https://t.me/https1024",
+  "title": "互联网从业者充电站",
+  "category": "博彩引流号（内容外壳 + 体育/棋牌博彩广告）",
+  "growth_short": "内容外壳 + 互推",
+  "one_liner": "矩阵里技术外壳最厚的一个——github 外链 116 次(aigc1024 的 5 倍),看起来完全是正经开发者资源号。但博彩词频与主题完全不同的 aigc1024 逐项一模一样(七项零差异)。技术内容是真的,博彩广告也是真的,由同一套系统同时推送。",
+  "analyzed_at": "2026-09-13T16:15:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/https1024.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2026-09-06",
+      "2026-09-13"
+    ],
+    "note": "与 wenan888/aigc1024/https1024/qing_03 共享同一博彩品牌矩阵(8G/8K/182体育/球速 + meiriyishu 互链);博彩域名不收录"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 30634,
+    "median_views": 308,
+    "err_pct": 1.01,
+    "views_available": true,
+    "views_note": "样本全在近 7 天，阅读未累积",
+    "mature_posts": 0,
+    "forwards_per_post": 3.3,
+    "posts_per_day": 48.6,
+    "media_mix": {
+      "photo": 202,
+      "document": 71,
+      "text": 27
+    },
+    "deleted_pct": 1.0,
+    "activity_note": "实测曝光 308 × 48.6 ≈ 1.5 万次/天,低于 aigc1024(3.1 万)高于 wenan888(7,400)——与三者 ERR 排序(1.72%>1.01%>0.19%)及外壳质量排序完全一致。",
+    "forwards_median": 2,
+    "reactions_total": 125,
+    "er_pct": 0.14
+  },
+  "implementation": {
+    "publish_identity": "bot",
+    "post_structure": "正文中位 156 字,外链 github 116(矩阵内最高)、x.com 10、夸克 4。频道名精准对标技术人群。",
+    "delivery": "固定 footer:https1024(176)+chunse1024(176)+inside1024(176)+meiriyishu(175)。inside1024 在本轮已单独判定 criminal,两号互为固定 footer 构成闭环证据。",
+    "schedule": "全天节流:间隔中位 415 秒、<60 秒占 39%。",
+    "network": "博彩导流矩阵成员(与 wenan888/aigc1024/https1024/qing_03 同网，meiriyishu 互链)",
+    "growth": "内容外壳吸粉 + 频道互推 + 博彩变现",
+    "ad_injection": "与 aigc1024 七项零差异:彩金 83、体育 72、真人 40、电子 58、提款 34、信誉 18、担保 30;【球速体育】6、【贵宾会 750.cc】6。",
+    "note": "1024 博彩矩阵网络级证据:aigc1024 与 https1024 的博彩词频七项逐项相同(彩金83/体育72/真人40/电子58/提款34/信誉18/担保30);【贵宾会 750.cc】见于 4 个成员、【球速体育】见于 3 个;共享落地域名 8g.com/182443.com/8k2517.com/gux.axe02ja.cfd 各 3 个号;共享代理客服 `某招商号`/`某客服号`/`某代理号`/`某娱乐城 bot` 各 4 个号;连内容素材标题【中英文翻译版】都在 3 个不同主题的号里复用。矩阵牵出未在样本内的成员:chunse1024、liangxing1024/liangxing365、text1024、openclaw1024、toutiao911、dogdairy、yunying23。"
+  },
+  "growth": {
+    "strategy": "最厚技术外壳对标开发者人群 + 矩阵固定互导",
+    "paid_acquisition": "subs",
+    "mechanisms": [
+      {
+        "name": "最厚的技术外壳",
+        "evidence": "github 116 次",
+        "note": "矩阵里内容投入最高"
+      },
+      {
+        "name": "固定互导 footer",
+        "evidence": "每条挂 chunse1024/inside1024/meiriyishu",
+        "note": "与已判定 criminal 的 inside1024 互为固定引用"
+      },
+      {
+        "name": "买粉铺底",
+        "evidence": "ERR 1.01%"
+      },
+      {
+        "name": "高频铺量",
+        "evidence": "48.6 条/天"
+      }
+    ],
+    "signals": {
+      "subscribers": 30634,
+      "err_pct": 1.01,
+      "forwards_per_post": 3.3
+    },
+    "assessment": "运营方清楚外壳质量决定导流效率,所以在技术题材上舍得投入 116 次真实 github 内容。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      150,
+      700
+    ],
+    "onetime_cny": [
+      3000,
+      16100
+    ],
+    "items": [
+      {
+        "name": "【启动】粉丝铺底",
+        "cny_onetime": [
+          3000,
+          15300
+        ],
+        "note": "3.06 万 × ¥0.1-0.5/个"
+      },
+      {
+        "name": "【启动】技术内容采集系统",
+        "cny_onetime": [
+          0,
+          800
+        ]
+      },
+      {
+        "name": "技术内容采集与整理",
+        "cny_month": [
+          100,
+          500
+        ],
+        "note": "116 次 github 外链意味着真的在抓项目,矩阵里内容成本最高"
+      },
+      {
+        "name": "投放脚本 / VPS",
+        "cny_month": [
+          50,
+          200
+        ]
+      },
+      {
+        "name": "多号矩阵托管",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "摊薄"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      5000,
+      25000
+    ],
+    "model": "博彩导流分成",
+    "streams": [
+      {
+        "name": "博彩导流分成",
+        "evidence": "与 aigc1024 完全相同的广告投放",
+        "cny_month": [
+          5000,
+          25000
+        ],
+        "confidence": "low"
+      },
+      {
+        "name": "内容侧变现",
+        "evidence": "无广告位、无联盟、无网盘拉新",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "矩阵内部规律:外壳投入越高 → ERR 越高 → 导流曝光越大(aigc1024 1.72%/3.1万 > https1024 1.01%/1.5万 > wenan888 0.19%/0.74万)。",
+    "est_scope": "本号可归因(矩阵整体更高)"
+  },
+  "risk": {
+    "level": "criminal",
+    "notes": [
+      "以开发者资源为外壳投放境外博彩推广,属《刑法》303 条帮助行为与 287 条之二帮信罪引流环节",
+      "与 aigc1024 博彩词频七项零差异,是同一运营方中央批量投放的直接证据,两号不可分别评价",
+      "每条固定引用 inside1024(本轮已判定 criminal),互为固定 footer 构成同一网络闭环证据",
+      "技术内容真实性不构成减轻情节反而相反:116 次 github 外链是为提高伪装可信度付出的成本,吸引来的技术人群转化价值也更高",
+      "1024 博彩矩阵网络级证据:aigc1024 与 https1024 的博彩词频七项逐项相同(彩金83/体育72/真人40/电子58/提款34/信誉18/担保30);【贵宾会 750.cc】见于 4 个成员、【球速体育】见于 3 个;共享落地域名 8g.com/182443.com/8k2517.com/gux.axe02ja.cfd 各 3 个号;共享代理客服 `某招商号`/`某客服号`/`某代理号`/`某娱乐城 bot` 各 4 个号;连内容素材标题【中英文翻译版】都在 3 个不同主题的号里复用。矩阵牵出未在样本内的成员:chunse1024、liangxing1024/liangxing365、text1024、openclaw1024、toutiao911、dogdairy、yunying23。"
+    ]
+  }
+}

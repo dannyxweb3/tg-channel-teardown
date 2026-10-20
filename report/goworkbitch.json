@@ -1,0 +1,160 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "goworkbitch",
+  "username": "goworkbitch",
+  "url": "https://t.me/goworkbitch",
+  "title": "上班划水之无聊图",
+  "category": "梗图/无聊图娱乐号(对照组)",
+  "growth_short": "梗图自然扩散",
+  "one_liner": "ER 0.93% 在本轮娱乐类排第二,说明有真实的人在看在点。但另一组数字更值得注意——变现关键词 0 次、外链 0 个、t.me 0 次、@提及 0 个、标签 0 个:一个 2.5 万订阅的号五项全零。而且它 24 小时都在发(0 点 30 条、6 点 30 条),完全没有作息。",
+  "analyzed_at": "2026-09-13T13:00:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/goworkbitch.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2026-08-05",
+      "2026-09-12"
+    ],
+    "note": "跨度 38 天、7.9 条/天"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 24773,
+    "median_views": 1264,
+    "mean_views": 1301,
+    "p10_views": 1087,
+    "p90_views": 1518,
+    "err_pct": 5.1,
+    "mature_posts": 244,
+    "reactions_total": 3426,
+    "forwards_total": 2172,
+    "forwards_per_post": 7.2,
+    "forwards_median": 6,
+    "er_pct": 0.93,
+    "posts_per_day": 7.89,
+    "views_available": true,
+    "media_mix": {
+      "document": 292,
+      "photo": 8
+    },
+    "deleted_pct": 1.3,
+    "activity_note": "ER 0.93% 在『用户通常不互动』的梗图品类里很高(对照 GodlyNews1 0.68%、meizitu3 0.01%、botmzt 0),说明内容真的让人有反应。但 ERR 5.10% 低于同类 FoolishTraceWind(10.23%)——看的人少、但看的人真在互动,可能是订阅盘里有相当比例的沉默账号(高频铺量容易被静音)。阅读随帖龄稳定收敛(0-7 天 870 → 35-42 天 1,393),无异常。",
+    "files": 292,
+    "files_gb": 1.97
+  },
+  "implementation": {
+    "publish_identity": "channel",
+    "post_structure": "292 个 document(1.97GB,文件名全部无扩展名,推测为 GIF/WebP 动图)+ 8 photo。正文中位 0 字(大量纯图),但有文案的部分是有梗、有语感的吐槽式配文(如『星巴克：我们要报警了』28 转发全频道最高、『🩴：也是过命的交情了,放脚吧』),这是 ER 0.93% 的来源——让人想点表情的是那句话不是那张图。",
+    "delivery": "以 document 而非 photo 发图通常为保留原画质,但梗图不需要无损,更可能是 GIF/WebP 被 TG 归为 document。完全不与外界发生连接(本轮少数几个之一,另有 botmzt、SomeACG)。",
+    "curation": "搜集网络梗图/无聊图,轻加工配文",
+    "schedule": "24 小时无作息:0-2 点 79 条、6-7 点 51 条,分布覆盖全天且均匀,间隔中位 1,153 秒(19 分钟)、<10 秒占 14%——更像攒一批素材后脚本按间隔慢慢放。频道名叫『上班划水』投放却在凌晨最密,说明服务的是全时段刷手机的人。",
+    "ad_injection": "五项全零:变现关键词(50 词全扫)0 次、外链域名 0、t.me 0、@提及/bot 0、标签 0。"
+  },
+  "growth": {
+    "strategy": "配文质量 + 高频全时段铺量,无任何外部手段",
+    "paid_acquisition": "unknown",
+    "mechanisms": [
+      {
+        "name": "配文质量",
+        "evidence": "ER 0.93%(娱乐类第二)",
+        "note": "让人想点表情的是那句吐槽"
+      },
+      {
+        "name": "高频铺量",
+        "evidence": "7.89 条/天、24 小时覆盖",
+        "note": "占据全时段信息流"
+      },
+      {
+        "name": "无任何外部手段",
+        "evidence": "五项全零",
+        "note": "不互推、不导流、不打标签"
+      }
+    ],
+    "signals": {
+      "subscribers": 24773,
+      "err_pct": 5.1,
+      "forwards_per_post": 7.2,
+      "er_pct": 0.93
+    },
+    "assessment": "无买粉直接证据,但 ERR 5.10% 偏低而 ER 0.93% 偏高的组合,指向订阅盘含较多沉默账号。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      0,
+      50
+    ],
+    "onetime_cny": [
+      0,
+      300
+    ],
+    "items": [
+      {
+        "name": "【启动】频道创建 + 发布脚本",
+        "cny_onetime": [
+          0,
+          300
+        ]
+      },
+      {
+        "name": "找图 + 写配文",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "15-30 小时/月;配文需要写梗,这是它区别于纯搬运的地方"
+      },
+      {
+        "name": "VPS / 脚本",
+        "cny_month": [
+          0,
+          50
+        ]
+      },
+      {
+        "name": "存储",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "1.97GB 由 TG 托管"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "est_scope": "本频道",
+    "model": "完全不变现",
+    "streams": [
+      {
+        "name": "无",
+        "evidence": "50 个变现关键词零命中,0 外链,0 bot",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "潜在价值仅 ¥300-800/月(2.48 万订阅但中位阅读只有 1,264,日曝光约 1 万次,娱乐类 CPM ¥30-80)。这个数字太低可能正是它不变现的原因。对比 FoolishTraceWind(1.67 万订阅但中位阅读 1,703、ERR 10.23%)——订阅少 33% 却曝光更高。",
+    "potential_ad_value_cny_month": [
+      300,
+      800
+    ]
+  },
+  "risk": {
+    "level": "low",
+    "notes": [
+      "梗图/无聊图娱乐内容,配原创吐槽文案,无外链、无导流、零商业变现",
+      "无灰产、无成人、无博彩、无诈骗要素",
+      "唯一常规瑕疵是图片来源版权:梗图多为网络搬运且不标注出处(0 外链、0 @提及),属该品类通行做法,量级与性质都很轻",
+      "UI 上不应与灰产样本同框标红"
+    ]
+  }
+}

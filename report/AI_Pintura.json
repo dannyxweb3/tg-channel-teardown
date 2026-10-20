@@ -1,0 +1,181 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "AI_Pintura",
+  "username": "AI_Pintura",
+  "url": "https://t.me/AI_Pintura",
+  "title": "AI绘画｜AI视频｜AI音乐",
+  "category": "AI 绘画/视频/音乐 工具分享（含少量 6G 品牌互链）",
+  "growth_short": "AI 热点 + 互推",
+  "one_liner": "本次深挖推翻此前『1024 博彩矩阵成员』的判断:它的博彩词频是彩金 1、首充 1,而矩阵核心号是彩金 83-91;十一项矩阵判据一项不符。实际形态是 ERR 24.78%、转发 25/帖 的正经 AI 工具号(Google Play 外链 127、github 46),只零星互链过 6G 品牌。风险从 high 下调到 medium。",
+  "analyzed_at": "2026-09-13T15:45:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/AI_Pintura.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2025-04-28",
+      "2026-09-13"
+    ],
+    "note": "deleted 67.2% 滚动删除;含少量博彩导流域名，不收录"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 32762,
+    "median_views": 8119,
+    "mean_views": 7716,
+    "p10_views": 2385,
+    "p90_views": 10641,
+    "err_pct": 24.78,
+    "mature_posts": 297,
+    "reactions_total": 931,
+    "forwards_total": 7573,
+    "forwards_per_post": 25.2,
+    "er_pct": 0.04,
+    "posts_per_day": 0.6,
+    "views_available": true,
+    "media_mix": {
+      "photo": 187,
+      "document": 101,
+      "webpage": 5,
+      "text": 7
+    },
+    "deleted_pct": 67.2,
+    "hosted_files": 100,
+    "hosted_bytes_gb": 67.31,
+    "file_ext": {
+      "apk": 89,
+      "mp4": 10,
+      "gif": 1
+    },
+    "activity_note": "ERR 24.78% + 转发 25/帖 与 ddgksf2021(42.6%)、AppDoDo(13.4%)同属『有真实受众的工具号』区间,与任何博彩外壳号都不在一个量级。67.2% 删除率主要来自时间(跨度 503 天、仅 0.6 条/天):AI 工具迭代快,旧版本链接、失效应用、下架项目被清理——与博彩外壳号『发完即删防举报』的短期高比例删除不同,是长期缓慢清理。",
+    "forwards_median": 16
+  },
+  "implementation": {
+    "publish_identity": "bot",
+    "post_structure": "正文中位 160 字。标签 #Windows 25、#macOS 15、#Linux 15、#Android 6、#iOS 2——跨平台 AI 工具推荐,实打实的内容。",
+    "delivery": "外链 play.google.com 127、github 46、aigenprompt.com 22、insightface.ai 2。自有四件套:AI_Pintura 181 + AI_Pintura_bot 179 + ai_huitu 178 + aidrawkkbot 178——这是自己的矩阵不是别人的。6G 品牌互链仅零星:某 6G 品牌域名 A 5、某 6G 品牌域名 B 4、某 6G 品牌域名 C 3、`某博彩客服 D`/`某博彩客服 E`/`某博彩代理号` 各 1。",
+    "schedule": "人工运营:11-12 点占 177 条(59%),间隔中位 86,296 秒(约 24 小时),<60 秒占 32%(成组发布)。",
+    "retention": "约 67% 滚动删除",
+    "growth": "AI 热点 + 频道互推 + 机场/博彩导流",
+    "ad_injection": "极少:彩金 1、首充 1、彩票 3、电子 2、代理 2、无忧 1。0 条明确报价帖。",
+    "note": "【矩阵成员判断修正】与已确认核心号逐项对照,十一项判据全不符合:彩金 1 vs 83-91、体育 0 vs 72-88、提款 0 vs 34-35、担保/信誉 0/0 vs 30-35/18-21、无【贵宾会】无【球速体育】、无博来代理账号、无 chunse1024/meiriyishu 固定 footer(核心号每条必挂 109-176 次,它 0 次)、频率 0.6 vs 43.7-59.5 条/天、ERR 24.78% vs 0.19-1.72%。此前归入矩阵的依据是与 6G 品牌的零星互链(300 条里合计不到 20 次),不足以支撑该结论。"
+  },
+  "growth": {
+    "strategy": "AI 工具刚需驱动 + 自有 bot 收口",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "AI 工具刚需",
+        "evidence": "ERR 24.78%、转发中位 16",
+        "note": "真实受众,内容驱动"
+      },
+      {
+        "name": "跨平台覆盖",
+        "evidence": "#Windows/#macOS/#Linux/#Android/#iOS",
+        "note": "受众面宽"
+      },
+      {
+        "name": "自有 bot 收口",
+        "evidence": "AI_Pintura_bot / aidrawkkbot 各 178+",
+        "note": "把频道流量沉淀进私聊"
+      },
+      {
+        "name": "低频高质",
+        "evidence": "0.6 条/天",
+        "note": "不刷屏,每条有内容"
+      }
+    ],
+    "signals": {
+      "subscribers": 32762,
+      "err_pct": 24.78,
+      "forwards_per_post": 25.2
+    },
+    "assessment": "自有四件套(频道+2 个 bot+备份号)是它自己的运营结构,与 1024 矩阵的固定互导 footer 完全不同。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      30,
+      100
+    ],
+    "onetime_cny": [
+      0,
+      800
+    ],
+    "items": [
+      {
+        "name": "【启动】频道 + bot + 备份号",
+        "cny_onetime": [
+          0,
+          800
+        ],
+        "note": "四件套需开发 2 个 bot"
+      },
+      {
+        "name": "选题与试用",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "20-40 小时/月,每条 160 字且需实际验证工具"
+      },
+      {
+        "name": "bot / VPS 托管",
+        "cny_month": [
+          30,
+          100
+        ]
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      1000,
+      14000
+    ],
+    "model": "6G 品牌推广 + bot 侧变现 + 潜在广告位",
+    "streams": [
+      {
+        "name": "6G 品牌推广",
+        "evidence": "某 6G 品牌域名 A 5、某 6G 品牌域名 B 4、某 6G 品牌域名 C 3、`某博彩客服 D`/`某博彩客服 E`/`某博彩代理号` 各 1",
+        "cny_month": [
+          1000,
+          6000
+        ],
+        "confidence": "low"
+      },
+      {
+        "name": "bot 侧变现",
+        "evidence": "两个自有 bot 内容不可观测",
+        "cny_month": [
+          0,
+          5000
+        ],
+        "confidence": "low"
+      },
+      {
+        "name": "广告位",
+        "evidence": "0 条明确报价帖",
+        "cny_month": [
+          0,
+          3000
+        ],
+        "confidence": "low"
+      }
+    ],
+    "note": "锚点:3.28 万订阅、中位阅读 8,119、转发 25/帖,按 CPM ¥50-150 折算每周 2 条约 ¥3,900-11,700/月。最大盲区是两个自有 bot(各被引用 178-179 次几乎每条都挂),内部付费绘图额度/会员/广告完全不可观测。",
+    "est_scope": "本频道 + 自有 bot(bot 内部不可观测)"
+  },
+  "risk": {
+    "level": "medium",
+    "notes": [
+      "【修正】此前判为 high 并归入 1024 博彩矩阵,本次逐项比对后不成立:十一项矩阵判据全不符合(无共享文案、无共享品牌、无博来代理账号、无固定 footer、ERR 高一个数量级),风险下调至 medium",
+      "主体是 AI 绘画/视频/音乐工具的推荐与分享,外链以 Google Play、GitHub、开源项目为主,完全合法且质量不低",
+      "6G 品牌的零星推广(某 6G 品牌域名 A 5、某 6G 品牌域名 B/某 6G 品牌域名 C 共 7、`某博彩客服 D`/`某博彩客服 E`/`某博彩代理号` 各 1):6G 已被识别为体育博彩品牌(见 dianying4K、vip115hot),为博彩品牌导流即便量小仍属帮信范畴——这是不能判 low 的原因",
+      "部分 AI 工具涉人脸相关技术(外链含 insightface.ai),若用于换脸用途存在肖像权与《深度合成管理规定》合规问题;样本内无法判定推荐语境",
+      "少量 代理 2、彩票 3 的零星词频,量级极低"
+    ]
+  }
+}

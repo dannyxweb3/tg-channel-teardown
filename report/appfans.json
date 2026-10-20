@@ -1,0 +1,169 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "appfans",
+  "username": "appfans",
+  "url": "https://t.me/appfans",
+  "title": "Price Tag",
+  "category": "iOS应用限免/降价日报(对照组,已休眠)",
+  "growth_short": "应用日报口碑",
+  "one_liner": "300 条消息的转发总数是 122,均值 0.4、中位 0、最高 3——本轮扩散力最低,没有之一。反应也是 0(功能关闭)。每天 18-19 点雷打不动发一条『应用日报』(间隔中位 87,149 秒≈24 小时),格式统一到连日期都用花体数字排版,然后把人全部导去微信公众号。最后一条停在 2026-04-17。",
+  "analyzed_at": "2026-09-13T13:00:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/appfans.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2024-12-24",
+      "2026-04-17"
+    ],
+    "note": "跨度 479 天、0.6 条/天;最后更新 2026-04-17(约5个月未更),标注休眠"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 15145,
+    "median_views": 2320,
+    "mean_views": 2405,
+    "p10_views": 1938,
+    "p90_views": 2945,
+    "err_pct": 15.32,
+    "mature_posts": 300,
+    "reactions_total": 0,
+    "forwards_total": 122,
+    "forwards_per_post": 0.4,
+    "er_pct": 0.0,
+    "posts_per_day": 0.63,
+    "views_available": true,
+    "media_mix": {
+      "webpage": 269,
+      "empty": 31
+    },
+    "deleted_pct": 0.3,
+    "activity_note": "转发最高只有 3,对照 AWAvenue 920、Legado 565、xyxyspace 527、FindBlog 362——是一个数量级之外的数字。原因是内容形态:『今日速览』信息高度浓缩、时效只有 24 小时、且对每个读者的相关性都不同(限免的十几个 App 里可能只有一个是你要的),转发给别人几乎没有价值。颗粒度越细越具体转发意愿越高,appfans 是这个规律的反面极端。按帖龄分桶 300 条全在 56-63 天档、中位 2,320,说明停更前表现稳定,不是数据下滑才放弃。",
+    "forwards_median": 0
+  },
+  "implementation": {
+    "publish_identity": "channel",
+    "post_structure": "极致格式化:『📅 2024 ¹²/₂₄ Tᴜᴇsᴅᴀʏ · 应用日报』+ 四个固定栏目(👍限免 / ⬇️降价 / 🔥推荐 / 🆕资讯)。日期用上下标花体数字、星期用小型大写字母,排版洁癖说明是人工精心维护的模板而非脚本拼接。『限免』一词出现 301 次(每条必有)。正文中位 213 字,269 条为链接预览卡。",
+    "delivery": "全部流量导向微信公众号:mp.weixin.qq.com 261 次、tinyurl.com 38 次(短链中转)。TG 只放日报摘要,完整内容(每个 App 的介绍、截图、下载链接)都在公众号里——『TG 引流 → 微信承接』的跨平台结构。Price Tag 是国内知名 App 推荐品牌,主阵地本就在微信,TG 是给翻墙用户的第二入口。⚠️ 统计口径:本频道 300 条 URL 的 scheme 全部被截断(存成 s://…),已按修正口径统计。",
+    "curation": "人工整理iOS应用限免/降价,『Price Tag』是知名应用推荐品牌",
+    "schedule": "严格定时:18 点 175 条(58%)、19 点 110 条(37%),间隔中位 87,149 秒≈24.2 小时,<60 秒占 0%(从不批量);分钟与秒无固定聚集,是人工在固定时段发布而非精确 cron。",
+    "ad_injection": "0 条招商帖(广告 7、合作 8、投放 2、赞助 1 均非招商语境)。",
+    "note": "零矩阵零 bot:t.me 引用 0、@提及 0、bot 0,不互推不导流到其他 TG 资源。"
+  },
+  "growth": {
+    "strategy": "品牌延伸 + 限免刚需 + 严格日更,从设计上不追求扩散",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "品牌延伸",
+        "evidence": "Price Tag 是国内知名 App 推荐品牌",
+        "note": "靠品牌自然沉淀,不独立获客"
+      },
+      {
+        "name": "限免刚需",
+        "evidence": "『限免』301 次每条必有",
+        "note": "iOS 用户的省钱刚需"
+      },
+      {
+        "name": "严格日更",
+        "evidence": "每天 18-19 点,间隔恰 24 小时",
+        "note": "可预期的更新养成习惯"
+      },
+      {
+        "name": "零传播设计",
+        "evidence": "转发总计 122、反应关闭、不互推",
+        "note": "从设计上就不追求增长,是品牌给老用户的便利入口而非拉新工具"
+      }
+    ],
+    "signals": {
+      "subscribers": 15145,
+      "err_pct": 15.32,
+      "forwards_per_post": 0.4
+    },
+    "assessment": "停更(2026-04-17)与 GoReading、fakeye 的『个人时间耗尽』不同:Price Tag 有品牌、有公众号主体,更可能是渠道优先级取舍——TG 端月收入几百块还要每天手工同步,不如把精力放回微信。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      0,
+      0
+    ],
+    "onetime_cny": [
+      0,
+      0
+    ],
+    "items": [
+      {
+        "name": "【启动】频道创建",
+        "cny_onetime": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "TG 端发布",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "1-3 小时/月:内容在公众号已做好,TG 只是复制摘要"
+      },
+      {
+        "name": "服务器 / 工具",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "无 bot、无外链托管,边际成本严格为零"
+      },
+      {
+        "name": "公众号侧编辑工作",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "每天监控 App Store 价格变动、筛选、写介绍、做图,估 40-80 小时/月,不属于本频道口径"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      500
+    ],
+    "est_scope": "TG 端(公众号收入不计入)",
+    "model": "TG 基本不直接变现,作用是给公众号导流",
+    "streams": [
+      {
+        "name": "联盟 / aff",
+        "evidence": "aff 7(多为 App Store 联盟追踪)",
+        "cny_month": [
+          0,
+          500
+        ],
+        "confidence": "low"
+      },
+      {
+        "name": "TG 端广告位",
+        "evidence": "0 条招商帖",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "导流价值折算:每天 1 条 × 2,320 阅读 ≈ 7 万次曝光/月,若 10-20% 点击进入公众号则月带来 7,000-14,000 次阅读,按微信科技类流量主与广告价值折算约合 ¥700-3,000/月的公众号侧收入。对比 cnbeta_com(同为 TG 导流母站结构,估 ¥200-1,400/月)量级一致:TG 作为二级渠道,对成熟品牌的收入贡献都很有限。"
+  },
+  "risk": {
+    "level": "low",
+    "notes": [
+      "iOS 应用限免、降价与推荐的日报,内容为 App Store 公开价格信息与官方应用介绍,导流至自有微信公众号",
+      "无盗版、无破解、无成人、无博彩、无侵权分发,TG 端零商业变现",
+      "唯一常规项:App Store 联盟链接(aff 7 次)属正常联盟营销",
+      "本轮合规性最干净的样本之一,UI 上不应与灰产样本同框标红"
+    ]
+  }
+}

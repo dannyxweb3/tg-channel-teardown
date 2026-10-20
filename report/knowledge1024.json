@@ -1,0 +1,174 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "knowledge1024",
+  "username": "knowledge1024",
+  "url": "https://t.me/knowledge1024",
+  "title": "你不知道的冷知识",
+  "category": "博彩引流号（内容外壳 + 体育/棋牌博彩广告）",
+  "growth_short": "内容外壳 + 互推",
+  "one_liner": "矩阵里博彩浓度最高的一个——彩金 91、体育 88,比共享文案基准还多约 10%。而『冷知识』外壳最薄(#冷知识 仅 36 次占 12%,其余是食谱、生活常识),每条固定挂 chunse1024、liangxing1024、meiriyishu 三个兄弟号。",
+  "analyzed_at": "2026-09-13T16:15:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/knowledge1024.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2026-09-06",
+      "2026-09-13"
+    ],
+    "note": "与 wenan888/aigc1024/https1024/qing_03 共享同一博彩品牌矩阵(8G/8K/182体育/球速 + meiriyishu 互链);博彩域名不收录"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 19380,
+    "median_views": 327,
+    "err_pct": 1.69,
+    "views_available": true,
+    "views_note": "样本全在近 7 天，阅读未累积",
+    "mature_posts": 0,
+    "forwards_per_post": 1.6,
+    "posts_per_day": 43.7,
+    "media_mix": {
+      "photo": 164,
+      "document": 73,
+      "text": 61,
+      "webpage": 2
+    },
+    "deleted_pct": 1.0,
+    "activity_note": "博彩浓度矩阵最高:彩金 91、体育 88、电子 65、真人 42、担保 35、提款 35、存款 35、信誉 21,各项均高于 aigc1024/https1024 共享基准且同向增加,说明在共享投放基础上多加一轮。ERR 1.69% 看似不低因盘子小(1.94 万):绝对曝光 327 × 43.7 ≈ 1.43 万次/天,与 https1024 接近而远低于 aigc1024。",
+    "forwards_median": 1,
+    "reactions_total": 118,
+    "er_pct": 0.12
+  },
+  "implementation": {
+    "publish_identity": "bot",
+    "post_structure": "正文中位 125 字。#冷知识 36 是唯一内容标签(占 12%),其余【食材】3、【做法】3、【日常生活小常识】等泛生活内容,无主题一致性——矩阵里外壳最薄。",
+    "delivery": "固定四件套:knowledge1024(118)+chunse1024(118)+liangxing1024(117)+meiriyishu(117)。它挂 liangxing1024(两性),而 https1024 挂 inside1024、aigc1024 挂 openclaw1024——矩阵在做题材交叉分发。",
+    "schedule": "全天节流:间隔中位 1,080 秒、<60 秒仅 25%,与 aigc1024/https1024 同一套系统。",
+    "network": "博彩导流矩阵成员(与 wenan888/aigc1024/https1024/qing_03 同网，meiriyishu 互链)",
+    "growth": "内容外壳吸粉 + 频道互推 + 博彩变现",
+    "ad_injection": "浓度矩阵最高(见 metrics);【球速体育】7、【贵宾会 750.cc】7,标签 #球速体育 7、#182体育 7。在最小的号上投得最多,合理推测是对其内容伪装要求最低,可更激进压广告比例。",
+    "note": "1024 博彩矩阵网络级证据:aigc1024 与 https1024 的博彩词频七项逐项相同(彩金83/体育72/真人40/电子58/提款34/信誉18/担保30);【贵宾会 750.cc】见于 4 个成员、【球速体育】见于 3 个;共享落地域名 8g.com/182443.com/8k2517.com/gux.axe02ja.cfd 各 3 个号;共享代理客服 `某招商号`/`某客服号`/`某代理号`/`某娱乐城 bot` 各 4 个号;连内容素材标题【中英文翻译版】都在 3 个不同主题的号里复用。矩阵牵出未在样本内的成员:chunse1024、liangxing1024/liangxing365、text1024、openclaw1024、toutiao911、dogdairy、yunying23。"
+  },
+  "growth": {
+    "strategy": "泛内容外壳覆盖不设防人群 + 题材交叉分发",
+    "paid_acquisition": "subs",
+    "mechanisms": [
+      {
+        "name": "泛内容外壳",
+        "evidence": "#冷知识 36 + 食谱/生活常识",
+        "note": "无门槛话题覆盖不设防人群"
+      },
+      {
+        "name": "题材交叉分发",
+        "evidence": "固定挂 liangxing1024(两性)",
+        "note": "把冷知识读者导给其他题材号"
+      },
+      {
+        "name": "买粉铺底",
+        "evidence": "ERR 1.69%、转发中位 1"
+      },
+      {
+        "name": "高频铺量",
+        "evidence": "43.7 条/天"
+      }
+    ],
+    "signals": {
+      "subscribers": 19380,
+      "err_pct": 1.69,
+      "forwards_per_post": 1.6
+    },
+    "assessment": "经济逻辑是低成本高浓度:内容不值钱、盘子不大,就把广告密度压到最高,用最低维护成本榨取导流量。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      50,
+      200
+    ],
+    "onetime_cny": [
+      1900,
+      9900
+    ],
+    "items": [
+      {
+        "name": "【启动】粉丝铺底",
+        "cny_onetime": [
+          1900,
+          9700
+        ],
+        "note": "1.94 万 × ¥0.1-0.5/个"
+      },
+      {
+        "name": "【启动】内容素材",
+        "cny_onetime": [
+          0,
+          200
+        ]
+      },
+      {
+        "name": "内容拼凑",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "外壳最薄,几乎无实质投入"
+      },
+      {
+        "name": "投放脚本 / VPS",
+        "cny_month": [
+          50,
+          200
+        ]
+      },
+      {
+        "name": "多号矩阵托管",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "摊薄"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      4000,
+      20000
+    ],
+    "model": "博彩导流分成",
+    "streams": [
+      {
+        "name": "博彩导流分成",
+        "evidence": "彩金 91、体育 88(矩阵最高浓度)",
+        "cny_month": [
+          4000,
+          20000
+        ],
+        "confidence": "low"
+      },
+      {
+        "name": "内容侧变现",
+        "evidence": "0",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "实测曝光约 1.43 万次/天。它是矩阵里成本最低的号:最小的盘、最薄的外壳、最高的广告浓度。",
+    "est_scope": "本号可归因(矩阵整体更高)"
+  },
+  "risk": {
+    "level": "criminal",
+    "notes": [
+      "以『冷知识』为外壳投放境外博彩推广,属《刑法》303 条帮助行为与 287 条之二帮信罪引流环节",
+      "矩阵中的特殊性是广告浓度最高且外壳最薄——说明已基本放弃伪装,是纯粹的投放载体;伪装成本降低不减轻责任,只说明它被定位为消耗品",
+      "固定引用 liangxing1024(两性)与 chunse1024(春色),从命名判断涉成人内容,构成成人内容导流的连带敞口",
+      "1024 博彩矩阵网络级证据:aigc1024 与 https1024 的博彩词频七项逐项相同(彩金83/体育72/真人40/电子58/提款34/信誉18/担保30);【贵宾会 750.cc】见于 4 个成员、【球速体育】见于 3 个;共享落地域名 8g.com/182443.com/8k2517.com/gux.axe02ja.cfd 各 3 个号;共享代理客服 `某招商号`/`某客服号`/`某代理号`/`某娱乐城 bot` 各 4 个号;连内容素材标题【中英文翻译版】都在 3 个不同主题的号里复用。矩阵牵出未在样本内的成员:chunse1024、liangxing1024/liangxing365、text1024、openclaw1024、toutiao911、dogdairy、yunying23。"
+    ]
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "TestFlightX",
+  "username": "TestFlightX",
+  "url": "https://t.me/TestFlightX",
+  "title": "TestFlight 分享",
+  "category": "TestFlight 名额分享",
+  "growth_short": "TF名额刚需",
+  "one_liner": "300 条消息只有一个外链域名——testflight.apple.com,出现 299 次。格式就是一行『#应用名 + 邀请链接』,正文中位 59 字。零删除、零广告、零 aff。但最要紧的一件事在时间戳上:最后一条发于 2026 年 6 月 10 日而抓取时间是 9 月 13 日——它已经停更三个月。而在停更之前,它的月度阅读正从 1,999 涨到 8,411,四个月翻了四倍。",
+  "analyzed_at": "2026-09-13T15:30:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_batch_dump.py",
+    "dump": "data/recon/TestFlightX.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "—",
+      "2026-06-10"
+    ],
+    "note": "4.2条/天;最后更新2026-06-10(约3个月前),偏低频"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 44665,
+    "median_views": 3411,
+    "err_pct": 7.64,
+    "mature_posts": 299,
+    "forwards_per_post": 1.7,
+    "er_pct": 0.02,
+    "posts_per_day": 4.23,
+    "views_available": true,
+    "media_mix": {
+      "webpage": 299
+    },
+    "deleted_pct": 0.0,
+    "activity_note": "id 34939→35238 是 300 个连续号位没有任何缺口,意味着抓取到的就是这个频道最新的 300 条——最后一条发于 2026-06-10,距抓取日 95 天,已停更约三个月。停更前的阅读曲线恰恰在上升:2026-03 的 1,999 → 04 的 2,924(+46%)→ 05 的 5,724(+96%)→ 06 的 8,411(+47%),这四个月的帖子在抓取时都已超过三个月龄、全部充分成熟,落差真实——四个月翻了 4.2 倍然后戛然而止。这条曲线与本轮所有衰退样本都不同:QuanXNews(-87%)、NobyDa(-76%)、gitbig(-47%)都是『慢慢没人看』,它是『正当红的时候停了』。停更原因样本无法给出,三条线索:(1)只有一个域名、一种内容,没有任何缓冲,TestFlight 邀请链接有名额上限与有效期,上游供给一断频道立刻无话可说;(2)零变现,没有经济动力;(3)本轮同名生态的 TestFlightCN 早已改名转型(变成在花科技圈,28.2 万订阅的科技资讯号),『TestFlight 分享』这个品类可能整体在退潮——两个号的分叉本身就是这个品类价值的一次市场检验。",
+    "mean_views": 4023,
+    "p10_views": 1969,
+    "p90_views": 6310,
+    "forwards_total": 507,
+    "forwards_median": 1,
+    "reactions_total": 200,
+    "median_text_len": 59,
+    "last_post": "2026-06-10",
+    "comments_total": 182,
+    "comments_posts": 66,
+    "note": "该频道自 2026-06-10 起停更,本报告的所有结论仅描述其运营期间的状态。"
+  },
+  "implementation": {
+    "publish_identity": "channel",
+    "post_structure": "网页预览 299、纯文本 1,零图片零文件零视频。正文中位 59 字,标准格式是『#应用名 + testflight.apple.com/join/XXXXXXXX』。外链域名只有 testflight.apple.com 299 次,没有第二个域名。标签:#Microsoft 10、#FRITZ 4、#Spotify 3、#Notion 3、#Moon 3、#Lody 3、#Keka 2、#CounterUps 2、#酷狗概念版 2、#Element 2、#Proton 2、#TikTok 2——大厂与独立应用混排;同一个应用会被重复发布(Spotify 3 次、Moon FM 3 次、Lody 3 次),因为 TestFlight 名额满了会关闭、放出新名额时要重发。",
+    "delivery": "纯TF名额指路,不托管App",
+    "curation": "极少数条目带说明且是开发者自己写的,例如一条包含『Please test our app and send any bug reports. Everyone who signs up gets 1 month of Premium for free. If you find and report a valid bug, we'll…』——这条是全样本阅读第一(13,896),而它恰恰是唯一一条带完整开发者留言的,说明用户对『这个 beta 有什么好处』是有需求的而频道通常不提供。转发榜印证稀缺性驱动:Minecraft Preview 31 转发、TikTok 13、Spotify 12+11(同一链接发了两次)——大厂应用的 beta 名额是稀缺资源,一放出来就被转走。",
+    "schedule": ":05-:08 的分钟栅格:分钟 :06 出现 89 次(30%)、:07 38、:05 37、:08 16,四分钟窗口内 180/300 条(60%);而秒完全随机(最高各 9 次)。这个组合在本轮出现过一次(FinanceNewsDaily 分钟落在 :00 :05 :10 :35 :40、秒集中 :06-:08),但那个是分秒都聚集的严格 cron;TestFlightX 是『分钟聚集、秒随机』,指向不同机制——它在每小时的第 5-8 分钟执行一次抓取任务,但抓取本身耗时不定(要访问多个源、验证链接是否还开放),所以发出的秒数是随机的。小时分布覆盖全天 24 小时,符合『每小时轮询一次』的判断;<10 秒只有 8% 说明它很少一次发多条,每轮通常只抓到一两个新链接。"
+  },
+  "growth": {
+    "strategy": "稀缺 beta 名额驱动的自然转发",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "稀缺性驱动",
+        "evidence": "Minecraft 31 转发、TikTok 13、Spotify 12+11",
+        "note": "名额有限先到先得,这是转发的全部动力"
+      },
+      {
+        "name": "极简格式",
+        "evidence": "正文 59 字、一行一链接",
+        "note": "零摩擦"
+      },
+      {
+        "name": "每小时轮询",
+        "evidence": ":05-:08 分钟栅格",
+        "note": "抢时效——名额满了链接就失效"
+      },
+      {
+        "name": "应用名做标签",
+        "evidence": "12 类高频标签",
+        "note": "TG 内搜应用名能命中"
+      },
+      {
+        "name": "零删除",
+        "evidence": "id 缺口 0.0%",
+        "note": "历史可回溯(尽管多数链接已失效)"
+      },
+      {
+        "name": "无任何外部手段",
+        "evidence": "单一域名、零 t.me 引用、零 @提及、零互推",
+        "note": "完全自然"
+      }
+    ],
+    "signals": {
+      "subscribers": 44665,
+      "err_pct": 7.64,
+      "forwards_per_post": 1.7
+    },
+    "assessment": "4.47 万订阅、零外部获客,且阅读在停更前四个月翻了 4.2 倍。『零 t.me 引用、零 @提及』在本轮极罕见——它连自己的频道都不在正文里提,是一个纯粹的机器投递管道。增长逻辑与 TAndroidAPK 有相似之处(都是『官方能拿到但不好找』的东西的聚合入口),区别在于:TAndroidAPK 的内容是官方 APK 永久有效、旧版本是唯一来源、历史价值高,结果 25.7 万订阅持续运营;TestFlightX 的内容是名额满即失效的邀请链接、历史价值趋近于零,结果 4.47 万订阅后停更。『内容会过期』是它的结构性弱点——300 条历史里绝大多数链接现在已经点不开,零删除保留下来的是一份失效清单。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      30,
+      150
+    ],
+    "onetime_cny": [
+      500,
+      3000
+    ],
+    "items": [
+      {
+        "name": "【启动】抓取 + 发布脚本",
+        "cny_onetime": [
+          500,
+          3000
+        ],
+        "note": "每小时轮询、提取 TestFlight 链接、去重、发布"
+      },
+      {
+        "name": "VPS",
+        "cny_month": [
+          30,
+          150
+        ],
+        "note": "每小时一次轮询,负载极轻"
+      },
+      {
+        "name": "人力",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "0.5-3 小时/月。高度自动化,只在脚本挂掉时介入"
+      },
+      {
+        "name": "存储",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "零文件"
+      }
+    ],
+    "note": "本轮成本最低的几个样本之一(与 awesomeRSSHub、AwesomeChatGPT、alistshare 同级)。这也让『停更』更难解释:一个每月 30-150 元、几乎不需要人的自动化频道不会因为成本压力停掉,更可能是上游断了或运营者失去兴趣。"
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "est_scope": "实测",
+    "model": "71 天零变现",
+    "streams": [
+      {
+        "name": "广告帖",
+        "evidence": "0 条。变现关键词只有『广告 1、aff 1』两次命中",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "联盟 / aff",
+        "evidence": "0 个。299 个链接全是 testflight.apple.com/join/…,无任何参数",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "付费 / 打赏",
+        "evidence": "无任何入口",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "广告承载力按停更前水位:4.47 万订阅、中位阅读 3,411、月发约 127 条、月曝光约 43 万次;iOS 尝鲜用户是高价值受众(愿意装 beta 的人通常是重度用户),科技/应用类 CPM 参考 ¥60-150,折算 ¥26,000-65,000/月。区间宽的三个原因:(1)无任何报价信息;(2)内容形态是『一行链接』,插广告会极其突兀——形式上的排斥性很强,与 ShadowrocketNews(纯 changelog)同理;(3)它已停更,这个数字只有历史意义。一个 4.47 万订阅、阅读还在翻倍增长的号从没接过一条广告然后停了——这是本轮『零变现』样本里最可惜的一个,它甚至没来得及试。",
+    "ad_capacity_cny_month": [
+      26000,
+      65000
+    ]
+  },
+  "risk": {
+    "level": "low",
+    "notes": [
+      "TestFlight 是 Apple 官方的 beta 测试分发平台,邀请链接由开发者自行生成并公开分发,本就设计为可传播。本频道只做链接聚合,299 个外链全部指向 testflight.apple.com、无任何参数、无第三方域名、零文件托管、零广告、零收款",
+      "与 Apple 服务条款的关系(很轻):TestFlight 公开链接(Public Link)的设计目的就是让开发者广泛招募测试者,聚合转发不违反其用途。部分开发者可能希望限定测试人群,但公开链接一旦生成即对所有人开放,这是 Apple 的机制设计而非频道的行为",
+      "变现关键词清洁度:全部命中只有『广告 1、aff 1』两次,是本轮最干净的几个样本之一(与 NekogramAPKs、TAndroidAPK、StickerGroup 同级,那三个是 50 词全空)",
+      "不适用:不涉及侵犯著作权罪(不托管、不分发任何应用本体,只给官方邀请链接);不涉及帮助信息网络犯罪活动罪(0 个收款账号、0 条灰产导流);不涉及非法经营罪(71 天零收入);不涉及传播淫秽物品罪(0 条成人内容);不涉及规避技术措施(不破解任何东西)。UI 上不应与灰产样本同框标红",
+      "状态说明:该频道自 2026-06-10 起停更,本报告的所有结论仅描述其运营期间的状态"
+    ]
+  }
+}

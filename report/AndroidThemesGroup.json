@@ -1,0 +1,163 @@
+{
+  "depth": "deep",
+  "schema_version": 3,
+  "kind": "group",
+  "slug": "AndroidThemesGroup",
+  "username": "AndroidThemesGroup",
+  "url": "https://t.me/AndroidThemesGroup",
+  "title": "Telegram Android Themes",
+  "category": "Telegram 主题美化 资源群",
+  "growth_short": "平台原生深链 + 颜色标签检索 + 多频道汇集",
+  "one_liner": "530 个 t.me 链接，其中 279 个是 t.me/addtheme/<hash>——Telegram 自己的主题安装深链。站外域名总共 4 个、合计 4 次。这是本语料第一个完全不离开平台的经济体：商品是 Telegram 主题，分发用 Telegram 深链，推广靠 Telegram 频道互转，消费也在 Telegram 里完成。它的标签体系是颜色（#dark 98、#black 53、#light 32、#blue 29、#brown 25、#pink 22）——本语料第一个把标签当检索维度而不是分类维度用的样本。",
+  "analyzed_at": "2026-09-20T00:00:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/AndroidThemesGroup.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2026-09-14",
+      "2026-09-20"
+    ],
+    "note": "含发言人字段的重抓。样本中出现的阅读数与转发数来自转发进本群的频道帖，不是本群自身的指标——群没有阅读数"
+  },
+  "metrics": {
+    "confidence": "medium",
+    "members": 20092,
+    "online": null,
+    "online_pct": null,
+    "messages_per_day": 60.0,
+    "bot_share_pct": 0.0,
+    "links_per_message_mean": 1.78,
+    "deleted_pct": 36.8,
+    "deleted_ratio_pct": 36.8,
+    "subscribers": null,
+    "median_views": null,
+    "err_pct": null,
+    "views_available": false,
+    "activity_note": "t.me 链接 530 vs 站外域名 4 次，比例 132:1；本语料平台依赖度最高的商业形态"
+  },
+  "implementation": {
+    "publish_identity": "group",
+    "post_structure": "正文中位 140 字（本批最长），图片 245 张为主。典型结构是装饰性排版 + 三行功能链接 + 一行引流：「⬇️ APPLY THEME / 📁 WALLPAPER / 👥 JOIN CHANNEL / Theme Link」，用花体字与 emoji 分隔线包装。",
+    "ad_injection": "零。300 条粗筛 0 命中、零收款账号、零联盟参数、零推广码、零订阅墙。",
+    "delivery": "t.me/addtheme/<hash> 279 次（一键安装主题）、t.me/bg/<hash> 63 次（一键应用背景图）、各主题频道用户名 73 次、t.me/boost/ 25 次。addtheme 与 bg 是 Telegram 内置的深链协议——点开直接在客户端里装上，不下载文件、不访问网站、不经过任何第三方。站外域名仅 4 个各 1–2 次（应用商店 2、两个伊朗站点各 1）。",
+    "curation": "八个高频标签里六个是颜色（#dark 98、#black 53、#light 32、#blue 29、#brown 25、#pink 22），另两个是 #darktheme 32（类别）与 #Android 25（平台）。#dark 与 #light 之比 3:1——暗色主题的供给是亮色的三倍。",
+    "schedule": "无。bot 0 条，60 条/天由人手工转。",
+    "retention": "零 bot、零治理工具。存活率 63.2% 是内容本身无争议的结果。",
+    "operating_team_note": "36 个发言人、top10 占 65%——约 10 个人承担 39 条/天。",
+    "note": "零基础设施：0 个 bot、0 个自有域名、0 个服务器、1 个文件（5.2MB mp4）。全部技术实现由平台提供——主题打包与安装、背景图应用、检索、分发、激励（Boost）全是 Telegram 的。运营者只做三件事：转发、打标签、排版。这是本语料「基础设施最少」的记录保持者，比 V2EXPro 还少一个维度：那个群至少产出原创内容（观点），这个群连内容都是转的。"
+  },
+  "growth": {
+    "strategy": "增长完全建立在「安装零摩擦」上：看到主题 → 点链接 → 装上，三步，不离开 App。本语料的分发类样本里摩擦最少的一个（对照 shareAliyun 跳网盘→转存→下载、magazinesclubnew 下载 PDF→换设备打开、zaproshare 复制订阅→粘贴进客户端）。这解释了它的转发数据（单帖最高 667）：可转发性极高，因为收到的人点一下就能用。",
+    "paid_acquisition": "no",
+    "mechanisms": [
+      {
+        "name": "平台原生深链",
+        "evidence": "279 个 addtheme",
+        "note": "安装零摩擦"
+      },
+      {
+        "name": "颜色标签检索",
+        "evidence": "六个颜色标签共 259 次",
+        "note": "可查"
+      },
+      {
+        "name": "多频道内容汇集",
+        "evidence": "5 个来源频道（23/20/19/15/14 次）",
+        "note": "供给"
+      },
+      {
+        "name": "转发帖保留原页脚",
+        "evidence": "「JOIN CHANNEL」",
+        "note": "反向给上游导流；本语料「矩阵识别五法」第三法第四次印证"
+      },
+      {
+        "name": "Boost 请求",
+        "evidence": "25 次 t.me/boost/",
+        "note": "平台权益"
+      },
+      {
+        "name": "互推",
+        "evidence": "73 个主题频道引用",
+        "note": "密集"
+      },
+      {
+        "name": "站外买量",
+        "evidence": "零站外域名",
+        "note": "0"
+      },
+      {
+        "name": "买粉",
+        "evidence": "群成员数无法验证",
+        "note": "无从判断"
+      }
+    ],
+    "signals": {
+      "members": 20092,
+      "messages_per_day": 60.0,
+      "tme_links": 530
+    },
+    "assessment": "本语料「零/极少外链」的成因增至七种，第七种是「商品是平台原生对象」——与前六种性质不同：前六种是「没有链接可贴」，这一种是「链接不需要指向站外」。这个差别有实质后果：本语料反复出现的结构性规律是「要做流量生意就得有域名（hacker_news_feed）/ 做工具就必须有服务器（Hao12News）/ 要收钱就必须实名（TimeHorizonX）」，而这个样本是那条规律的边界案例——它做的是分发生意却不需要域名，因为它的商品是平台自己的一种数据格式。代价同样明确：对平台的依赖是百分之百的，Telegram 一旦调整 addtheme 协议或封禁某个主题频道，整条链路当场失效，而运营者手上没有任何可迁移的资产。另：本语料「标签七用」在这里出现第八种——属性检索。前七种回答的是「这条内容是什么」，第八种回答的是「我想要什么样的」；这个差别来自商品形态（主题是视觉产品，用户的需求是「我要一个暗色的」而不是「我要一个 9 月发布的」），而颜色标签把一个 300 条的消息流变成了可按外观查询的目录——这在 Telegram 里是唯一可行的做法，因为平台没有筛选器，标签是仅有的检索入口。地域上它与 creativemotion（俄罗斯）构成对照：三个地区（中国大陆、俄罗斯、伊朗）的共同点是本地互联网服务受限、Telegram 成为基础设施，但变现形态完全不同。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      0,
+      0
+    ],
+    "onetime_cny": [
+      0,
+      0
+    ],
+    "items": [
+      {
+        "name": "bot / 服务器 / 域名 / 存储",
+        "cny_month": 0
+      },
+      {
+        "name": "人力（由 36 个发言人分摊）",
+        "cny_month": 0,
+        "note": "60 条/天、每条需要选主题、写颜色标签、排版页脚，按每条 1–2 分钟算 1–2 小时/天；由约 10 个人承担 39 条/天，人均不到 10 分钟。与 ruanlu 的早报（一个人 20–40 分钟/天）形成对照：同样是无偿劳动，分摊结构决定了可持续性——本语料在 BotTalk 第六节与 pythonzh 第六节都论证过这一点，这里是第三次印证"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "est_scope": "实际（货币）",
+    "model": "货币收益 0，且没有任何货币化痕迹。非货币收益：25 次 Boost 请求——成员用自己的 Premium 订阅给频道投票，换取频道解锁更多功能。用户支付给 Telegram，频道获得权益。",
+    "streams": [
+      {
+        "name": "Boost（非货币）",
+        "cny_month": 0,
+        "evidence": "25 次 t.me/boost/ 链接",
+        "confidence": "medium"
+      },
+      {
+        "name": "主题类 App 推广位（未变现的潜力）",
+        "cny_month": [
+          0,
+          800
+        ],
+        "evidence": "下锚就是 0：这个人群的地域构成（伊朗为主）与商品性质（免费美化资源）决定了广告主稀缺，本语料的伊朗/俄语样本里只有 creativemotion 有真实广告收入而那是一个商业软件公司的官方频道；上锚 ¥800 对应应用商店/主题应用的推广位（样本里有 2 次应用商店链接），但这类开发者本身预算极低",
+        "confidence": "low"
+      }
+    ],
+    "note": "本语料「不变现的六种类型」之外的第七种：换平台权益（Boost）。区间宽的原因：本语料没有任何主题/美化类的定价样本，这个估算完全依靠人群规模外推。"
+  },
+  "risk": {
+    "level": "low",
+    "notes": [
+      "主题文件本身不构成侵权：Telegram 主题是配色与字体设置的集合，不包含第三方美术作品，addtheme 深链只携带一个 hash。",
+      "背景图（bg 深链 63 次）有边界问题：背景图是图片作品，若使用了受著作权保护的图像（样本中有动漫主题的转发来源）则涉及《著作权法》第 53 条信息网络传播权。但样本中未见任何一张图片的来源标注、无法判断权属，且这是非商业的个人分享，规模远低于 magazinesclubnew、shareAliyun 那类系统性分发。",
+      "商标与角色形象：转发来源中有动漫相关频道，主题的命名与配图可能使用了受保护的角色形象。实践中此类美化资源社群极少被追究，权利人通常直接向平台投诉下架。",
+      "零商业行为：无收款、无广告、无推广分成——这切断了绝大多数刑事路径的「营利目的」要件。",
+      "群主的管理义务：履行情况可接受。存活率 63.2%、0 条粗筛命中、零 bot——这是内容本身无争议的结果，不是治理的结果。",
+      "境内连接点：弱。内容为英语、成员构成以波斯语区为主、未见中文内容与中国大陆指向，中国法的管辖意义有限。",
+      "不适用：不涉及开设赌场罪（0 条博彩内容、0 个博彩域名）；不涉及传播淫秽物品罪（245 张图片均为手机界面截图与壁纸，0 条成人内容）；不涉及帮助信息网络犯罪活动罪（零收款、零支付通道、零推广分成）；不涉及非法经营罪（零收入）；不涉及侵犯公民个人信息罪（零 bot、零数据收集）；不涉及提供翻墙服务（内容与代理无关）。",
+      "责任主体：群主与管理员，身份不可见（无管理发言、无自有 bot、无置顶可见）。暴露面：零域名、零收款、零服务器——它唯一的资产是一个 Telegram 用户名，而这个资产完全握在平台手里。"
+    ]
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "FoolishTraceWind",
+  "username": "FoolishTraceWind",
+  "url": "https://t.me/FoolishTraceWind",
+  "title": "Foolish TraceWind",
+  "category": "个人梗图/趣闻娱乐号(对照组)",
+  "growth_short": "趣味内容高互动",
+  "one_liner": "ER 1.23% 是本轮娱乐类最高——6,192 个反应分摊在 300 条上,平均每条 21 个表情。靠的是投稿机制:『via my nbkls』『via 匿名』『via 猫又云云』这类署名出现在正文开头,内容由读者供给、运营者只做筛选。这让它以 1.67 万订阅在所有互动指标上反超 2.48 万订阅的 goworkbitch。",
+  "analyzed_at": "2026-09-13T13:00:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/FoolishTraceWind.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2026-08-03",
+      "2026-09-13"
+    ],
+    "note": "跨度 40 天、7.4 条/天"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 16655,
+    "median_views": 1703,
+    "mean_views": 1760,
+    "p10_views": 1443,
+    "p90_views": 2066,
+    "err_pct": 10.23,
+    "mature_posts": 243,
+    "reactions_total": 6192,
+    "forwards_total": 3134,
+    "forwards_per_post": 10.4,
+    "forwards_median": 9,
+    "er_pct": 1.23,
+    "posts_per_day": 7.44,
+    "views_available": true,
+    "media_mix": {
+      "photo": 267,
+      "document": 31
+    },
+    "deleted_pct": 3.8,
+    "activity_note": "与 goworkbitch 的直接对照:订阅少 33%(16,655 vs 24,773),但中位阅读 1,703 vs 1,264、ERR 10.23% vs 5.10%、ER 1.23% vs 0.93%、反应 6,192 vs 3,426——全面高出。刷量检验:反应≥50 的帖 n=8、CV 中位 1.074([34,11,7,4,4]),幂律,无刷量。"
+  },
+  "implementation": {
+    "publish_identity": "channel",
+    "post_structure": "图片 267 条 + 文件 30 个(0.06GB,mp4 18),正文中位 0 字(大量纯图)但有文案的部分质量高。原创配文偏理工科笑点(如『我每天都摄入 2 千克 TNT 当量的能量：』41 转发),与 goworkbitch 的吐槽式风格不同。标签 0、变现关键词 0 次。",
+    "delivery": "投稿机制是供给引擎:开头模板『via my nbkls』7、『via 匿名』4、『via 猫又云云』2 是固定署名格式;t.me 引用(cnmlgcbyd 7、shinzocat 3、WII_IIW 1、tiantuazhi 1)是标注出处的内容源频道。与 goworkbitch(零外链、不标来源)形成鲜明对比。",
+    "curation": "投稿机制带来两个优势:供给不依赖运营者一人的搜寻能力;投稿者本人会关注自己投稿的表现,天然带来互动——这可能是 ER 1.23% 高于 goworkbitch 0.93% 的直接原因。",
+    "schedule": "白天零散、晚上集中的混合模式:22 点 69 条(23%)且分钟聚集 :16(43 次)说明晚间有一次集中排空;其余时段分散,间隔中位 520 秒、<10 秒占 34% 是成组发布。",
+    "ad_injection": "无。外链只有 t.me 13 次与 mp.weixin 1 次,没有任何变现链接。"
+  },
+  "growth": {
+    "strategy": "投稿机制驱动供给与互动",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "投稿机制",
+        "evidence": "『via 投稿人』署名格式",
+        "note": "供给侧自我扩张 + 投稿者带来互动"
+      },
+      {
+        "name": "标注来源",
+        "evidence": "t.me 13 次全为内容源频道",
+        "note": "与 goworkbitch 不标来源相反,社区规范更好"
+      },
+      {
+        "name": "高 ER",
+        "evidence": "1.23%,本轮娱乐类最高",
+        "note": "内容真的让人有反应"
+      },
+      {
+        "name": "无外部手段",
+        "evidence": "无互推、无买粉、无 bot",
+        "note": "完全自然"
+      }
+    ],
+    "signals": {
+      "subscribers": 16655,
+      "err_pct": 10.23,
+      "forwards_per_post": 10.4,
+      "er_pct": 1.23
+    },
+    "assessment": "它证明了在同一品类里,投稿机制 + 标注来源能让一个订阅数少 33% 的号在所有互动指标上全面反超。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      0,
+      0
+    ],
+    "onetime_cny": [
+      0,
+      0
+    ],
+    "items": [
+      {
+        "name": "【启动】频道创建",
+        "cny_onetime": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "筛选投稿 + 写配文",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "10-20 小时/月。投稿机制是成本优势:goworkbitch 要 15-30 小时找图,它只要筛选"
+      },
+      {
+        "name": "存储",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "0.06GB"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "est_scope": "本频道",
+    "model": "完全不变现",
+    "streams": [
+      {
+        "name": "无",
+        "evidence": "50 个变现关键词零命中,无广告链接",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "潜在价值仅 ¥400-1,000/月(1.67 万订阅、中位阅读 1,703、日曝光约 1.27 万次,娱乐类 CPM ¥30-80)。与 goworkbitch 一样太低,不值得为它牺牲内容体验。娱乐/梗图类的商业化困境很清楚:受众广但单位价值低,除非做到十万级订阅否则广告收入撑不起运营。",
+    "potential_ad_value_cny_month": [
+      400,
+      1000
+    ]
+  },
+  "risk": {
+    "level": "low",
+    "notes": [
+      "梗图与冷幽默内容的筛选转发,有投稿机制且标注来源,零商业变现",
+      "无灰产、无成人、无博彩、无诈骗",
+      "常规瑕疵仍是图片来源版权(投稿内容的原始版权归属不明),但它比同类做得好——至少标注了投稿人与来源频道",
+      "UI 上不应与灰产样本同框标红"
+    ]
+  }
+}

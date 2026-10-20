@@ -1,0 +1,7 @@
+.git
+data/
+logs/
+.env
+*.session
+__pycache__/
+*.desktop

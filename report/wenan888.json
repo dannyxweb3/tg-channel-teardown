@@ -1,0 +1,168 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "wenan888",
+  "username": "wenan888",
+  "url": "https://t.me/wenan888",
+  "title": "佳佳文案吧｜素材｜壁纸｜头像",
+  "category": "博彩引流号（伪装为文案/头像/壁纸素材）",
+  "growth_short": "素材外壳 + 博彩广告",
+  "one_liner": "6.6 万订阅每条只有 124 人看(ERR 0.19%,本轮倒数第二)。每天灌 59.5 条,其中 228 条挤在下午 17 点一小时内、间隔中位 6 秒。『头像/壁纸/文案』只是外壳,【贵宾会】等博彩品牌在 300 条里出现 42 次,并带 USDT 结算与代理招募。",
+  "analyzed_at": "2026-09-13T14:15:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/wenan888.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2026-09-07",
+      "2026-09-12"
+    ],
+    "note": "含博彩广告落地域名与招商联系方式，报告不收录原始域名"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 66100,
+    "median_views": 124,
+    "err_pct": 0.19,
+    "views_available": true,
+    "views_note": "样本全在近 5 天（日更 60 条），阅读未累积",
+    "mature_posts": 0,
+    "reactions_total": 53,
+    "forwards_total": 110,
+    "forwards_per_post": 0.4,
+    "er_pct": 0.05,
+    "posts_per_day": 59.5,
+    "media_mix": {
+      "photo": 233,
+      "document": 63
+    },
+    "deleted_pct": 0.0,
+    "activity_note": "ERR 0.19% 意味着 6.6 万订阅里只有约千分之二会打开消息。删除率 0%(300 条 id 完全连续):博彩导流号通常删帖降低举报面,它一条不删——号本身就是消耗品,封了再换。投放集中 17 点 228 条(76%)、间隔中位 6 秒,脚本固定时段一次性排空。",
+    "forwards_median": 0,
+    "historical_message_id": 67313
+  },
+  "implementation": {
+    "publish_identity": "bot",
+    "post_structure": "外壳为头像/壁纸素材(#头像 84、#壁纸 1),正文中位 73 字。内核博彩词频:提款 91、信誉 90、担保 66、代理 48、电子 43、娱乐城 42、彩票 42、优惠 30、真人 25、彩金 24、返水 18、博彩 12。",
+    "delivery": "转化全在频道外:t.me 指向 toutiao911 127、自有 jiajiawenan_bot 127、jbzhaoshang 54(招商)、usdtag8 30、kyqp33vip 24;@kk888/kk999/zhaopian 各 18、KY33SVIP/KYQP33VIP/KY33388bot 各 6、TGYLCzhaoshang 6。域名 usdt06.ag、usdt.pr——USDT 结算。",
+    "schedule": "17 点一小时倾倒:228/300 条,间隔中位 6 秒、<60 秒占 70%。",
+    "growth": "素材关键词吸粉 + 博彩广告变现",
+    "ad_injection": "【贵宾会 750.cc】作为品牌标题出现 42 次,另有【金边娱乐城】;话术围绕『信誉担保』『提款无忧』,是境外博彩招揽玩家与代理的标准结构。",
+    "note": "1024 博彩矩阵网络级证据:aigc1024 与 https1024 的博彩词频七项逐项相同(彩金83/体育72/真人40/电子58/提款34/信誉18/担保30);【贵宾会 750.cc】见于 4 个成员、【球速体育】见于 3 个;共享落地域名 8g.com/182443.com/8k2517.com/gux.axe02ja.cfd 各 3 个号;共享代理客服 `某招商号`/`某客服号`/`某代理号`/`某娱乐城 bot` 各 4 个号;连内容素材标题【中英文翻译版】都在 3 个不同主题的号里复用。矩阵牵出未在样本内的成员:chunse1024、liangxing1024/liangxing365、text1024、openclaw1024、toutiao911、dogdairy、yunying23。"
+  },
+  "growth": {
+    "strategy": "买粉铺底 + 内容外壳做检索诱饵 + 矩阵互导,不以留存为目标",
+    "paid_acquisition": "subs",
+    "mechanisms": [
+      {
+        "name": "买粉铺底",
+        "evidence": "6.6 万订阅 / 124 阅读,ERR 0.19%",
+        "note": "订阅数是买来的数字不是受众"
+      },
+      {
+        "name": "内容外壳做检索诱饵",
+        "evidence": "#头像 84",
+        "note": "让号在搜索里看起来正常"
+      },
+      {
+        "name": "矩阵互导",
+        "evidence": "toutiao911 127 等共享节点"
+      },
+      {
+        "name": "高频铺量",
+        "evidence": "59.5 条/天"
+      }
+    ],
+    "signals": {
+      "subscribers": 66100,
+      "err_pct": 0.19,
+      "forwards_per_post": 0.4
+    },
+    "assessment": "号是耗材:买粉→投放→被封→换号,矩阵的存在就是让单个号的死亡不影响整体。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      50,
+      200
+    ],
+    "onetime_cny": [
+      6600,
+      33000
+    ],
+    "items": [
+      {
+        "name": "【启动】粉丝铺底",
+        "cny_onetime": [
+          6600,
+          33000
+        ],
+        "note": "6.6 万 × ¥0.1-0.5/个;ERR 0.19% 使买粉成为唯一合理解释"
+      },
+      {
+        "name": "【启动】频道创建与素材库",
+        "cny_onetime": [
+          0,
+          0
+        ],
+        "note": "号是消耗品批量注册,素材网络搬运"
+      },
+      {
+        "name": "投放脚本 / VPS",
+        "cny_month": [
+          50,
+          200
+        ]
+      },
+      {
+        "name": "多号矩阵托管",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "与其他成员共用投放系统,成本摊薄"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      5000,
+      30000
+    ],
+    "model": "博彩导流分成 + 代理招募返佣",
+    "streams": [
+      {
+        "name": "博彩导流分成",
+        "evidence": "【贵宾会】42 次、代理与招商账号",
+        "cny_month": [
+          5000,
+          30000
+        ],
+        "confidence": "low"
+      },
+      {
+        "name": "内容侧变现",
+        "evidence": "无广告位、无网盘、无联盟",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "实测曝光仅 124 × 59.5 ≈ 7,400 次/天,撑不起上述收入——真实价值在:(1)被 TG 站内搜索命中的入口作用;(2)矩阵内互导作为流量池节点;(3)代理层级发展(按团队流水抽成,与曝光无关)。区间宽因 CPA 与抽成在其后台、矩阵内各号贡献无法切分。",
+    "est_scope": "本号可归因(矩阵整体更高)"
+  },
+  "risk": {
+    "level": "criminal",
+    "notes": [
+      "以文案/素材/壁纸/头像为外壳投放境外博彩推广(【贵宾会】42 次),属《刑法》303 条开设赌场罪帮助行为与 287 条之二帮信罪引流环节",
+      "加重一 规模化:59.5 条/天、6.6 万订阅盘",
+      "加重二 代理招募:jbzhaoshang、TGYLCzhaoshang 等招商账号,已超出单纯引流进入组织发展下线层面",
+      "加重三 USDT 结算(usdt06.ag 等),为赌资跨境流转提供便利,可能触及洗钱相关条款",
+      "『素材号』外观不构成抗辩——内容外壳本身就是为规避识别而设计,反而是主观明知的证据",
+      "1024 博彩矩阵网络级证据:aigc1024 与 https1024 的博彩词频七项逐项相同(彩金83/体育72/真人40/电子58/提款34/信誉18/担保30);【贵宾会 750.cc】见于 4 个成员、【球速体育】见于 3 个;共享落地域名 8g.com/182443.com/8k2517.com/gux.axe02ja.cfd 各 3 个号;共享代理客服 `某招商号`/`某客服号`/`某代理号`/`某娱乐城 bot` 各 4 个号;连内容素材标题【中英文翻译版】都在 3 个不同主题的号里复用。矩阵牵出未在样本内的成员:chunse1024、liangxing1024/liangxing365、text1024、openclaw1024、toutiao911、dogdairy、yunying23。"
+    ]
+  }
+}

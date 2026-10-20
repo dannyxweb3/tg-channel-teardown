@@ -1,0 +1,189 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "group",
+  "slug": "google_drive",
+  "username": "google_drive",
+  "url": "https://t.me/google_drive",
+  "title": "Google Drive 无限容量",
+  "category": "无限容量GDrive/教育号 交易群(低活跃)",
+  "growth_short": "无限网盘刚需",
+  "one_liner": "99.4%——357 天里产生了 46,649 条消息,只有 300 条活下来,平均每留 1 条删掉 155 条。这是本轮最高的删除率,比第二名(96.1%)还高出一个台阶。而这 300 条的正文中位数是 11 个字。群名叫『Google Drive 无限容量』,指的是早已终止的 Workspace 无限存储;样本里还留着这个话题的余烬——有人问怎么绕过 Google Drive 的配额限制、有人讨论用组账号批量操作会不会触发反垃圾邮件策略而被封。更多的是四国语言的求助:西班牙语问怎么下载受限视频,英语问能不能帮忙从百度网盘取文件。",
+  "analyzed_at": "2026-09-13T14:30:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_batch_dump.py",
+    "dump": "data/recon/google_drive.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2025-09-20",
+      "2026-09-12"
+    ],
+    "note": "群无per-message阅读;99.4% id缺口(CAS封禁/清理);批量抓取时会话占用,未取online"
+  },
+  "metrics": {
+    "confidence": "low",
+    "kind_note": "group",
+    "members": 21514,
+    "online": null,
+    "online_pct": null,
+    "subscribers": null,
+    "median_views": null,
+    "err_pct": null,
+    "views_available": false,
+    "views_note": "群无 per-message 阅读。样本内唯一带阅读数(6,618)的一条是从某频道转入的",
+    "messages_per_day": 0.84,
+    "deleted_ratio_pct": 99.4,
+    "activity_note": "99.4% 是本轮最高的删除率:id 1294386→1341034,46,649 个号位存活 300 条、缺口 46,349;id 差 +1 占 37%、+18 出现 4 次(大跳跃说明有成批的大段删除)。本轮最终排行:google_drive 99.4%(每留 1 条删 155 条)、bigdongdongGroup 96.1%(25 条)、blacktechsharing 92.9%(13 条)、dockertutorial 91.5%(5.8 条,但 +1 占 69% 是零散逐条)、Python 85.4%(5.8 条)。按留存速度反推每天实际产生约 131 条消息。三种可能:极短的自动清理周期、持续的大规模反垃圾清理(一个 2.15 万人的『免费网盘』主题群是广告重灾区)、两者叠加;存活的 300 条里几乎没有垃圾广告,说明清理机制是有效的,但 +18 跳跃与 37% 的 +1 占比同时存在更像『定期成段清空』而非『逐条删广告』——与 dockertutorial(+1 占 69%,零散逐条)形成对照。分/秒无任何聚集,零自动化;小时分布铺满全天且凌晨 0-5 点仍有 42 条,符合多语言跨时区的成员构成;间隔中位 12,446 秒是『留存后』的数字,实际产生 131 条/天时真实间隔在 11 分钟量级。",
+    "messages_per_day_actual": 131,
+    "forwards_total": 27,
+    "reactions_total": 38,
+    "deleted_pct": 99.4,
+    "median_text_len": 11,
+    "median_gap_sec": 12446,
+    "hosted_bytes_gb": 0.0,
+    "files": 3
+  },
+  "implementation": {
+    "publish_identity": "user",
+    "chat_type": "megagroup",
+    "post_structure": "纯文本 273、文件 15(3 个文件共 0.00GB)、网页预览 12。正文中位 11 字。外链:github 4、t.me 3、reddit 2、perplexity/pplx 2、quark 1、telegra.ph 1、某永久存储服务 1、某论坛 1、workspace.google.com 1。",
+    "ad_injection": "尽管清理率 99.4%,存活的 300 条里仍有三条推广且都来自成员:(1)『嘿各位有需要無限相片儲存服務嗎 我最近創立了 [某服务] — 檔案總數量無上限、檔案總大小無上限、檔案永久保存 這是利用了 Arweave 的永久網路達成的 目前上傳完全免費,是 Arweave 節點商贊助的』+ 带 utm_source 的链接(成员自建产品的自荐,技术路线真实);(2)某 AI 浏览器『点我的链接下载送你 $20,然后你再发邀请还能挣钱』(个人 aff 推广);(3)两条指向 Reddit 的链接,内容为某付费交易软件 Premium 终身版/全指标包的破解分发,附『Grab it before it gets deleted』(付费软件的盗版分发,这句话本身表明发布者知道它会被删)。这三条能在 99.4% 的清理率下存活,说明清理机制针对的是别的东西(大概率是刷屏式的批量广告)而不是这类『看起来像正常发言』的软推广。",
+    "delivery": "社区问答/交易,不分发内容",
+    "schedule": "全天候但极低频",
+    "curation": "群名指向一个已经消失的东西:『Google Drive 无限容量』指 Google Workspace 曾经提供的不限量存储方案,该方案已被终止并改为按席位配额。样本内还留着技术余烬:『Hi everyone, do you know if it's possible to bypass the Google Drive quota limit? Using rclone.』与『这就触发了谷歌的反垃圾邮件政策了。我举例说 1000 个不是说谷歌设定了这个数字作为判断,具体这个数字是多少不清楚,但一个 workspace 账号如果以反垃圾邮件的原因被封,百分百就是因为组账号这样操作导致的』——第二条技术含量不低,它在解释批量创建组账号会触发 Workspace 的反垃圾策略从而导致整个账号被封,这是『薅无限容量』这条路上最常见的翻车方式。关键词:无限 10、账号 8、容量 8、edu 3、团队盘 2、车 1、合租 1——edu 指向教育版账号(曾是获取大容量的常见路径)、团队盘指向共享云端硬盘、车/合租指向拼车共享订阅。这是一个围绕『怎么低成本拿到大容量云存储』聚集起来的群,而它的核心话题已经被平台关掉了。",
+    "note": "它是一个多语言群,样本内可辨识至少四种语言:西班牙语(『Buenas compañeros, alguien sabe como descargar videos restringidos en Google drive?』有人知道怎么下载 Google Drive 里受限的视频吗)、英语(『Hi, anyone can help me download file from Baidu?』『bypass the Google Drive quota limit? Using rclone』)、中文(反垃圾邮件政策那条)。『英语用户求助怎么从百度网盘下载』特别有意思:它反映了一个跨语言的需求错配——中文资源在百度网盘上而非中文用户拿不到。这也解释了它为什么能到 2.15 万人:『Google Drive』是一个全球通用词,群名不带任何语言特征所以吸收了各语种的搜索流量;与本轮 Python(9.62 万,纯英文国际群)、dockertutorial(8,287,纯中文)相比,它是唯一一个多语言混杂的。代价是信噪比:不同语言的人互相看不懂、提问得不到回答,99.4% 的内容被删掉也就不奇怪了。"
+  },
+  "growth": {
+    "strategy": "通用词 + 诱人承诺占坑,多语言不设限",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "通用词 + 诱人承诺做群名",
+        "evidence": "『Google Drive 无限容量』",
+        "note": "全球通用词 + 一个已经不存在的卖点"
+      },
+      {
+        "name": "多语言不设限",
+        "evidence": "中/英/西班牙语混杂",
+        "note": "吸收各语种搜索流量"
+      },
+      {
+        "name": "自动清理",
+        "evidence": "99.4%",
+        "note": "保持可读,但也销毁了全部历史"
+      },
+      {
+        "name": "迎新 bot",
+        "evidence": "被提及 4 次",
+        "note": "基础运营"
+      },
+      {
+        "name": "无任何主动手段",
+        "evidence": "群内转发 0、t.me 引用 3、互推 0",
+        "note": "完全被动"
+      }
+    ],
+    "signals": {
+      "members": 21514,
+      "deleted_pct": 99.4,
+      "messages_per_day": 0.84
+    },
+    "assessment": "2.15 万成员完全靠群名。『无限容量』这四个字是它最大的资产也是最大的问题:这个卖点已经不存在了。本轮三个『通用词占坑』技术群对比——Python 96,150 人/20.6 条留存每天/正文中位 97 字/英文/话题仍成立;dockertutorial 8,287/0.48/13 字/中文/话题仍成立;google_drive 21,514/0.84/11 字/多语言/话题已终止。Python 群靠话题本身持续有效而保持高质量,google_drive 的话题已经死了、剩下的是一群还在找替代方案的人;99.4% 的删除率从这个角度看也有了另一层解释:一个话题失效的群,产生的内容本来就没有留存价值。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      0,
+      100
+    ],
+    "onetime_cny": [
+      500,
+      3000
+    ],
+    "items": [
+      {
+        "name": "【启动】建群",
+        "cny_onetime": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "【启动】清理 bot",
+        "cny_onetime": [
+          500,
+          3000
+        ],
+        "note": "99.4% 的删除率必须靠自动化;样本内可见通用管理 bot 与一个迎新 bot"
+      },
+      {
+        "name": "群管理",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "10-30 小时/月。每天约 131 条产生、130 条删除"
+      },
+      {
+        "name": "bot / VPS",
+        "cny_month": [
+          0,
+          100
+        ]
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "est_scope": "群方",
+    "model": "357 天群方零变现",
+    "streams": [
+      {
+        "name": "群方广告",
+        "evidence": "0 条(三条推广均来自成员)",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "导流 / 联盟",
+        "evidence": "群方零外链;成员的 aff 链接与群方无关",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "付费 / 入群费",
+        "evidence": "无任何入口",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "群无 per-message 阅读无法按 CPM 估算。2.15 万成员、多语言、话题是『免费云存储』——受众付费意愿低(都在找免费方案),且语言分散使定向困难;同类群的置顶位常见 ¥500-2,000/月。它不变现的原因大概率是:这是一个用通用词占坑、靠自动清理维持的群,运营者投入极低也没有变现动机。",
+    "ad_capacity_cny_month": [
+      500,
+      2000
+    ]
+  },
+  "risk": {
+    "level": "medium",
+    "notes": [
+      "群主题本身:规避云存储服务条款。群名与核心话题指向『获取超出授权的 Google Drive 容量』,样本内可见 bypass the Google Drive quota limit(用 rclone 绕过配额)、批量创建组账号、教育版账号等讨论。这些行为违反 Google Workspace 的服务条款,属合同违约而非违法——后果是账号被封(样本内那条『反垃圾邮件政策』的讨论正是在描述这个后果),中国大陆法律下不构成独立罪名",
+      "成员发布的盗版软件链接(唯一有实质问题的一项):样本内两条指向 Reddit 的链接,内容为某付费交易软件 Premium 版的破解分发,附『Grab it before it gets deleted』。《著作权法》第十条第(十二)项与第五十条。责任主体是发布该链接的成员;群方的责任取决于是否『知道或者应当知道』并采取必要措施——在 99.4% 的清理率下这两条却存活了下来,说明清理机制对这类内容无效。这一点与本轮 abc999222(74.8% 删除率下洗钱广告存活 4 条)是同一种结构问题:高删除率不等于有效审核",
+      "成员的 aff 推广:一条带个人推荐链接的 AI 浏览器邀请返利(『点我的链接送 $20』)。属正常的联盟推广不违法,但它同样穿过了清理机制",
+      "跨语言的资源代取请求:样本内有英语用户请求帮忙从百度网盘下载文件、西班牙语用户询问如何下载 Google Drive 中的受限视频。『受限视频』的受限原因不明(可能是权限设置也可能是版权限制),样本无法判断,列此备考",
+      "不适用:不涉及帮助信息网络犯罪活动罪(0 个代收款账号、0 条博彩/诈骗/机场导流);不涉及非法经营罪(群零收入、不经手资金);不涉及传播淫秽物品罪(0 条成人内容);不涉及开设赌场罪(0 条)",
+      "观测限制声明:99.4% 的内容已被删除,本报告基于剩余 0.6% 的碎片;对该群真实活动的覆盖度是本轮最低的,置信度为 low"
+    ]
+  }
+}

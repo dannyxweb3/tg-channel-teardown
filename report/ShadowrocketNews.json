@@ -1,0 +1,201 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "ShadowrocketNews",
+  "username": "ShadowrocketNews",
+  "url": "https://t.me/ShadowrocketNews",
+  "title": "Shadowrocket News",
+  "category": "翻墙App(小火箭)资讯/官方号",
+  "growth_short": "翻墙App用户",
+  "one_liner": "299 条消息以同一个词开头——『Shadowrocket』。这是一个只发版本更新日志的频道,而它的 changelog 写法是 feat(reality):、fix(script):、特性(tailscale): 这样的 conventional commit 格式,逐条列出协议支持、DNS 路由、内存拷贝优化。300 条里 id 缺口为 0、<60 秒的连发为 0——它从不批量发布,也从不删除。放在本轮四个 iOS 代理生态样本里看,它是唯一一个更新节奏没有枯竭的:QuanXNews 的用户在问『作者不更新了么』,而它半年发了 300 条。",
+  "analyzed_at": "2026-09-13T15:30:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_batch_dump.py",
+    "dump": "data/recon/ShadowrocketNews.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "—",
+      "2026-09-10"
+    ],
+    "note": "1.5条/天"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 46671,
+    "median_views": 6271,
+    "err_pct": 13.44,
+    "mature_posts": 291,
+    "forwards_per_post": 2.3,
+    "er_pct": 0.11,
+    "posts_per_day": 1.45,
+    "views_available": true,
+    "media_mix": {
+      "empty": 285,
+      "photo": 15
+    },
+    "deleted_pct": 0.0,
+    "activity_note": "『id 缺口 0.0% + <60 秒连发 0%』的组合在本轮是独一份。本轮的零删除样本还有 eco_cn、chinapodcast、AwesomeChatGPT、alyp_1(1.0%),但它们都有批量发布的痕迹;ShadowrocketNews 是唯一『既不删也不挤』的——300 条消息里没有任何两条在一分钟内连发。刷量检验:反应≥50 的帖 n=6,CV 中位 1.097,最低三个 0.940/1.070/1.090,幂律无买量特征。趋势平稳无衰退:月度中位阅读七个月在 5,600-7,700 之间波动没有趋势性方向(2026-02 的 7,720、03 的 5,870、04 的 6,684、05 的 5,969、06 的 5,628、07 的 7,610、08 的 7,423);帖龄分桶显示两周后进入 6,000-8,800 的稳定区间。这与本轮 QuanXNews(-87%)、NobyDa(-76%)、gitbig(-47%)的衰退曲线形成鲜明对比——同一个生态里只有它是平的。样本跨度只有 207 天看不到更长期走向,这是本报告的限制。",
+    "mean_views": 6645,
+    "p10_views": 5230,
+    "p90_views": 8142,
+    "forwards_total": 701,
+    "forwards_median": 1,
+    "reactions_total": 2165,
+    "comments_total": 558,
+    "comments_posts": 135,
+    "comments_max": 36,
+    "median_text_len": 179
+  },
+  "implementation": {
+    "publish_identity": "channel",
+    "post_structure": "纯文本 285、图片 15,零文件。正文中位 179 字。开头模板:『Shadowrocket …』299 条(99.7%)、一条新年祝福。标签 0 个,外链 6 个(github 3、一个模块商店域名 2、1.1.1.1 一个公共 DNS)。这是本轮内容形态最单一的频道——比 alyp_1(300 条同格式影视挂单)还要单一,因为 alyp_1 至少有 300 张不同的海报。",
+    "delivery": "固定页脚的三个 298:@ShadowrocketApp 298 次、@ShadowrocketNews 298 次、@gmail 298 次——三个数字完全对齐,是机械附加的固定页脚,包含应用主账号、本频道、以及一个 Gmail 联系邮箱。『留 Gmail 而不是 Telegram 客服账号』是值得注意的选择:留 TG 客服号期待即时对话、支持负担重,留邮箱则异步、可归档、过滤掉大部分无效提问——与 QuanXApp 群规里那句『群里没有保姆』是同一种思路,用渠道设计过滤支持成本。但它做得更彻底:连群都没有(Quantumult X 生态有频道 + 5.36 万人的群,Loon 有 3.96 万人的群,Shadowrocket 只有这一个频道和一个邮箱);代价是评论区承接全部提问(558 条,135/300 帖),收益是没有一个 277 条/天的噪音群要管。",
+    "curation": "changelog 的写法暴露了工程规范。测试版用英文 Conventional Commits 前缀:feat(reality)、feat(mitm): add http2 mitm suppo…、fix(script): prevent malformed…、feat(shadowsocks): add extra ae…——说明版本公告直接从 git 提交记录生成而不是人工撰写的营销文案。正式版改用中文但保留同样结构:『特性(protocol): 新增 Sudoku 代理协议支持,并深度优化其数据转发路径以减少内存分配与拷贝』『特性(dns): 增加直连域名专属 DNS 路由支持并允许 DNS over TCP,新增 DNSCrypt 上游支持,并在 CNAME 与 Host 规则中支持配置多服务器』『特性(tailscale): 引入全局 Tailscale 隧道模块,支持本地 MagicDNS 解析…』『优化(tailscale): …支持按需调度 WireGuard 唤醒』——一条正式版公告里出现八个独立技术点。『测试版用英文 commit 前缀、正式版用中文特性/优化』是刻意的分层:测试版给开发者与尝鲜者看,正式版给普通用户看。",
+    "schedule": "完全人工,从不批量:<60 秒占 0%、<10 秒占 0%,间隔中位 41,252 秒(11.5 小时);分钟最高 :43 仅 11 次、秒最高各 9 次,零 cron 痕迹;发布集中在白天 9-22 点,是一个人在有更新时手动发出。"
+  },
+  "growth": {
+    "strategy": "产品持续更新本身就是留存理由",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "产品带来订阅",
+        "evidence": "299 条版本公告、页脚固定带主账号",
+        "note": "买了 App 的人会来"
+      },
+      {
+        "name": "持续更新本身",
+        "evidence": "1.45 条/天、207 天不间断",
+        "note": "在一个竞品普遍停滞的品类里,『还在更新』就是最强的留存理由"
+      },
+      {
+        "name": "工程化 changelog",
+        "evidence": "Conventional Commits 格式",
+        "note": "建立专业可信度"
+      },
+      {
+        "name": "分层公告",
+        "evidence": "测试版英文 / 正式版中文",
+        "note": "兼顾开发者与普通用户"
+      },
+      {
+        "name": "为第三方索引背书",
+        "evidence": "『模块中心』139 转发",
+        "note": "帮用户解决配置难题"
+      },
+      {
+        "name": "邮箱而非客服号",
+        "evidence": "页脚 @gmail 298 次",
+        "note": "压缩支持成本"
+      },
+      {
+        "name": "无任何外部手段",
+        "evidence": "外链 6 个、互推 0、买粉 0、无群",
+        "note": "完全自然"
+      }
+    ],
+    "signals": {
+      "subscribers": 46671,
+      "err_pct": 13.44,
+      "posts_per_day": 1.45
+    },
+    "assessment": "唯一的高转发内容不是版本公告:『Shadowrocket 模块中心』(模块索引、检索、一键安装、一键复制的第三方模块资源索引平台)拿到 139 转发,是第二名的 2.8 倍,原文强调『模块资源均来源于开源仓…』——官方频道主动为第三方索引平台背书。这与 QuanXNews 完全一致(那边转发第一的也不是版本公告而是『资源解析器』1,057 转发)。规律:在代理客户端生态里,真正被传播的永远是『帮我把配置搞定』的工具而不是『产品更新了什么』。但阅读量排名恰恰相反——阅读第一是测试版 2.2.91(24,193,中位数的 3.9 倍):『阅读高、转发低』说明版本公告是自用信息,我要知道能不能升级但我不会转给别人,与 AppleNuts 的模板帖是同一规律。把本轮四个 iOS 代理生态样本放在一起:ShadowrocketNews 4.67 万订阅平稳、QuanXNews 4.10 万阅读 -87%、NobyDa 6.33 万阅读 -76%、Loon0x00 3.96 万成员群活跃但知识零沉淀——这是一个正在洗牌的品类,而它是目前唯一没有掉队的;QuanXApp 群里那句『小火箭一直良心价也不涨』从用户侧印证了这一点。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      0,
+      0
+    ],
+    "onetime_cny": [
+      0,
+      0
+    ],
+    "items": [
+      {
+        "name": "【启动】建频道",
+        "cny_onetime": [
+          0,
+          0
+        ],
+        "note": "Shadowrocket 这款 App 的开发成本不计入——频道是产品的公告渠道"
+      },
+      {
+        "name": "撰写与发布公告",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "5-15 小时/月。1.45 条/天 ≈ 44 条/月,但 changelog 从 git 记录生成,改写成本很低"
+      },
+      {
+        "name": "评论区回应",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "5-15 小时/月。558 条评论"
+      },
+      {
+        "name": "存储 / VPS",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "零文件"
+      }
+    ],
+    "note": "本轮『产出/投入比』最高的公告频道之一——内容是开发流程的副产品,不是额外创作。"
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "est_scope": "实测",
+    "model": "零变现,收入在 App Store 侧",
+    "streams": [
+      {
+        "name": "广告帖",
+        "evidence": "0 条",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "联盟 / aff",
+        "evidence": "6 个外链,无 aff 参数、无落地页",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "付费 / 打赏",
+        "evidence": "无任何入口",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "关键词误报说明:『代理 16、资源 7、节点 2、aff 2、订阅 1』是本轮黑话命中数最低的代理生态样本(对照 QuanXNews 的节点 99、订阅 69、代理 43)——原因很简单:它只发 changelog,不写教程、不讨论配置,连『节点』这个词都很少用到;aff 的 2 次命中来自技术词汇的字符串匹配(add extra aead、add client…)不是联盟推广。广告承载力:4.67 万订阅、中位阅读 6,271、月发约 44 条、月曝光约 28 万次,受众画像极精准(iOS 付费应用用户 + 有代理需求)CPM 可达 ¥100-250,折算 ¥28,000-70,000/月。区间宽的三个原因:(1)无任何报价信息;(2)内容是纯 changelog,插一条广告会极其突兀——形式上的排斥性比其他号更强,实际可售位可能远少于理论值;(3)207 天窗口不足以看长期波动。它不变现的逻辑与 Loon0x00、QuanXNews 完全一致:App 在 App Store 上付费销售,公告渠道插广告只会损害产品口碑。",
+    "ad_capacity_cny_month": [
+      28000,
+      70000
+    ]
+  },
+  "risk": {
+    "level": "medium",
+    "notes": [
+      "代理客户端的定性(与本轮 Loon0x00、QuanXNews、QuanXApp 同一判断):Shadowrocket 是在 App Store 正常上架的付费应用,属规则分流客户端——不提供网络出口,只做本机的规则匹配与流量转发。《计算机信息网络国际联网管理暂行规定》第六条禁止的是『自行建立或使用其他信道进行国际联网』,指向提供信道的一方(机场)而非客户端工具。本频道不销售节点、不提供订阅、不推荐任何机场服务商:6 个外链(3 个 GitHub、2 个模块商店、1 个公共 DNS),零落地页、零优惠码、零 aff 参数、零收款入口、零机场客服账号;『代理 16』次命中全部是 changelog 里的技术词。残余风险在于内容本身的性质:changelog 里明确列出了 REALITY、Mieru、Sudoku 等抗封锁协议的支持,这些协议的设计目的就是规避网络审查;发布对这类协议的支持说明在监管口径上处于灰色地带,但它是产品的技术文档不是服务销售",
+      "MITM 能力的公告:样本内有 feat(mitm): add http2 mitm suppo…。中间人解密是这类客户端的核心功能之一,用于本机流量的规则改写;它作用于用户自己的设备与自己的证书,不侵入他人系统,不构成《刑法》第二百八十五条项下的问题。但同一能力也是本轮 NobyDa 那些『去广告/解锁会员』脚本的技术前提——工具方与脚本方的责任在法律上是分离的",
+      "为第三方模块索引平台背书:『模块中心』(139 转发)是一个第三方的模块资源索引站,原文强调『模块资源均来源于开源仓…』。若其索引的模块中包含绕过付费墙、去广告等内容则触及《著作权法》第五十条;但本频道只是介绍它,不托管任何模块,责任层级很低",
+      "不适用:不涉及帮助信息网络犯罪活动罪(0 个收款账号、0 条博彩/诈骗导流、不为任何机场提供推广);不涉及非法经营罪(207 天零收入、无经营行为);不涉及传播淫秽物品罪(0 条成人内容);不涉及侵犯著作权罪(0 个破解包、0 个盗版资源、零文件托管,App 本身在 App Store 正常销售)。与本轮 feiyu123、blacktechsharing、Lottery_home 的关键区别:那三个为机场提供有偿推广渠道,本频道只发自家产品的版本更新日志——它是本轮四个代理生态样本里内容最干净的一个,连教程和配置讨论都没有"
+    ]
+  }
+}

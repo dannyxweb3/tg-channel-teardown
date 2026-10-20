@@ -1,0 +1,195 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "ruyoblog",
+  "username": "ruyoblog",
+  "url": "https://t.me/ruyoblog",
+  "title": "如有乐享",
+  "category": "个人博客分享（AI/羊毛/优惠，自有站 ruyo.net）",
+  "growth_short": "内容质量口碑",
+  "one_liner": "『薅羊毛 + 白嫖 AI 额度』的个人博客分发号,ERR 37.58% 说明订阅者极精准。转发榜清一色是免费领取类(Gemini 教育优惠 106、Qwen 每日 200 次免费调用 71),阅读榜第一却是 Yandex 停止免费域名邮箱——受众只对一件事有反应:什么还能白嫖、什么白嫖不了了。",
+  "analyzed_at": "2026-09-13T16:45:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/ruyoblog.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2026-01-27",
+      "2026-09-11"
+    ],
+    "note": "自有站 ruyo.net + 即刻(jike.info)为主要外链"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 23901,
+    "median_views": 8983,
+    "mean_views": 9215,
+    "p10_views": 6630,
+    "p90_views": 12042,
+    "err_pct": 37.58,
+    "mature_posts": 290,
+    "reactions_total": 4326,
+    "forwards_total": 3668,
+    "forwards_per_post": 12.2,
+    "er_pct": 0.16,
+    "posts_per_day": 1.32,
+    "views_available": true,
+    "media_mix": {
+      "text": 158,
+      "photo": 129,
+      "webpage": 7,
+      "poll": 3,
+      "document": 3
+    },
+    "deleted_pct": 2.3,
+    "activity_note": "阅读从 2026-03 峰值 11,502 跌到 08 月 7,048(-39%),而转发中位稳定在 7-11——与 geekshare 同形态:阅读跌、转发不跌,流失的是泛读者。刷量检验:反应≥50 的帖 n=12、CV 中位 1.340([67,18,8,5,2]),幂律分布,无刷量。",
+    "forwards_median": 8,
+    "views_trend_by_month": {
+      "2026-01": 8949,
+      "2026-02": 9208,
+      "2026-03": 11502,
+      "2026-04": 11021,
+      "2026-05": 9330,
+      "2026-06": 8250,
+      "2026-07": 9069,
+      "2026-08": 7048
+    }
+  },
+  "implementation": {
+    "publish_identity": "user",
+    "post_structure": "以纯文本为主(158 条文本 / 129 条图文),正文中位仅 35 字 2 行——活动通知不需要长文。开头模板『账号密钥 Win 10』7 条、『账号密钥 Windows』2 条,批量分发 Windows 激活密钥。",
+    "delivery": "双站结构:jike.info 57 次、自有博客 51.ruyo.net 45 次,其余为各家活动落地页(openai/xiaomimimo/baishan/azure 各 1-4)。URL 参数含 inviteCode 2 及 click_src/qshare_entry/actType 等分享追踪参数。",
+    "schedule": "人工发布无 cron:集中 8-10 点(134/300=45%)与 13 点(36);间隔中位 36,960 秒,<60 秒仅 4%——一条一条发不批量;分钟与秒无聚集。羊毛的时效性决定了它不能靠定时队列。",
+    "growth": "内容质量 + 博客/TG 互导",
+    "ad_injection": "0 条成型广告帖,但有『报价』1、『商务』1、『频道主』1 的零星出现,说明存在广告洽谈。",
+    "curation": "人工盯活动。有真人温度:阅读第三名(15,458)是一条与羊毛无关的个人感想(张雪峰去世),这类第一人称内容占比不高却进阅读前三——与 xiaoshuwu『真人碎念反应是资源卡两倍』同现象,人格化内容在工具号里有超额回报。",
+    "note": "矩阵极简:t.me 仅指向 AITimes365 5 次、landiansub 1 次,不参与互推网络。"
+  },
+  "growth": {
+    "strategy": "羊毛时效性驱动的高精准受众沉淀",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "羊毛时效",
+        "evidence": "转发榜全是免费领取类",
+        "note": "早一步发布就是全部竞争力"
+      },
+      {
+        "name": "高精准受众",
+        "evidence": "ERR 37.58%",
+        "note": "订阅者盯着羊毛窗口,每条必看"
+      },
+      {
+        "name": "人格化内容",
+        "evidence": "个人感想帖进阅读前三",
+        "note": "在工具号里有超额回报"
+      },
+      {
+        "name": "无互推无买粉",
+        "evidence": "t.me 仅 6 次且非互推",
+        "note": "完全自然"
+      }
+    ],
+    "signals": {
+      "subscribers": 23901,
+      "err_pct": 37.58,
+      "forwards_per_post": 12.2
+    },
+    "assessment": "『某某开始免费』与『某某不再免费』触发同一批人的同一根神经,这解释了 37.58% 的 ERR——订阅者不是来学技术的,是来盯羊毛窗口的。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      30,
+      120
+    ],
+    "onetime_cny": [
+      300,
+      1000
+    ],
+    "items": [
+      {
+        "name": "【启动】自有博客 51.ruyo.net",
+        "cny_onetime": [
+          300,
+          1000
+        ],
+        "note": "域名+主机,『如有乐享』是运营多年的老博客"
+      },
+      {
+        "name": "【启动】频道创建",
+        "cny_onetime": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "盯活动 + 写作",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "30-60 小时/月:1.32 条/天,但羊毛需持续监控各家活动页与社区。成本几乎全是信息搜集时间——羊毛内容的价值在于比别人早"
+      },
+      {
+        "name": "博客托管 + 域名",
+        "cny_month": [
+          30,
+          120
+        ]
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      800,
+      9000
+    ],
+    "model": "邀请码/aff 返佣 + 博客导流 + 少量广告位",
+    "streams": [
+      {
+        "name": "邀请码/aff 返佣",
+        "evidence": "邀请码 4、URL 参数 inviteCode 2、aff 3",
+        "cny_month": [
+          500,
+          3000
+        ],
+        "confidence": "medium"
+      },
+      {
+        "name": "自有博客广告",
+        "evidence": "51.ruyo.net 45 次导流",
+        "cny_month": [
+          300,
+          2000
+        ],
+        "confidence": "low"
+      },
+      {
+        "name": "广告位",
+        "evidence": "广告 3、商务 1、报价 1;0 条明确招商帖",
+        "cny_month": [
+          0,
+          4000
+        ],
+        "confidence": "low"
+      }
+    ],
+    "note": "证据强度中等:有『报价』『商务』零星出现说明存在广告洽谈,但样本内无成型广告帖。主要可确认的变现是邀请码返佣与博客导流。潜在价值按 CPM ¥50-150、每周 2 条约 ¥1,900-5,800/月。",
+    "est_scope": "本频道 + 自有博客",
+    "potential_ad_value_cny_month": [
+      1900,
+      5800
+    ]
+  },
+  "risk": {
+    "level": "medium",
+    "notes": [
+      "主体是各家厂商官方活动、教育优惠、免费额度的信息聚合,完全合法——只是把公开活动更早告诉读者",
+      "批量分发 Windows 账号密钥(开头模板『账号密钥 Win 10』7 条、『账号密钥 Windows』2 条,激活 11 次),若为非授权密钥则涉《著作权法》与软件许可问题",
+      "部分『白嫖』路径(指导用户以特定方式注册获取本应付费的额度)游走在服务条款边缘,属民事违约而非违法",
+      "【无】无盗版影视、无成人、无博彩、无诈骗、无翻墙分销。整体中等偏低"
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "group",
+  "slug": "StickerGroup",
+  "username": "StickerGroup",
+  "url": "https://t.me/StickerGroup",
+  "title": "贴纸交流群",
+  "category": "Telegram 贴纸分享/求制作群",
+  "growth_short": "贴纸刚需",
+  "one_liner": "300 条消息里 251 条完全没有文字,剩下的 49 条里有 20 条只写了两个词——『#詢問』加一个角色名(柴犬、蠟筆小新、開司、耀西、胖蟹、超有禮貌抱抱鬼)。这是一个求贴图的群:有人发一张图问『这套是什么』,别人把 t.me/addstickers/… 链接丢回去。它托管了 128 个贴图文件(124 个 webm 动态贴图)却只占 0.02GB,反应功能关闭,11.9 天里转发总共 13 次。它繁体运营、面向台湾用户,而且干净得反常:变现关键词 50 个词全部零命中。",
+  "analyzed_at": "2026-09-13T16:30:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_batch_dump.py",
+    "dump": "data/recon/StickerGroup.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "—",
+      "—"
+    ],
+    "note": "群无per-message阅读;online未取(会话占用)"
+  },
+  "metrics": {
+    "confidence": "medium",
+    "kind_note": "group",
+    "members": 39614,
+    "online": null,
+    "online_pct": null,
+    "subscribers": null,
+    "median_views": null,
+    "err_pct": null,
+    "views_available": false,
+    "views_note": "群无 per-message 阅读,ERR 不适用",
+    "messages_per_day": 25,
+    "deleted_ratio_pct": 24.6,
+    "activity_note": "『变现关键词 50 词全空』在本轮此前只出现过两次(NekogramAPKs、TAndroidAPK),而那两个都是纯文件分发频道——StickerGroup 是第一个做到这一点的聊天群。128 个文件总共只有 0.02GB、平均每个约 160KB,是本轮文件体积最小的样本且差距悬殊(TAndroidAPK 单个 70MB、gitbig 115MB、blindgamer 39MB);贴图格式(webm/webp/tgs)是为即时通讯优化过的,体积比任何视频或安装包小两三个数量级——这直接决定了它的成本结构:连『存储由 Telegram 托管』这个本轮反复出现的优势在它这里都变得无关紧要,因为它根本不占地方。分/秒无任何聚集、<10 秒只有 1%,零自动化痕迹,是慢节奏的真实对话;8-17 点占 174 条(58%),台湾时区的白天,作息干净。",
+    "forwards_total": 13,
+    "reactions_total": 0,
+    "deleted_pct": 24.6,
+    "median_text_len": 0,
+    "median_gap_sec": 1179,
+    "comments_total": 21,
+    "comments_posts": 16,
+    "hosted_bytes_gb": 0.02,
+    "files": 128
+  },
+  "implementation": {
+    "publish_identity": "user",
+    "chat_type": "megagroup",
+    "post_structure": "文件 251 条(84%)、纯文本 49。128 个文件:webm 124(Telegram 动态贴图标准格式)、webp 3(静态贴图)、tgs 1(早期 Lottie 动画贴图格式)。正文中位 0 字。",
+    "ad_injection": "无",
+    "delivery": "外链极少:t.me(全部是 addstickers)23、line.me + store.line.me 3。300 条消息 26 个外链,没有一个落地页、没有一个网盘、没有一个 aff 参数。line.me 的 3 次出现是有意思的细节——LINE 在台湾是主流通讯软件、它的贴图商店是付费的,而 @提及里有一个 line2tgsbot(把 LINE 贴图转换成 Telegram 贴图的 bot),这条转换链路是这个群最接近版权争议的地方;另一个被提及的 bot 是 gene_moe_sticker_bot(贴图生成类)。",
+    "schedule": "全天候",
+    "curation": "一个群只做一件事——找贴图。49 条有文字的消息里 20 条是同一个格式『#詢問 #角色名』(柴犬、蠟筆小新、開司、耀西、胖蟹、大猩猩魚柱、超有禮貌抱抱鬼、監獄兔、骷髏人),#詢問 出现 20 次是唯一的高频标签。完整流程:有人发一张贴图截图(这解释了 251 条无文字的消息)→ 配一行 #詢問 #角色名 → 有人回一个 t.me/addstickers/… 链接;该链接在样本内出现 23 次。一个 3.96 万人的群 11.9 天里完成了约 23 次贴图溯源。角色名单说明受众:日系 ACG + 台湾本地流行贴图角色的混合。",
+    "retention": "两个 bot 与一次自动驱逐。(1)一个带分页的贴图搜索 bot:样本内最长消息之一是搜索结果『搜尋 布丁狗：顯示第 1–20 項,共 23 項(第 1/2 頁)』+ 英文对照 + 每套贴图的张数(40 張貼圖 / 40 stickers)——这是一个自建的贴图索引搜索服务,中英双语输出、带结果计数、带分页;『共 23 項』说明它的索引里光『布丁狗』就收录了 23 套,这个规模的索引不是随手做的。(2)一个通用工具 bot:/info、/lsadmin、/uniname(查 Unicode 字符名)、/factor(质因数分解)、/jq(JSON 查询)——后三个与贴图毫无关系是极客工具,/uniname 在贴图群里其实有用(贴图名常含特殊符号与 emoji)但 /factor 和 /jq 纯粹是开发者顺手加的,这是技术型运营者的痕迹。(3)自动驱逐记录:『[某账号] [某数字 ID] has sent a Contact without authorization. 操作：已驅逐』『報告已發送』——规则细到『未经授权发送联系人卡片即驱逐』;『发送 Contact 卡片』是 TG 群里常见的引流手法(把某个账号的名片推给群成员),这个群把它设成了直接驱逐的红线。24.6% 的 id 缺口与这套机制吻合。对照本轮其他群:blacktechsharing 自动清理 92.9%、Python 自动清理+跑题分流 85.4%、Loon0x00 /sb 指令+公开日志 44.5%、EmbyPublic !dban+CAS+公开公告 52.9%、StickerGroup 规则化自动驱逐 24.6%——它的删除率最低但规则最精确,不需要大规模清理因为规则拦在了前面。值得注意:它的日志公示了被驱逐账号的数字 ID(与 Loon0x00 相同),构成同样的个人信息合规瑕疵。"
+  },
+  "growth": {
+    "strategy": "通用群名 + 自建贴图搜索 bot",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "通用群名",
+        "evidence": "StickerGroup + 「貼圖群」",
+        "note": "TG 内搜 sticker / 貼圖 能命中"
+      },
+      {
+        "name": "搜索 bot",
+        "evidence": "带分页的贴图索引,『布丁狗』就有 23 套",
+        "note": "这是它真正的护城河"
+      },
+      {
+        "name": "#詢問 求助文化",
+        "evidence": "20 次,格式统一",
+        "note": "低门槛参与"
+      },
+      {
+        "name": "精确的反垃圾规则",
+        "evidence": "Contact 卡片即驱逐",
+        "note": "保持群的纯净"
+      },
+      {
+        "name": "无自然传播",
+        "evidence": "转发 13 次、反应 0",
+        "note": "贴图求助对群外零价值"
+      }
+    ],
+    "signals": {
+      "members": 39614,
+      "messages_per_day": 25,
+      "forwards_total": 13
+    },
+    "assessment": "3.96 万成员靠的是群名与搜索 bot。『转发 13 次』说明它几乎没有外部传播,与本轮所有大型技术/服务群一致(Loon0x00 转发 0、EmbyPublic 转发 0、QuanXApp 真实转发 0、cosplaysharegroup 转发 0)。天花板很清楚:贴图求助是一个低频需求——11.9 天只有 20 次求助、23 次链接回复,一个 3.96 万人的群平均每人两年才会问一次,绝大多数成员是潜水者,等着哪天自己需要找某套贴图时来问一句。这不是问题而是这类工具型群的正常形态:它的价值在『需要时它在那儿』,不在日常活跃度。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      30,
+      150
+    ],
+    "onetime_cny": [
+      3500,
+      18000
+    ],
+    "items": [
+      {
+        "name": "【启动】建群",
+        "cny_onetime": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "【启动】贴图索引搜索 bot",
+        "cny_onetime": [
+          3000,
+          15000
+        ],
+        "note": "带分页、双语输出、每套张数统计的索引服务——它唯一的真金白银投入:要建索引、要抓取贴图包元数据、要做中英双语与分页"
+      },
+      {
+        "name": "【启动】反垃圾 bot",
+        "cny_onetime": [
+          500,
+          3000
+        ],
+        "note": "规则化驱逐"
+      },
+      {
+        "name": "群管理",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "3-10 小时/月。25.1 条/天、规则化自动驱逐,人工介入很少"
+      },
+      {
+        "name": "索引维护",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "5-15 小时/月,新贴图包要入库"
+      },
+      {
+        "name": "bot / VPS",
+        "cny_month": [
+          30,
+          150
+        ]
+      },
+      {
+        "name": "存储",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "0.02GB,几乎不占空间"
+      }
+    ],
+    "note": "本轮『有技术投入但运营负担极低』的少见组合——bot 做完了大部分工作。"
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "est_scope": "实测",
+    "model": "零变现,本轮内容最干净的三个样本之一",
+    "streams": [
+      {
+        "name": "广告帖",
+        "evidence": "0 条。变现关键词 50 词全部零命中",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "导流 / 联盟",
+        "evidence": "26 个外链全是贴图安装链接与 LINE 商店,无落地页、无 aff、无收款",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "付费 / 打赏",
+        "evidence": "无任何入口",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "群无 per-message 阅读无法按 CPM 估算。按 3.96 万成员、25.1 条/天,以及『台湾、ACG 爱好者』这个画像,同类兴趣群的置顶广告位在中文 TG 常见 ¥300-1,500/月。区间宽的三个原因:(1)群曝光完全不可测量(转发 13、反应 0);(2)贴图爱好者的商业价值很低——他们要的是免费贴图,付费意愿弱;(3)11.9 天窗口太短。它不变现的原因大概率很朴素:这是一个兴趣群,运营者做了一个搜索 bot 给大家用,仅此而已。",
+    "ad_capacity_cny_month": [
+      300,
+      1500
+    ]
+  },
+  "risk": {
+    "level": "low",
+    "notes": [
+      "整体清洁度是本轮最高一档:变现关键词 50 个词全部零命中(本轮仅三例);0 条博彩、0 条色情、0 个代收款账号、0 条机场广告、0 个网盘链接、0 个破解包;外链 26 个全是贴图安装链接与 LINE 官方商店;文件仅 0.02GB 且全是贴图。零收入、零经营行为",
+      "贴图的著作权(唯一的实质项,量级很轻):Telegram 贴图包大量使用动漫角色、卡通形象与知名 IP(样本内可见蜡笔小新、耀西、监狱兔、布丁狗、赌博默示录角色等),这些形象的著作权归原权利人,未经授权制作与分发贴图包构成侵权。但责任层级需要厘清:贴图包本身托管在 Telegram 的贴图平台上(t.me/addstickers/…)不是这个群,群只是分享安装链接;群内 128 个文件是单张贴图的转发不是贴图包的分发;非营利、无收款、无规模化(11.9 天 23 次链接)。这使它落在最外围的位置,现实中日系 IP 权利人对 Telegram 贴图的追究极少,实际风险接近于零",
+      "LINE 贴图转 Telegram(需要单独一提):@提及里有一个将 LINE 贴图转换为 Telegram 贴图的 bot,外链中有 3 个 LINE 商店链接。LINE 贴图商店是付费的,把付费贴图转换后免费分发绕过了原平台的付费机制,触及《著作权法》第五十条(规避技术措施)与 LINE 的服务条款。但同样地:本群不运营该 bot、不托管转换结果、样本内只是提及,责任在 bot 运营者与使用者",
+      "自动驱逐日志公示数字 ID:反垃圾 bot 的驱逐记录包含被驱逐账号的 Telegram 数字 ID,与本轮 Loon0x00 相同——《个人信息保护法》第四条将网络身份标识信息列为个人信息。减轻情节:目的正当(反垃圾)、单次记录、不涉及真实身份信息,且未见跨群共享的表述(这一点比 Loon0x00 的『已上报数据』要轻)",
+      "不适用:不涉及帮助信息网络犯罪活动罪(0 个收款账号、0 条灰产导流);不涉及非法经营罪(零收入);不涉及传播淫秽物品罪(0 条成人内容);不涉及侵犯著作权罪的刑事情形(『以营利为目的』这一要件完全不成立)。UI 上不应与灰产样本同框标红"
+    ]
+  }
+}

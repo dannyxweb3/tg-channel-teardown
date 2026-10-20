@@ -1,0 +1,181 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "FindBlog",
+  "username": "FindBlog",
+  "url": "https://t.me/FindBlog",
+  "title": "Find Blog👁发现博客",
+  "category": "独立博客发现/策展(轻变现)",
+  "growth_short": "博客圈口碑+抽奖",
+  "one_liner": "本轮最反常的一条数据——阅读冠军与转发冠军是同一条帖,而那是一条明确标注 #ad 的广告(新西兰 0 月租电话卡,36,396 阅读 / 362 转发),分别是日常中位的 5.7 倍与 26 倍。一个博客策展号,最火的东西是隐私电话卡广告。",
+  "analyzed_at": "2026-09-13T13:00:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/FindBlog.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2023-09-22",
+      "2026-09-08"
+    ],
+    "note": "跨度 1083 天、0.3 条/天"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 13923,
+    "median_views": 6370,
+    "mean_views": 6781,
+    "p10_views": 4644,
+    "p90_views": 8960,
+    "err_pct": 45.75,
+    "mature_posts": 269,
+    "reactions_total": 2648,
+    "forwards_total": 6450,
+    "forwards_per_post": 21.5,
+    "forwards_median": 14,
+    "er_pct": 0.15,
+    "posts_per_day": 0.28,
+    "views_available": true,
+    "media_mix": {
+      "photo": 189,
+      "empty": 91,
+      "webpage": 15
+    },
+    "deleted_pct": 18.7,
+    "activity_note": "阅读第一(36,396)是日常中位(6,370)的 5.7 倍;转发第一(362)是中位(14)的 26 倍——而这两个第一是同一条 #ad 广告。为什么电话卡广告能压过所有博客内容:它命中受众真实痛点——独立博客作者需要匿名注册境外服务(域名、VPS、支付、AI),而『无需实名+免月租+能收验证码』的境外号码正是刚需,广告与受众的重合度比主营内容还高。"
+  },
+  "implementation": {
+    "publish_identity": "channel",
+    "post_structure": "图文 189 条 + 纯文本 91,正文中位 145 字。标签 #Blog 40、#Article 27、#Platform 18、#讨论 17、#Life 14、#Tool 11、#Theme 10、#WordPress 8、#AD 8、#公告 7。",
+    "delivery": "真策展:外链 github 34、yinji.org 22、pseudoyu.com 13、twitter+x 20、quail.ink 10、anotherdayu.com 8、justgoidea.com 6——后几个都是中文独立博客,是真的在读别人博客并推荐。",
+    "curation": "运营者自述:『写了 5 年博客…2021 年 5 月开始运营和博客相关的频道…在 Telegram 中文圈里应该找不到第二个类似的』——这个自我认知准确,不可替代性是 45.75% ERR 的来源。",
+    "schedule": "低频人工:间隔中位 126,053 秒、<60 秒仅 8%;小时集中 20-23 点(149 条)。",
+    "ad_injection": "明确标注 #AD 8 次,是本轮『透明变现』的少数派(与 AppDoDo 同)。URL 参数暴露完整联盟链路:utm_source 11、aff 11、pid 7、cid 6、ref 3;配合邀请码 10、优惠码 9、佣金 1。落地域名含 lizhi.shop 6 次——该域名同时出现在本轮 AppDoDo 报告里,说明两号共用同一变现落地渠道或广告代理。抽奖 32、赞助 10 是第二引擎。",
+    "note": "正规圈层互链:t.me 指向 aboutrss 2、fakeye 2、vps_xhq 1、Geekshare_bot 1(均在本轮样本内),因内容相关而互引,与灰产换量互推性质不同。@FindBlog 212 + @FindBlog_Group 193 双署名水印(与 GodlyNews1、AppDoDo 同一手法)。"
+  },
+  "growth": {
+    "strategy": "品类唯一性 + 广告即内容 + 抽奖拉互动",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "品类唯一性",
+        "evidence": "运营者自述『中文圈找不到第二个』,2021-05 起运营",
+        "note": "ERR 45.75% 的根本来源"
+      },
+      {
+        "name": "广告即内容",
+        "evidence": "#ad 帖是全频道阅读与转发双冠",
+        "note": "广告与受众痛点高度重合,反而成为增长点"
+      },
+      {
+        "name": "抽奖拉互动",
+        "evidence": "抽奖 32 次"
+      },
+      {
+        "name": "正规圈层互引",
+        "evidence": "aboutrss / fakeye / vps_xhq / geekshare",
+        "note": "内容相关性驱动"
+      },
+      {
+        "name": "双署名水印",
+        "evidence": "@FindBlog 212 + @FindBlog_Group 193",
+        "note": "被搬运即免费曝光"
+      }
+    ],
+    "signals": {
+      "subscribers": 13923,
+      "err_pct": 45.75,
+      "forwards_per_post": 21.5
+    },
+    "assessment": "第 4 条爆款用『跟老板合作』『基本封车了』『老板又弄了 One 卡』的熟人口吻讲电话卡业务,说明这不是一次性接单而是长期合作的自营业务线。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      0,
+      550
+    ],
+    "onetime_cny": [
+      0,
+      0
+    ],
+    "items": [
+      {
+        "name": "【启动】频道 + 配套群创建",
+        "cny_onetime": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "读博客 + 策展",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "10-25 小时/月,需持续泡在独立博客圈"
+      },
+      {
+        "name": "抽奖奖品",
+        "cny_month": [
+          0,
+          500
+        ],
+        "note": "抽奖 32 次"
+      },
+      {
+        "name": "服务器 / 图床",
+        "cny_month": [
+          0,
+          50
+        ]
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      3500,
+      19500
+    ],
+    "est_scope": "本频道可归因",
+    "model": "#ad 广告位 + 联盟返佣 + 电话卡自营业务 + 抽奖赞助",
+    "streams": [
+      {
+        "name": "#ad 广告位",
+        "evidence": "#AD 8 次,含超级爆款(36,396 阅读)",
+        "cny_month": [
+          2000,
+          10000
+        ],
+        "confidence": "medium"
+      },
+      {
+        "name": "联盟返佣",
+        "evidence": "URL 参数 aff 11、pid 7、cid 6、utm_source 11;邀请码 10、优惠码 9",
+        "cny_month": [
+          1500,
+          8000
+        ],
+        "confidence": "medium"
+      },
+      {
+        "name": "抽奖赞助",
+        "evidence": "抽奖 32、赞助 10",
+        "cny_month": [
+          0,
+          1500
+        ],
+        "confidence": "low"
+      }
+    ],
+    "note": "本轮『变现证据最完整』的几个号之一:有 #ad 标注、有 aff 参数、有邀请码与优惠码、有可辨认的长期合作业务线,不需靠推测。锚点:按 CPM ¥80-200 折算每月 4 条约 ¥2,000-5,100/月;但它的广告帖能跑到 36,396 阅读(中位的 5.7 倍),单条价值远高于按中位折算的结果——这也是广告主愿意长期合作的原因。"
+  },
+  "risk": {
+    "level": "low",
+    "notes": [
+      "独立博客与建站工具的策展分享,内容正规,外链指向公开博客与开源项目;广告以 #AD 诚实标注、联盟参数透明,是本轮运营方式最规范的号之一",
+      "唯一边缘项:境外电话卡推广(新西兰 Skinny / One 卡,主打『无需实名、可注册境外服务、可收验证码』)。这类号码在其发行地合法,但为大陆用户提供免实名的境外通信号码,客观上会被用于绕过实名制注册境外服务;若被用于电诈接码则涉更重责任,不过样本内无任何此类指向,推广语境是隐私保护与境外服务注册。属需注意但不构成违法的灰区",
+      "无盗版、无成人、无博彩、无诈骗。UI 上不应与灰产样本同框标红"
+    ]
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "group",
+  "slug": "dockertutorial",
+  "username": "dockertutorial",
+  "url": "https://t.me/dockertutorial",
+  "title": "Docker",
+  "category": "技术杂谈群(名不副实,低活跃)",
+  "growth_short": "技术标签聚人",
+  "one_liner": "619 天里产生了 3,545 条消息,只留下 300 条——91.5% 被删掉,而这 300 条的正文中位数是 13 个字。它是一个 Docker 技术问答群,真正有信息量的是那几条贴着完整报错的提问:Mounts denied: The path /Volumes is not shared from the host、bash: line 1: systemctl: command not found、以及一段 WSL2 的 .wslconfig 配置。零广告、零收款、零灰产,外链只有 GitHub 与 Docker 官方文档——这是本轮最小、也最干净的技术群之一。",
+  "analyzed_at": "2026-09-13T14:30:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_batch_dump.py",
+    "dump": "data/recon/dockertutorial.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2024-12-18",
+      "2026-08-30"
+    ],
+    "note": "群无per-message阅读;91.5% id缺口;低活跃杂谈"
+  },
+  "metrics": {
+    "confidence": "medium",
+    "kind_note": "group",
+    "members": 8287,
+    "online": null,
+    "online_pct": null,
+    "subscribers": null,
+    "median_views": null,
+    "err_pct": null,
+    "views_available": false,
+    "views_note": "群无 per-message 阅读。样本内唯一带阅读数(4,071)的一条是从某个频道转发进来的",
+    "messages_per_day": 0.48,
+    "deleted_ratio_pct": 91.5,
+    "activity_note": "91.5% 的删除率但删的不是垃圾:id 差 +1 占 69%,比本轮其他高删除率样本都高(bigdongdongGroup 37%、blacktechsharing 52%、Python 58%)——+1 占比高说明删除是零散逐条的不是成批清场。在一个 619 天、8,287 人、每天只有 5.7 条消息的小群里,91.5% 不可能是『广告太多』;更可能的解释是技术问答的生命周期本来就很短:问题解决了,提问和回答就没有留存价值,成员自己撤回或管理员定期清理已解决的串。一个旁证是内容本身:样本内没有任何未清理的广告、没有任何灰产残留,清理机制显然是有效的。『转发 10 次全部集中在一条』说明群内其余 299 条消息一次都没有被转出去,与本轮所有技术群一致。间隔中位 6,041 秒是『留存后』的数字,实际产生约 5.7 条/天时真实间隔在 4 小时量级——这是一个很安静的群。",
+    "messages_per_day_actual": 5.7,
+    "forwards_total": 10,
+    "reactions_total": 0,
+    "deleted_pct": 91.5,
+    "median_text_len": 13,
+    "median_gap_sec": 6041,
+    "comments_total": 69,
+    "comments_posts": 35,
+    "hosted_bytes_gb": 0.01,
+    "files": 2
+  },
+  "implementation": {
+    "publish_identity": "user",
+    "chat_type": "megagroup",
+    "post_structure": "纯文本 264、图片 21、网页预览 10、文件 5(2 个文件共 0.01GB)。正文中位 13 字。300 条消息只有 13 个外链:github + gist 5、index.docker.io 2(官方镜像仓库)、docs.docker.com 1(官方文档)、docker.1ms.run 1(国内 Docker 镜像加速站)、cnblogs 1、postmarketos wiki 1、wikipedia 1——全部是技术文档、开源项目或镜像源,零落地页、零网盘、零 aff 参数、零 t.me 引用。docker.1ms.run 值得单独说:那是国内的 Docker 镜像加速服务,它的出现说明群成员在中国大陆,而中国大陆访问 Docker Hub 长期受限,这正是『换源』那条回复的背景。",
+    "ad_injection": "无系统广告注入",
+    "delivery": "社区闲聊,不分发内容",
+    "schedule": "分/秒无任何聚集(分钟最高各 10 次、秒最高 :20 仅 12 次),零自动化;小时分布覆盖全天,晚 19-23 点占 98 条(33%),下班后折腾 Docker 的作息。",
+    "curation": "正文中位 13 字但少数长消息质量很高,四条典型内容覆盖四种场景:『(HTTP code 500) server error - Mounts denied: The path /Volumes is not shared from the host and is not known to Docker』(macOS 桌面端配置)、一段完整的 .wslconfig(memory/processors/localhostForwarding/swap + [network] networkingMode,Windows WSL2 调优)、『能正常登录进管理界面容器里 docker 处于停止状态,尝试开启重启提示服务内部错误：stderr: bash: line 1: systemctl: command not found』(一个经典的认知错误——容器不是虚拟机、没有 init 系统)、『Truenas』(NAS 场景)。第三条尤其典型:systemctl: command not found 是 Docker 新手最常撞上的墙之一,它反映的是『把容器当虚拟机用』这个根本性误解。",
+    "note": "唯一的高转发内容与技术无关:样本内唯一有阅读数与转发的一条(4,071 阅读、10 转发)是从外部频道转进来的——『#杂 非常形象。和过往的一切工具进步替代掉人类的某种能力一样：工具进步后,使用这些工具的碳基生物这方面的能力就会下降。例如有了车,人类的步行数量会减少』。它是全样本唯一被转发的内容,而它不是技术内容。这与本轮反复出现的规律一致:技术问答本身没有外部传播价值(Loon0x00 的 7 条有效信息、QuanXApp 的 5 条、Python 的高质量提问,转发全部为 0),能被转出去的永远是『有观点的东西』。"
+  },
+  "growth": {
+    "strategy": "通用技术名词占坑,成员互答",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "通用技术名词做群名",
+        "evidence": "群名与用户名都直指 Docker",
+        "note": "TG 内搜『Docker』能命中——这几乎是它全部的获客"
+      },
+      {
+        "name": "成员互答",
+        "evidence": "运营者零介入",
+        "note": "可无成本扩张"
+      },
+      {
+        "name": "高效清理",
+        "evidence": "91.5%,且 +1 占 69%(逐条而非清场)",
+        "note": "保持可读性"
+      },
+      {
+        "name": "无任何主动手段",
+        "evidence": "转发 0(群内)、t.me 引用 0、@提及 2、互推 0",
+        "note": "完全被动"
+      }
+    ],
+    "signals": {
+      "members": 8287,
+      "messages_per_day": 0.48,
+      "deleted_pct": 91.5
+    },
+    "assessment": "8,287 成员完全靠群名,与本轮 Python(9.62 万成员、群名就叫 Python)是同一个策略只是量级差 11 倍。差别:Python 群 20.6 条/天留存、正文中位 97 字、英文国际社区、有 @pythonofftopic 分流机制;dockertutorial 0.48 条/天、正文中位 13 字、中文小群、无分流。『Docker』这个词的搜索量不比『Python』低,但它做到的规模只有十二分之一——说明占坑只能带来第一批人,留住人靠的是别的东西。天花板很清楚:一个每天只有 5.7 条消息的群,新人进来看不到活跃,多数会静音离开。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      0,
+      50
+    ],
+    "onetime_cny": [
+      0,
+      1000
+    ],
+    "items": [
+      {
+        "name": "【启动】建群",
+        "cny_onetime": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "【启动】清理 bot",
+        "cny_onetime": [
+          0,
+          1000
+        ],
+        "note": "通用方案"
+      },
+      {
+        "name": "群管理",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "1-5 小时/月。每天约 5.7 条消息,本轮管理负担最轻的群"
+      },
+      {
+        "name": "技术答疑",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "运营者 0 小时。成员互答,与 Python 同理"
+      },
+      {
+        "name": "bot / VPS",
+        "cny_month": [
+          0,
+          50
+        ]
+      }
+    ],
+    "note": "本轮成本最低的群,没有之一:8,287 人、每天 5.7 条消息、成员自答,运营者几乎什么都不用做。"
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "est_scope": "实测",
+    "model": "619 天零变现",
+    "streams": [
+      {
+        "name": "广告",
+        "evidence": "0 条",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "导流 / 联盟",
+        "evidence": "13 个外链全是技术文档与镜像源,零 aff、零落地页、零收款",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "付费 / 入群费",
+        "evidence": "无任何入口",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "群无 per-message 阅读无法按 CPM 估算。8,287 成员、开发者/运维受众(高价值品类),但活跃度极低(5.7 条/天);同类小型技术群的置顶广告位常见 ¥200-1,000/月。区间窄的原因:这个群太小、太安静,商业价值本来就有限。它不变现的原因大概率很朴素:这是一个用通用技术名词占坑的问答群,运营者投入极低也就没有变现的动机。",
+    "ad_capacity_cny_month": [
+      200,
+      1000
+    ]
+  },
+  "risk": {
+    "level": "low",
+    "notes": [
+      "Docker 容器技术的中文问答群,内容为部署配置、报错排查、NAS 与 WSL2 相关讨论。外链仅 13 个,全部指向 GitHub、Docker 官方文档、官方镜像仓库、国内镜像加速站与技术博客。零广告、零收款、零联盟链接、零网盘、零文件分发(仅 2 个文件共 0.01GB,为表情与音频)",
+      "内容清洁度:变现关键词全部命中只有『代理 14、教程 3、破解 2、节点 1』,逐条核对均为技术语境——『代理』指网络代理配置与 Docker registry mirror,『节点』指集群节点。0 条博彩、0 条色情、0 个代收款账号、0 条机场广告",
+      "国内 Docker 镜像加速站(需要澄清,非风险):样本内出现一个国内 Docker 镜像加速服务的域名。Docker 官方镜像在中国大陆访问长期受限,使用第三方镜像加速站是普遍且正当的工程实践,不涉及任何违规。列此是为了避免把『换源』误读为绕过管控",
+      "91.5% 的删除率(非风险):与本轮 bigdongdongGroup(96.1%)、appmew(79.8%)不同,本群的删除呈零散逐条形态(+1 占 69%),且样本内不存在需要掩盖的内容;更合理的解释是技术问答解决后的自然清理。这一项列此是为了说明:高删除率本身不是风险信号,要看删的是什么、怎么删的",
+      "不适用:不涉及侵犯著作权罪(0 个资源链接、0 个网盘、0 个破解包);不涉及帮助信息网络犯罪活动罪(0 个收款账号、0 条灰产导流);不涉及非法经营罪(619 天零收入);不涉及传播淫秽物品罪(0 条成人内容);不涉及规避技术措施(0 个激活工具)。UI 上不应与灰产样本同框标红"
+    ]
+  }
+}

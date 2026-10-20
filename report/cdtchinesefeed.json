@@ -1,0 +1,175 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "cdtchinesefeed",
+  "username": "cdtchinesefeed",
+  "url": "https://t.me/cdtchinesefeed",
+  "title": "中国数字时代（China Digital Times）",
+  "category": "独立新闻媒体 / 审查监测（正规机构，本批唯一非灰产样本）",
+  "growth_short": "内容驱动 + 姊妹频道互链",
+  "one_liner": "每 20 分钟准点推送一次、秒数固定在 :01 的全自动 RSS 转发管道:境外非营利中文媒体『中国数字时代』的 TG 出口。300 条 id 完全连续、删除率 0%,零广告零变现——本轮商业动机最干净的样本。",
+  "analyzed_at": "2026-09-13T10:00:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/cdtchinesefeed.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2026-08-08",
+      "2026-09-13"
+    ],
+    "note": "公开可抓；本条为正规媒体，分析口径与其它灰产样本不同，见 risk"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 44208,
+    "median_views": 1886,
+    "mean_views": 1879,
+    "p10_views": 1529,
+    "p90_views": 2220,
+    "err_pct": 4.27,
+    "mature_posts": 253,
+    "reactions_total": 2333,
+    "forwards_total": 1928,
+    "forwards_per_post": 6.4,
+    "er_pct": 0.41,
+    "posts_per_day": 8.3,
+    "views_available": true,
+    "media_mix": {
+      "photo": 300
+    },
+    "linked_chat_id": 1146329382,
+    "activity_note": "删除率 0%(相邻 id 差全部为 1,299/299),在本轮样本中独一份——灰产号普遍 45-99%。转发仅 6.4/帖是受众自我保护的结果(转发被审查内容会在自己社交关系里留痕),与 Czenb6 外挂号转发 1.0/帖同理。按帖龄分桶(0-7天 1958、14-21天 1819、28-35天 1921)与按月序列均无衰减,是稳态号。",
+    "forwards_median": 6,
+    "deleted_pct": 0.0
+  },
+  "implementation": {
+    "publish_identity": "bot_or_user",
+    "post_structure": "统一图文(300/300 全为 photo):摘要 + 母站链接,正文中位 111 字/3 行。固定栏目可从开头识别:『每日一语 YYYY.M.D』31 条、『中国数字时代 · 一周推荐』5 条。",
+    "delivery": "外链 336 次全部指向 chinadigitaltimes.net(另 5 次 YouTube),无任何第三方链接、无 t.me 互链、无 @提及、无 bot——不做站内导流,只把流量送回母站。",
+    "sister_channels": [
+      "@cdt404notfound（404文库，存档被删文章）",
+      "@cdt404tv（视频频道）"
+    ],
+    "submission": "匿名投稿 bot @cdtmedia_bot（『404投给CDT』），众包线索与被删内容",
+    "schedule": "每 20 分钟一个投递窗口:分钟 :00(104)/:20(87)/:40(81) 合计占 91%,秒固定 :01(190 条),间隔中位 1,203 秒(20.05 分钟)。标准 cron(*/20)。24 小时无人类作息(0 点 23 条、3 点 1 条)。<10 秒间隔占 24%,是同一轮询窗口批量出队。",
+    "note": "以『保存被删内容』(404文库)为业的机构,自己的频道 0% 删除率,逻辑自洽。",
+    "ad_injection": "无。『广告』仅 2 次、『合作』1 次且均非招商语境,0 条广告帖。",
+    "curation": "零编辑加工的 RSS 管道。真正的采编在母站(审查追踪、404 文章存档、周报与研究报告),TG 端只是出口。"
+  },
+  "growth": {
+    "strategy": "母站品牌延伸,内容稀缺性驱动的自然增长",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "母站品牌",
+        "evidence": "全部外链指向 chinadigitaltimes.net",
+        "note": "频道是品牌延伸,不独立获客"
+      },
+      {
+        "name": "内容稀缺性",
+        "evidence": "报道墙内被删/被封内容",
+        "note": "需求刚性但受众天然受限"
+      },
+      {
+        "name": "无买粉无互推",
+        "evidence": "ER 0.41%、0 个 t.me 互链、无 SOSO 类推广",
+        "note": "自然增长"
+      }
+    ],
+    "signals": {
+      "subscribers": 44208,
+      "err_pct": 4.27,
+      "forwards_per_post": 6.4
+    },
+    "assessment": "增长天花板清晰:受众限定在『能翻墙 + 关注审查议题』,且转发意愿被安全顾虑压制(6/帖)。44,208 已接近该细分领域自然上限,不可能像资源号那样病毒扩张。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      20,
+      60
+    ],
+    "onetime_cny": [
+      0,
+      300
+    ],
+    "items": [
+      {
+        "name": "【启动】频道创建",
+        "cny_onetime": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "【启动】RSS→TG 推送脚本",
+        "cny_onetime": [
+          0,
+          300
+        ],
+        "note": "开源方案(rsshub/n8n/自写)即可"
+      },
+      {
+        "name": "推送脚本托管",
+        "cny_month": [
+          20,
+          60
+        ],
+        "note": "一台最小 VPS"
+      },
+      {
+        "name": "TG 端人力",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "全自动,无需值守"
+      },
+      {
+        "name": "母站编辑部(不计入本频道)",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "审查追踪/404存档/周报/研究需专职人员,量级远高于 TG 端,属机构运营"
+      }
+    ],
+    "note": "作为非营利机构媒体，其成本结构是编辑部运营，不是灰产的服务器/账号成本，无法也不宜用同一口径估算"
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "model": "零变现(非营利媒体的公益分发渠道)",
+    "streams": [
+      {
+        "name": "无",
+        "evidence": "0 条广告帖、0 联盟码、0 打赏入口、0 外部导流",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "4.4 万订阅、1,886 中位阅读,按科技类 CPM ¥50-150 折算每天一条广告的潜在价值约 ¥2,800-8,500/月——它主动放弃了这部分收入。对以公信力为核心资产的媒体是理性选择:接广告会直接损害其独立性主张。资金来源为基金会资助与读者捐助,不在 Telegram。",
+    "est_scope": "本频道(母站资助不计入)",
+    "potential_ad_value_cny_month": [
+      2800,
+      8500
+    ]
+  },
+  "risk": {
+    "level": "medium",
+    "risk_kind": "political_censorship",
+    "notes": [
+      "运营主体与服务器均在境外,为合法注册的非营利媒体项目;内容是新闻报道、评论与已删稿件存档,具新闻价值与公共利益属性,在其运营地完全合法",
+      "无任何灰产要素:无盗版、无成人、无博彩、无诈骗、无侵权分发、零商业变现",
+      "风险来自内容与大陆管辖权的冲突:系统性报道审查与敏感事件,在大陆属被屏蔽范围,境内用户访问传播存在《计算机信息网络国际联网安全保护管理办法》下的行政风险",
+      "责任主要落在境内传播者一侧而非境外运营方;实际风险是被墙、被限流,而非对运营方的司法追诉",
+      "本报告只作外部风险识别,不对其内容立场作任何评价"
+    ]
+  }
+}

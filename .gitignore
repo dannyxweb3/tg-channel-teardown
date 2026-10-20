@@ -1,0 +1,12 @@
+.env
+data/
+logs/
+*.session
+*.session-journal
+__pycache__/
+*.py[cod]
+.venv/
+.idea/
+.vscode/
+# 本机快捷方式，Exec 写的是绝对路径
+*.desktop

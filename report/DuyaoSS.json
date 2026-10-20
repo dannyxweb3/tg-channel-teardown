@@ -1,0 +1,200 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "DuyaoSS",
+  "username": "DuyaoSS",
+  "url": "https://t.me/DuyaoSS",
+  "title": "Duyao｜SpeedTest｜科技生活｜资讯转发",
+  "category": "机场测速评测 + 科技资讯（评测导流型）",
+  "growth_short": "评测口碑 + 科技圈互链",
+  "one_liner": "机场测评圈的老牌坐标:187 张单线程测速截图 + 自有站 duyaoss.com(38 次)+ bit.ly 短链(38 次,与自有站次数完全相同,说明每条推荐都配一个可追踪的分销短链)。双主线运营——机场测速与苹果资讯各占一半,两条线表现差异极大(阅读 p10 5,084 / p90 37,109,相差 7.3 倍)。",
+  "analyzed_at": "2026-09-13T12:45:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/DuyaoSS.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2024-05-07",
+      "2026-09-09"
+    ],
+    "note": "187 张 png 多为测速图表；reactions 关闭"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 67802,
+    "median_views": 11197,
+    "mean_views": 16666,
+    "p10_views": 5084,
+    "p90_views": 37109,
+    "err_pct": 16.51,
+    "mature_posts": 290,
+    "reactions_total": 0,
+    "forwards_total": 3461,
+    "forwards_per_post": 11.5,
+    "er_pct": 0.0,
+    "posts_per_day": 0.35,
+    "views_available": true,
+    "media_mix": {
+      "document": 189,
+      "photo": 90,
+      "text": 17,
+      "webpage": 4
+    },
+    "deleted_pct": 2.0,
+    "activity_note": "p90/p10 相差 7.3 倍是结构特征:两条内容线受欢迎程度差异巨大。双峰曲线:2024-08(53,122)与 2026-03(47,751)两次冲高,中间 2025 上半年回落到 2 万区间,当前(2026-06 的 23,179)处于下行。转发中位长期稳定 3-10 未随阅读同步波动——说明阅读起落来自外部流量(被搜索、被转发进群、机场圈热点),而非核心受众规模变化。反应功能已关闭。",
+    "forwards_median": 7,
+    "views_trend_by_month": {
+      "2024-05": 6752,
+      "2024-08": 53122,
+      "2025-01": 21505,
+      "2025-02": 20637,
+      "2025-11": 45644,
+      "2026-03": 47751,
+      "2026-05": 28086,
+      "2026-06": 23179
+    }
+  },
+  "implementation": {
+    "publish_identity": "user",
+    "post_structure": "187 张 png 测速截图(占 62%)+ 90 张 photo + 苹果资讯长文。正文中位 0 字(信息多在图中),但苹果发布会整理有数百字原创写作。",
+    "delivery": "bit.ly 38 与 duyaoss.com 38 次数完全相同——每次推荐都配套『自有站详情页 + 可追踪短链』:自有站承载测评与权威性,短链承载分销归因(可统计点击、可随时换绑落地页)。配合『优惠码』8 次,分销链路完整可见:测评建立信任 → 自有站详情 → 短链跳转注册 → 优惠码归因。",
+    "asset": "duyaoss.com 的测速方法学与历史数据",
+    "schedule": "晚间为主:21 点 75 条、22 点 48、23 点 33、20 点 34;间隔中位 0 秒、<10 秒占 64%(测速截图成组发布)。",
+    "growth": "评测口碑 + 与 NewlearnerChannel/AppDoDo 等科技号互链",
+    "ad_injection": "0 条明确报价帖(『合作』7 次)。变现藏在分销链路里。",
+    "curation": "真实横测是护城河:标注『2024.05.20 晚11点半测速』『北京联通1000M/河北电信1000M』等可复核的方法论细节。标签 #单线程测速 37 + 具体机场名(#咖啡云/#FastLink/#Catnet/#STC);『机场』一词 76 次为最高频业务词。第二条线是苹果资讯(#APPLE 10、#News 11,含 WWDC 与秋季发布会长篇整理),作用是扩大受众面、降低单一品类封禁风险。",
+    "note": "圈层互链:@NewlearnerChannel 25、@AppDoDo 5、@APPDOTG 5、@ibetame 5、@AppPie 4——前两者都在本轮样本内且同为科技策展号,属内容相关性互引而非灰产互推网。另有 ZaiHuabot/zaihuanews/zaihuachat 各 3(关联资讯矩阵)。"
+  },
+  "growth": {
+    "strategy": "真实测速建立权威 + 双主线扩大受众 + 科技圈层互引",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "真实测速建立权威",
+        "evidence": "187 张自测截图、标注具体时间与宽带环境",
+        "note": "核心护城河,不可低成本复制"
+      },
+      {
+        "name": "双主线扩大受众",
+        "evidence": "机场测速 + 苹果资讯各占一半",
+        "note": "降低单一品类风险、扩大人群"
+      },
+      {
+        "name": "科技圈层互引",
+        "evidence": "NewlearnerChannel 25、AppDoDo 5、AppPie 4",
+        "note": "内容相关性驱动,非换量"
+      },
+      {
+        "name": "自有站沉淀",
+        "evidence": "duyaoss.com 38 次",
+        "note": "榜单长期可查"
+      }
+    ],
+    "signals": {
+      "subscribers": 67802,
+      "err_pct": 16.51,
+      "forwards_per_post": 11.5
+    },
+    "assessment": "关闭反应功能是值得注意的运营选择:放弃一个互动维度,可能是为避免反应区被机场水军或竞品刷屏——在测评类内容里,『看起来中立』比『看起来热闹』更重要。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      350,
+      1700
+    ],
+    "onetime_cny": [
+      1500,
+      7000
+    ],
+    "items": [
+      {
+        "name": "【启动】自有站 duyaoss.com",
+        "cny_onetime": [
+          500,
+          2000
+        ],
+        "note": "域名+主机,承载测评榜单"
+      },
+      {
+        "name": "【启动】测速环境搭建",
+        "cny_onetime": [
+          1000,
+          5000
+        ],
+        "note": "多地宽带(北京联通、河北电信等)与设备"
+      },
+      {
+        "name": "多地宽带与测速设备",
+        "cny_month": [
+          300,
+          1500
+        ],
+        "note": "区别于普通导流号的真实成本——测速必须有真实线路"
+      },
+      {
+        "name": "自有站托管",
+        "cny_month": [
+          50,
+          200
+        ]
+      },
+      {
+        "name": "实测与写作人力",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "20-40 小时/月:每条要真测、截图、写分析;苹果发布会长文另计"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      18000,
+      78000
+    ],
+    "model": "机场分销返佣(CPS)+ 付费送测/置顶",
+    "streams": [
+      {
+        "name": "机场分销返佣(CPS)",
+        "evidence": "bit.ly 38 + duyaoss.com 38 配套、优惠码 8",
+        "cny_month": [
+          15000,
+          60000
+        ],
+        "confidence": "medium"
+      },
+      {
+        "name": "机场付费送测 / 置顶",
+        "evidence": "『机场』76 次、多家品牌标签",
+        "cny_month": [
+          3000,
+          15000
+        ],
+        "confidence": "low"
+      },
+      {
+        "name": "苹果资讯侧广告",
+        "evidence": "合作 7;0 条明确报价帖",
+        "cny_month": [
+          0,
+          3000
+        ],
+        "confidence": "low"
+      }
+    ],
+    "note": "锚点:6.78 万订阅、中位阅读 11,197、单条峰值 5.3 万。对照同为机场测评的 jichangtj(13.4 万、ERR 50%、估 ¥20,000-80,000)与 gebaopiCloud(10.1 万、ERR 39.8%、估 ¥15,000-60,000)——DuyaoSS 订阅与 ERR 都略低,收入区间相应下调一档但量级一致。机场分销返佣通常为首充金额的 30-50% 且有长期复购分成,是本轮毛利结构最好的品类之一。区间宽因返佣率与送测报价完全私下协商、bit.ly 点击数据仅运营方可见。",
+    "est_scope": "本频道 + 自有站"
+  },
+  "risk": {
+    "level": "high",
+    "notes": [
+      "机场(翻墙 VPN)测评与分销是主要变现来源(机场 76 次、bit.ly 分销短链 38、优惠码 8),在大陆属为『未经许可经营国际联网业务』提供推广与引流,涉《计算机信息网络国际联网管理暂行规定》第六、十四条;有偿推广已有以《刑法》225 条非法经营罪定罪的判例",
+      "与 jichangtj、gebaopiCloud 相比经营主体更明确:自有站 duyaoss.com、可追踪的分销短链、系统化测速方法论——都表明这是持续、有组织的商业行为而非偶发分享",
+      "苹果资讯这条线本身完全合法(原创编译,来源为 Apple 官方与主流科技媒体),但客观上为机场业务提供流量与『科技生活号』的正当外观",
+      "【无】样本内无博彩、无成人、无诈骗、无盗版分发,故不判 criminal"
+    ]
+  }
+}

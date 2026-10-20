@@ -1,0 +1,157 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "GoReading",
+  "username": "GoReading",
+  "url": "https://t.me/GoReading",
+  "title": "Λ-Reading ♡",
+  "category": "newsletter/prompt/工具 高质量策展(对照组)",
+  "growth_short": "高质量策展口碑",
+  "one_liner": "ERR 53.31% 的高质策展号,但最受欢迎的不是书单——转发榜首是一条『通用 Prompt V4 版本』(512 转发),第二名才是年度书单(401)。正文压到中位 49 字、内容托在 Notion(54 次),是一个目录式频道。最后一条停在 2026-07-29。",
+  "analyzed_at": "2026-09-13T13:00:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/GoReading.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2023-10-10",
+      "2026-07-29"
+    ],
+    "note": "跨度 1023 天、0.3 条/天,低频高质;最后更新 2026-07-29"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 15219,
+    "median_views": 8114,
+    "mean_views": 8698,
+    "p10_views": 6300,
+    "p90_views": 11825,
+    "err_pct": 53.31,
+    "mature_posts": 298,
+    "reactions_total": 5553,
+    "forwards_total": 7259,
+    "forwards_per_post": 24.2,
+    "forwards_median": 11,
+    "er_pct": 0.21,
+    "posts_per_day": 0.29,
+    "views_available": true,
+    "media_mix": {
+      "empty": 142,
+      "photo": 96,
+      "document": 31,
+      "webpage": 31
+    },
+    "deleted_pct": 13.5,
+    "activity_note": "转发均值 24.2 / 中位 11 相差 2.2 倍,少数爆款贡献大部分转发。刷量检验:反应≥50 的帖 n=17、CV 中位 1.276(最低 0.767),幂律分布,无刷量。最后更新 2026-07-29,抓取时已停更 1.5 个月。"
+  },
+  "implementation": {
+    "publish_identity": "channel",
+    "post_structure": "正文中位仅 49 字(一句导语 + 链接),142 条纯文本 + 96 图 + 31 视频 + 31 链接卡。标签 #newsletter 37、#Prompt 5、#Tools 3、#book 3。",
+    "delivery": "Notion 是内容载体(www.notion.so 54 次),TG 只放导语+链接,与 scitech_fans 用 telegra.ph 是同一思路:用免费第三方文档平台承载长内容、TG 只做索引。选题源见品味:economist 3、newyorker 2、marginalrevolution 2、honest-broker 2、tiddlywiki 3、mailbrew 5。",
+    "curation": "英文长文与经济学/思想类内容的人工策展。转发冠军是可直接复制使用的 Prompt(512,是中位 11 的 46 倍),另有《Prompt Evaluation Chain 2.0》《心理咨询 Prompt》等长帖——规律与本轮一致:可直接复制使用的东西,转发力远超需要花时间消化的东西。",
+    "schedule": "纯人工无定时:间隔中位 103,564 秒(1.2 天)、<60 秒仅 2%;小时集中 10-15 点(167 条/56%),分钟与秒无任何聚集。",
+    "ad_injection": "无。赞助 1、aff 1、付费 1,0 条招商帖。注意『订阅』39 次是 newsletter 语境不是付费订阅——与 aboutrss 相同,是词频统计必须回查上下文的典型。",
+    "note": "完全孤立运营:t.me 仅 2 次、@提及 0 个、无 bot、无群。"
+  },
+  "growth": {
+    "strategy": "低频高质策展,完全不做外部动作",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "可复制内容的爆发力",
+        "evidence": "Prompt 512 转发(中位 11 的 46 倍)",
+        "note": "零消化成本的东西传播最快"
+      },
+      {
+        "name": "精选书单",
+        "evidence": "年度书单 401 转发 / 21,570 阅读",
+        "note": "稀缺的整理型内容"
+      },
+      {
+        "name": "低频高质",
+        "evidence": "0.29 条/天、ERR 53.31%"
+      },
+      {
+        "name": "完全孤立",
+        "evidence": "0 个 @提及、0 个 bot、t.me 仅 2 次",
+        "note": "不互推、不换量"
+      }
+    ],
+    "signals": {
+      "subscribers": 15219,
+      "err_pct": 53.31,
+      "forwards_per_post": 24.2
+    },
+    "assessment": "本轮『高 ERR + 零变现』个人策展号的共同结局:GoReading 停更、fakeye 停更、aboutrss 产量掉 85%;唯二稳定的是 archlinuxcn(社区集体维护)与 scitech_fans(周刊有母体)。不变现保住了内容纯度与高 ERR,但也意味着没有任何东西支撑作者长期投入——这是本轮最一致的结构性发现。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      0,
+      0
+    ],
+    "onetime_cny": [
+      0,
+      0
+    ],
+    "items": [
+      {
+        "name": "【启动】频道 + Notion 账号",
+        "cny_onetime": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "阅读与策展时间",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "15-35 小时/月:内容源是 Economist/New Yorker 等英文长文,需要真读"
+      },
+      {
+        "name": "Notion / 托管",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "免费额度足够"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "est_scope": "本频道",
+    "model": "零变现",
+    "streams": [
+      {
+        "name": "无",
+        "evidence": "赞助 1、aff 1;0 条招商帖;URL 参数 ref 7 多为 Notion/YouTube 自带追踪非联盟",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "潜在价值:1.52 万订阅、8,114 中位阅读、ERR 53.31%,受众是英文阅读能力强的知识人群(广告价值高于泛资讯),按 CPM ¥80-200 折算每月 4 条约 ¥2,600-6,500/月,完全未兑现。",
+    "potential_ad_value_cny_month": [
+      2600,
+      6500
+    ]
+  },
+  "risk": {
+    "level": "low",
+    "notes": [
+      "newsletter、书单、AI 提示词与英文长文的策展分享,外链指向 Notion、Economist、New Yorker、YouTube 等公开来源,内容为原创导语 + 第三方链接,零商业变现",
+      "无盗版、无成人、无博彩、无侵权分发",
+      "唯一边缘项:archive.today 3 次(网页存档服务,可用于绕过付费墙),量级极小且该服务本身合法",
+      "UI 上不应与灰产样本同框标红"
+    ]
+  }
+}

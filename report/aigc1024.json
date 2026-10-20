@@ -1,0 +1,174 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "aigc1024",
+  "username": "aigc1024",
+  "url": "https://t.me/aigc1024",
+  "title": "AI探索指南",
+  "category": "AI 资源外壳 + 博彩广告引流",
+  "growth_short": "AI资源外壳 + 互推",
+  "one_liner": "AI 外壳是真的(github 22 次、正文中位 170 字),但它的博彩词频与主题完全不同的 https1024 逐项完全相同(七项一个不差)——同一份广告被中央批量投放。外壳越真 ERR 越高(1.72%,是 wenan888 的 9 倍),导流效率越高。",
+  "analyzed_at": "2026-09-13T14:15:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/aigc1024.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2026-09-07",
+      "2026-09-13"
+    ],
+    "note": "含体育博彩/棋牌广告域名，报告不收录"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 36962,
+    "median_views": 638,
+    "err_pct": 1.72,
+    "views_available": true,
+    "views_note": "样本全在近 6 天，阅读未累积",
+    "mature_posts": 0,
+    "reactions_total": 180,
+    "forwards_total": 2439,
+    "forwards_per_post": 8.1,
+    "er_pct": 0.1,
+    "posts_per_day": 48.9,
+    "media_mix": {
+      "photo": 175,
+      "text": 79,
+      "document": 44
+    },
+    "deleted_pct": 2.6,
+    "activity_note": "ERR 1.72% 比同矩阵 wenan888(0.19%)高近 10 倍,因为外壳更真。实测曝光 638 × 48.9 ≈ 3.1 万次/天,是 wenan888(7,400)的 4 倍多。矩阵内可验证规律:外壳投入越高 → ERR 越高 → 导流曝光越大。",
+    "forwards_median": 4
+  },
+  "implementation": {
+    "publish_identity": "bot",
+    "post_structure": "正文中位 170 字(wenan888 为 73 字),外链 github 22、夸克 4、微信 6。",
+    "delivery": "固定互导 footer:每条挂 aigc1024(111)+chunse1024(111)+meiriyishu(110)+openclaw1024(109);博彩落地 qsty8999/vip182ty888 各 30、PG8K001 21。",
+    "schedule": "全天节流:24 小时分散,间隔中位 765 秒、<60 秒仅 26%,不像 wenan888 一小时倾倒。",
+    "growth": "AI 资源吸粉 + #频道互推 + 博彩变现",
+    "ad_injection": "彩金 83、体育 72、电子 58、真人 40、提款 34、存款 32、担保 30、信誉 18;【球速体育 安全有保障】6、【贵宾会 750.cc】6,标签 #球速体育 6、#182体育 6。",
+    "note": "1024 博彩矩阵网络级证据:aigc1024 与 https1024 的博彩词频七项逐项相同(彩金83/体育72/真人40/电子58/提款34/信誉18/担保30);【贵宾会 750.cc】见于 4 个成员、【球速体育】见于 3 个;共享落地域名 8g.com/182443.com/8k2517.com/gux.axe02ja.cfd 各 3 个号;共享代理客服 `某招商号`/`某客服号`/`某代理号`/`某娱乐城 bot` 各 4 个号;连内容素材标题【中英文翻译版】都在 3 个不同主题的号里复用。矩阵牵出未在样本内的成员:chunse1024、liangxing1024/liangxing365、text1024、openclaw1024、toutiao911、dogdairy、yunying23。"
+  },
+  "growth": {
+    "strategy": "高质量 AI 外壳提高导流效率 + 固定互导分发人群",
+    "paid_acquisition": "subs",
+    "mechanisms": [
+      {
+        "name": "高质量 AI 外壳",
+        "evidence": "github 22、正文 170 字、全天节流",
+        "note": "矩阵里外壳最真,ERR 比 wenan888 高 9 倍"
+      },
+      {
+        "name": "固定互导 footer",
+        "evidence": "每条挂 chunse1024/meiriyishu/openclaw1024",
+        "note": "把 AI 人群分发给其他题材号(含成人题材 chunse1024)"
+      },
+      {
+        "name": "买粉铺底",
+        "evidence": "ERR 1.72%"
+      },
+      {
+        "name": "高频铺量",
+        "evidence": "48.9 条/天"
+      }
+    ],
+    "signals": {
+      "subscribers": 36962,
+      "err_pct": 1.72,
+      "forwards_per_post": 8.1
+    },
+    "assessment": "矩阵逻辑:不同题材外壳号抓不同人群,再把流量汇总到同一批博彩落地页。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      100,
+      500
+    ],
+    "onetime_cny": [
+      3700,
+      19000
+    ],
+    "items": [
+      {
+        "name": "【启动】粉丝铺底",
+        "cny_onetime": [
+          3700,
+          18500
+        ],
+        "note": "3.7 万 × ¥0.1-0.5/个"
+      },
+      {
+        "name": "【启动】AI 内容素材库",
+        "cny_onetime": [
+          0,
+          500
+        ]
+      },
+      {
+        "name": "AI 内容采集与改写",
+        "cny_month": [
+          50,
+          300
+        ],
+        "note": "外壳质量是它的差异点,比纯拼凑要花钱"
+      },
+      {
+        "name": "投放脚本 / VPS",
+        "cny_month": [
+          50,
+          200
+        ]
+      },
+      {
+        "name": "多号矩阵托管",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "摊薄"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      8000,
+      40000
+    ],
+    "model": "博彩导流分成",
+    "streams": [
+      {
+        "name": "博彩导流分成",
+        "evidence": "球速体育/贵宾会品牌 + 落地域名 + 代理账号",
+        "cny_month": [
+          8000,
+          40000
+        ],
+        "confidence": "low"
+      },
+      {
+        "name": "内容侧变现",
+        "evidence": "0",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "比 wenan888 值钱因 ERR 高 9 倍:每天约 3.1 万次真实曝光,是其 4 倍多。外壳质量直接决定导流效率。",
+    "est_scope": "本号可归因(矩阵整体更高)"
+  },
+  "risk": {
+    "level": "criminal",
+    "notes": [
+      "以 AI 资讯为外壳投放境外博彩推广,属《刑法》303 条帮助行为与 287 条之二帮信罪引流环节",
+      "特殊加重:『外壳做得更真』(github 外链、170 字正文、全天节流)是为提高伪装可信度的刻意投入,伪装越精心越能证明主观明知与组织化程度",
+      "与 https1024 博彩词频七项完全一致,是同一运营方中央投放的直接证据",
+      "每条固定互导 chunse1024(成人题材),承担成人内容导流连带风险",
+      "1024 博彩矩阵网络级证据:aigc1024 与 https1024 的博彩词频七项逐项相同(彩金83/体育72/真人40/电子58/提款34/信誉18/担保30);【贵宾会 750.cc】见于 4 个成员、【球速体育】见于 3 个;共享落地域名 8g.com/182443.com/8k2517.com/gux.axe02ja.cfd 各 3 个号;共享代理客服 `某招商号`/`某客服号`/`某代理号`/`某娱乐城 bot` 各 4 个号;连内容素材标题【中英文翻译版】都在 3 个不同主题的号里复用。矩阵牵出未在样本内的成员:chunse1024、liangxing1024/liangxing365、text1024、openclaw1024、toutiao911、dogdairy、yunying23。"
+    ]
+  }
+}

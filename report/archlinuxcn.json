@@ -1,0 +1,177 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "archlinuxcn",
+  "username": "archlinuxcn",
+  "url": "https://t.me/archlinuxcn",
+  "title": "Arch Linux Chinese Messages",
+  "category": "开源社区官方公告(对照组)",
+  "growth_short": "开源社区自然沉淀",
+  "one_liner": "ERR 81.18% 是本轮全部样本的天花板——1.1 万订阅里有 9 千人打开每一条。300 条覆盖 7 年 9 个月,阅读中位从 2018 年的 726 长到 2022 年的 2 万,之后横盘四年。转发榜前四全部是安全警报:AUR 投毒(283)、镜像站失联(222)、xz 后门(222)——它的价值不在日常,而在出事的那一刻。",
+  "analyzed_at": "2026-09-13T13:00:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/archlinuxcn.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2018-12-29",
+      "2026-09-13"
+    ],
+    "note": "跨度 2815 天(近8年)、0.1 条/天,极低频"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 11165,
+    "median_views": 9064,
+    "mean_views": 8869,
+    "p10_views": 1257,
+    "p90_views": 17111,
+    "err_pct": 81.18,
+    "mature_posts": 295,
+    "reactions_total": 18037,
+    "forwards_total": 5846,
+    "forwards_per_post": 19.5,
+    "forwards_median": 11,
+    "er_pct": 0.69,
+    "posts_per_day": 0.11,
+    "views_available": true,
+    "media_mix": {
+      "empty": 223,
+      "webpage": 76,
+      "photo": 1
+    },
+    "deleted_pct": 3.8,
+    "activity_note": "ERR 81.18% 本轮最高(第二名 Legado 68.57%)。原因:Arch 是滚动更新发行版,一次不当更新就可能让系统起不来,官方公告不是资讯而是必须读的操作指令。7.7 年完整曲线:726 → 20,310 涨 28 倍用了四年,之后连续四年(2022-2026)稳定在 1.5-2 万,每年 1 月都在 1.9 万上下,跨年度稳定性本轮独一无二。2026 年中回落但 08 月回到 13,432;结合 9 天一条的极低频,单月样本太小,更可能是选题差异而非趋势衰减。刷量检验:反应≥50 的帖 n=106、CV 中位 1.396(最低三条 0.702-0.732),样本量足够大,结论可靠:无任何刷量。",
+    "views_trend_by_month": {
+      "2018-12": 726,
+      "2019-12": 2691,
+      "2020-07": 12186,
+      "2021-06": 14382,
+      "2022-11": 20310,
+      "2023-02": 20268,
+      "2024-01": 19044,
+      "2025-01": 19113,
+      "2026-01": 19798,
+      "2026-07": 10801,
+      "2026-08": 13432
+    }
+  },
+  "implementation": {
+    "publish_identity": "channel",
+    "post_structure": "正文中位 194 字,纯文本为主(223 条无媒体 + 76 条链接卡)。固定栏目:『近期常见问题简答』10、『官方仓库中 Python…』5、repo.archlinuxcn 相关 5。标签零散(#warning 3、#已修复 3、#testing 2、#mirrors 2)——不做标签体系,因为用户是订阅制消费不需要被检索。长帖有技术深度(《近期 Linux 内核本地提权漏洞汇总》逐条列 CVE 与修复版本、《关于 base 元包的 Q&A》解释社区决策),是原创写作非转述。",
+    "delivery": "外链全部指向官方基础设施:archlinuxcn.org 79、github 37、wiki.archlinux.org 34、bugs.archlinux.org 31、gitlab.archlinux.org 27、lists.archlinux.org 18。矩阵为社区自有:archlinuxcn_group 11(讨论群)、cqumirror 2(重庆大学镜像站)、archlinuxcn_offtopic 1、chaotic_aur 1,无任何外部导流。",
+    "curation": "维护者手工发布,无 cron、无队列、无 bot:发布时段覆盖全天且分散(9-12 点 101 条为小高峰,0-4 点也有 24 条),分钟与秒无任何聚集,间隔中位 322,128 秒(3.7 天)、<60 秒仅 3%。",
+    "schedule": "0.1 条/天,随社区事件,工作时段",
+    "ad_injection": "无。『广告』2 次均为技术语境、『赞助』1 次,0 条招商帖。",
+    "note": "价值集中在『出事的那一刻』:转发榜前四全是安全/故障警报——AUR 大量孤儿包被投毒(283 转发/27,047 阅读)、多所高校镜像站不可访问(222/24,036)、xz 软件包被植入后门(222/21,252,即 2024 年震动开源界的供应链攻击)、AUR 新一轮投毒(129)。这四条转发量是日常帖(中位 11)的 12-26 倍。用户订阅不是为日常阅读,而是为了不错过那几条要命的公告;低频(9 天一条)反而强化了这一点。"
+  },
+  "growth": {
+    "strategy": "不可替代的告警地位 + 滚动发行版的强制性",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "不可替代的告警地位",
+        "evidence": "转发榜前四全是安全事件(283/222/222/129)",
+        "note": "出事时唯一的中文一手渠道"
+      },
+      {
+        "name": "滚动发行版的强制性",
+        "evidence": "Arch 一次不当更新就可能起不来",
+        "note": "公告是操作指令而非资讯"
+      },
+      {
+        "name": "低频强化重要性",
+        "evidence": "9 天一条",
+        "note": "每条都可能要命,用户不敢不看"
+      },
+      {
+        "name": "社区自有生态",
+        "evidence": "群 + 镜像站 + updates 频道",
+        "note": "完全内循环,零外部导流"
+      }
+    ],
+    "signals": {
+      "subscribers": 11165,
+      "err_pct": 81.18,
+      "forwards_per_post": 19.5
+    },
+    "assessment": "增长曲线(4 年 28 倍,之后 4 年横盘)说明基础设施型频道的天花板由用户群规模决定——中文 Arch 用户就这么多,涨到头就稳住。横盘不是衰退,是饱和。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      0,
+      0
+    ],
+    "onetime_cny": [
+      0,
+      0
+    ],
+    "items": [
+      {
+        "name": "【启动】频道创建",
+        "cny_onetime": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "维护者时间",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "志愿不计价;需持续跟踪上游安全公告、内核 CVE、镜像站状态"
+      },
+      {
+        "name": "频道运营",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "手工发布,无脚本无服务器,边际成本严格为零"
+      },
+      {
+        "name": "社区软件源服务器与带宽",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "repo.archlinuxcn.org 的成本属社区基础设施,不计入本频道口径"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "est_scope": "本频道",
+    "model": "零变现(非营利开源社区官方公告渠道)",
+    "streams": [
+      {
+        "name": "无",
+        "evidence": "0 条招商帖、0 联盟码、0 打赏入口",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "零变现且是结构性的:它是非营利开源社区的官方公告渠道,商业化会直接损害其作为『可信告警源』的地位——而这个地位正是 ERR 81% 的全部来源。潜在价值:1.1 万订阅、9,064 中位阅读的开发者受众,按技术类 CPM ¥80-200 折算每月 3 条赞助位约 ¥2,200-5,400/月,放弃这笔钱是理性的。",
+    "potential_ad_value_cny_month": [
+      2200,
+      5400
+    ]
+  },
+  "risk": {
+    "level": "low",
+    "notes": [
+      "开源社区官方公告频道,内容为软件源变更、安全漏洞告警、内核 CVE 汇总与社区决策说明,全部外链指向 archlinux.org / archlinuxcn.org / GitHub 等官方基础设施",
+      "零商业变现,无盗版、无成人、无博彩、无侵权分发",
+      "本轮合规性最干净的样本之一,且其内容(安全告警)具有明确的公共利益价值。UI 上不应与灰产样本同框标红"
+    ]
+  }
+}

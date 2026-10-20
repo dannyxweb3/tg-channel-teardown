@@ -1,0 +1,174 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "qing_03",
+  "username": "qing_03",
+  "url": "https://t.me/qing_03",
+  "title": "精选音乐收藏馆",
+  "category": "无损音乐盗版分发（网易云 FLAC）+ 博彩导流",
+  "growth_short": "无损音乐刚需 + 互推",
+  "one_liner": "与 1024 矩阵核心四号结构明显不同:主体是货真价实的网易云 FLAC 搬运(@Music163bot 273 次、#flac 229),ERR 11.52% 是那四个号的 7-60 倍。博彩注入确实存在但浓度只有核心号三分之一,落地品牌是另一套(QSTY/182ty 系),且无代理招募——更像『被博彩广告租用了版面的音乐号』而非『披着音乐皮的博彩号』。",
+  "analyzed_at": "2026-09-13T16:15:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/qing_03.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2025-12-16",
+      "2026-09-13"
+    ],
+    "note": "deleted 87.4% 滚动删除;夹带博彩导流(与 8G/182 矩阵同网)，域名不收录"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 14359,
+    "median_views": 1654,
+    "mean_views": 1811,
+    "p10_views": 833,
+    "p90_views": 2757,
+    "err_pct": 11.52,
+    "mature_posts": 289,
+    "reactions_total": 633,
+    "forwards_total": 834,
+    "forwards_per_post": 2.8,
+    "er_pct": 0.12,
+    "posts_per_day": 1.1,
+    "views_available": true,
+    "media_mix": {
+      "document": 291,
+      "text": 9
+    },
+    "deleted_pct": 87.4,
+    "hosted_files": 291,
+    "hosted_bytes_gb": 8.62,
+    "file_ext": {
+      "flac": 229,
+      "mp3": 47,
+      "mp4": 9,
+      "m4a": 6
+    },
+    "activity_note": "ERR 11.52% 是矩阵核心号(0.19%-1.72%)的 7-60 倍,而发帖频率只有它们的四十分之一(1.1 vs 43.7-59.5 条/天)——说明它有真实受众且靠内容留住。87.4% 删除率与音乐版权投诉高度吻合(无损音频尤其易被识别),也使历史数据不完整、无法给出可靠趋势。",
+    "forwards_median": 2
+  },
+  "implementation": {
+    "publish_identity": "bot",
+    "post_structure": "正文中位 76 字(歌名+歌手+格式)。@Music163bot 273 次(占 91%),标签 #网易云音乐 273、#flac 229、#mp3 44。",
+    "delivery": "落地品牌另成一套:@QStyas66/QSTYAS6_Bot/Svip182ty7/Svip182ty6/VIPBX666/Hongdan776/FLHD2028 各 3;t.me VIPBX666 18、Y3guoji666 18;域名 qs3498.cc 4、2759qs.cc 2、1821070.com 2、1821068.com 2。与核心号共享 182/QSTY 一系(#球速体育 3、#不限ip 3、#免实名 3),但无【贵宾会 750.cc】、8G、8K 品牌,也无 bolaidaili/BLzhaoshang 那组博来代理账号。",
+    "schedule": "9 点 263 条(88%),间隔中位 86,366 秒(恰好 24 小时)。",
+    "retention": "约 87% 滚动删除(版权规避)",
+    "network": "夹带 8G/182 博彩矩阵导流",
+    "growth": "无损音乐刚需 + 互推",
+    "ad_injection": "浓度只有核心号三分之一:彩金 30、体育 40、真人 13、电子 17、存款 15、提款 12、捕鱼 3。关键差异——『代理』仅 1 次(核心四号 7-48 次),即未参与代理招募,而代理招募意味着组织发展下线,是产业链更深一环。",
+    "curation": "结构清晰节奏稳定的音乐分享号:每天早 9 点发一批当日歌曲,FLAC 无损为主。",
+    "note": "综合 ERR 高一个数量级、无代理招募、品牌只部分重叠三点,更合理的定性是:一个真实运营的音乐号把版面租给了 182/QSTY 系博彩广告主,而非运营方自己开的外壳号。这与 wenan888(专为投放而生)是两种不同的东西,尽管最终都在为博彩导流。"
+  },
+  "growth": {
+    "strategy": "FLAC 无损刚需驱动的自然增长",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "FLAC 无损刚需",
+        "evidence": "#flac 229、ERR 11.52%",
+        "note": "无损音源稀缺,受众真实忠实"
+      },
+      {
+        "name": "稳定日更",
+        "evidence": "每天 9 点一批,间隔恰 24 小时",
+        "note": "可预期更新养成回访习惯"
+      },
+      {
+        "name": "无买粉无互推",
+        "evidence": "ERR 远高于矩阵号,转发中位仅 2",
+        "note": "自然增长"
+      }
+    ],
+    "signals": {
+      "subscribers": 14359,
+      "err_pct": 11.52,
+      "forwards_per_post": 2.8
+    },
+    "assessment": "与矩阵核心号最大的行为差异:核心号靠买粉堆数字(ERR 0.19-1.72%),它靠内容留人(ERR 11.52%)。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      15,
+      30
+    ],
+    "onetime_cny": [
+      0,
+      300
+    ],
+    "items": [
+      {
+        "name": "【启动】频道创建与音乐整理流程",
+        "cny_onetime": [
+          0,
+          300
+        ],
+        "note": "借助现成网易云下载 bot"
+      },
+      {
+        "name": "选曲与发布",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "5-15 小时/月"
+      },
+      {
+        "name": "网易云会员(获取无损音源)",
+        "cny_month": [
+          15,
+          30
+        ]
+      },
+      {
+        "name": "存储",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "TG 托管"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      2000,
+      10000
+    ],
+    "model": "博彩广告位(版面出租)",
+    "streams": [
+      {
+        "name": "博彩广告位",
+        "evidence": "彩金 30、体育 40、182/QSTY 系落地",
+        "cny_month": [
+          2000,
+          10000
+        ],
+        "confidence": "low"
+      },
+      {
+        "name": "音乐侧变现",
+        "evidence": "无网盘拉新、无会员、无打赏",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "锚点:1,654 × 1.1 ≈ 1,800 次/天。曝光不高但 ERR 11.52% 的受众质量远好于矩阵核心号,广告主愿为真实打开率付更高单价。按博彩包月位口径(一个坑位约 ¥2,500-7,500/月)估 ¥2,000-10,000/月。",
+    "est_scope": "本频道可归因"
+  },
+  "risk": {
+    "level": "criminal",
+    "notes": [
+      "第一层(决定 criminal 定性):存在境外博彩推广(彩金 30、体育 40,182/QSTY 系落地与 VIP 账号,#不限ip #免实名 话术),属《刑法》303 条帮助行为与 287 条之二帮信罪引流环节。只要存在这层,定性即 criminal,与内容主体是否正当无关",
+      "第二层:分发网易云 FLAC 无损音频(#flac 229),涉《刑法》217 条与《著作权法》;87.4% 删除率本身就是被持续投诉的证据",
+      "【情节应与矩阵核心号区分】无代理招募(『代理』仅 1 次 vs 核心号 7-48)、未使用矩阵的博来代理账号体系、ERR 高一个数量级说明有真实受众。角色更接近『出租版面的内容号』而非『专为投放而建的外壳号』——前者是共犯中的次要角色,这个区别在量刑上有实际意义"
+    ]
+  }
+}

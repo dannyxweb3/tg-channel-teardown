@@ -1,0 +1,226 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "KaiPanshare",
+  "username": "KaiPanshare",
+  "url": "https://t.me/KaiPanshare",
+  "title": "电子书资源分享 📚",
+  "category": "电子书盗版分享（网盘 + 直传 + 搜索 bot）",
+  "growth_short": "搜索 bot + 互推",
+  "one_liner": "每天清晨 5-7 点批量吐 9 条盗版电子书的三网盘分发号(百度/夸克/阿里并行 + pwd 提取码)。文案是 LLM 批量生成的(『助您多维拓展认知边界』式腔调反复出现),300 条只换来 78 个表情,ER 0.03%。",
+  "analyzed_at": "2026-09-13T10:00:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/KaiPanshare.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2026-08-11",
+      "2026-09-13"
+    ],
+    "note": "另抓了 inline 按钮（仅『🔍 资源搜索』一枚，指向自家搜索 bot）"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 16715,
+    "median_views": 922,
+    "mean_views": 969,
+    "p10_views": 787,
+    "p90_views": 1205,
+    "err_pct": 5.52,
+    "mature_posts": 247,
+    "reactions_total": 78,
+    "forwards_total": 837,
+    "forwards_per_post": 2.8,
+    "er_pct": 0.03,
+    "posts_per_day": 9.1,
+    "views_available": true,
+    "media_mix": {
+      "photo": 206,
+      "text": 65,
+      "document": 29
+    },
+    "hosted_files_sampled": 29,
+    "file_ext_sampled": {
+      "epub": 23,
+      "pdf": 6
+    },
+    "linked_chat_id": 2680277376,
+    "external_hosts": {
+      "pan.baidu.com": 218,
+      "pan.quark.cn": 218,
+      "alipan.com": 205,
+      "t.me": 365
+    },
+    "forwards_median": 3,
+    "deleted_pct": 18.5,
+    "activity_note": "阅读分布窄得反常(p10 787 / 中位 922 / p90 1,205,最高最低仅差 1.5 倍),而真实内容号会因选题好坏拉开数倍。配合 ER 0.03%(本轮最低区间)与最高转发仅 10,判断订阅中具真实阅读意愿的比例很低。"
+  },
+  "implementation": {
+    "publish_identity": "bot",
+    "post_structure": "固定栏目『今日为您精选 N 本好书』(#今日分享总结 33 次) + 单书推荐。文案有硬 LLM 特征:设问句开头+痛点+承诺的三段式,『助您多维拓展认知边界』『重塑思维边界与内心秩序』式同义轮换但论点不变。图文 206 条、纯文本 65 条、直传文件 29 个(1.36GB,epub 23 + pdf 6)。",
+    "delivery": "三网盘并行对抗失效:pan.baidu.com 218、pan.quark.cn 218、www.alipan.com 205,URL 参数 pwd 出现 218 次(提取码);『夸克』一词 221 次为主推(拉新返利最高)。小体积 epub 直传 TG(免费托管且不会被网盘投诉下架)。配 @Summer_Clear_Sky_Bot(10 次)。",
+    "search_bot": "自家 @pindaoyun_bot『搜本频道』——把历史存量做成可检索资产，消息挂『🔍 资源搜索』按钮",
+    "cooperation": "合作/商务走 @Kai_xiaoer_bot",
+    "schedule": "清晨批量投放:05 点 59 条 / 06 点 198 条 / 07 点 19 条,三小时占 92%;间隔中位 79 秒、p25 71 秒,每 70-80 秒一条连续吐出。前一晚生成好、清晨用队列排空,非整点 cron。",
+    "note": "内容偏知识类（成长/心理/历史/杂志/期刊），选品比纯爽文号『体面』，利于长期留存",
+    "ad_injection": "无招商帖;穿插破解软件(15 次)与机场推广(11 次)。",
+    "curation": "LLM 批量写稿,内容生产成本趋近于零,这解释 9.1 条/天的产能。标签即选题分类,主打成功学与心理自助(#个人成长 32、#心理学 20、#自我提升 14)——盗版电子书里转化最好的品类;另有 #杂志 10(《看天下》《环球人物》《第一财经》)。"
+  },
+  "growth": {
+    "strategy": "成功学品类选品 + 高频铺量覆盖长尾检索 + 互推换量",
+    "paid_acquisition": "exchange",
+    "mechanisms": [
+      {
+        "name": "成功学品类选品",
+        "evidence": "#个人成长 32、#心理学 20、#自我提升 14",
+        "note": "受众广、决策轻,盗版电子书转化最好的品类"
+      },
+      {
+        "name": "高频铺量",
+        "evidence": "9.1 条/天",
+        "note": "用量覆盖长尾书名检索"
+      },
+      {
+        "name": "互推网络",
+        "evidence": "#互推 10 次,对象含 QukanMovie/ASMR86866/zyfxlnn/shumozy",
+        "note": "与同类资源号交叉换量"
+      },
+      {
+        "name": "自引用导流",
+        "evidence": "t.me/kaipanshare 236 次",
+        "note": "每条引导回频道提高留存"
+      }
+    ],
+    "signals": {
+      "subscribers": 16715,
+      "err_pct": 5.52,
+      "forwards_per_post": 2.8,
+      "er_pct": 0.03
+    },
+    "assessment": "ER 0.03%、最高转发 10、阅读分布异常窄——三个信号共同指向订阅数含大量非活跃账号。互推换量可解释部分来源:换来的粉丝不读内容,只贡献订阅数。与 syrjfx_sl 同模式,程度稍轻。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      95,
+      430
+    ],
+    "onetime_cny": [
+      0,
+      1000
+    ],
+    "items": [
+      {
+        "name": "【启动】电子书库来源",
+        "cny_onetime": [
+          0,
+          500
+        ],
+        "note": "抓取现成盗版书库/其他频道搬运"
+      },
+      {
+        "name": "【启动】LLM 写稿脚本",
+        "cny_onetime": [
+          0,
+          300
+        ]
+      },
+      {
+        "name": "【启动】定时投放脚本",
+        "cny_onetime": [
+          0,
+          200
+        ]
+      },
+      {
+        "name": "三网盘会员(百度 SVIP + 夸克 + 阿里)",
+        "cny_month": [
+          60,
+          120
+        ],
+        "note": "上传与分享必需,最主要的现金支出"
+      },
+      {
+        "name": "VPS(脚本托管)",
+        "cny_month": [
+          30,
+          80
+        ]
+      },
+      {
+        "name": "LLM 写稿",
+        "cny_month": [
+          5,
+          30
+        ],
+        "note": "9.1 条/天短文案,成本可忽略"
+      },
+      {
+        "name": "人力(选书与异常处理)",
+        "cny_month": [
+          0,
+          200
+        ],
+        "note": "半自动"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      1000,
+      6000
+    ],
+    "model": "网盘拉新 CPA 为主(主推夸克)",
+    "streams": [
+      {
+        "name": "夸克网盘拉新 CPA",
+        "evidence": "『夸克』221 次、218 条夸克链接为主推位",
+        "cny_month": [
+          800,
+          4000
+        ],
+        "confidence": "low"
+      },
+      {
+        "name": "百度/阿里网盘拉新",
+        "evidence": "各 200+ 链接",
+        "cny_month": [
+          200,
+          1500
+        ],
+        "confidence": "low"
+      },
+      {
+        "name": "夹带机场/破解推广",
+        "evidence": "机场 11、破解 15",
+        "cny_month": [
+          0,
+          800
+        ],
+        "confidence": "low"
+      },
+      {
+        "name": "广告位",
+        "evidence": "0 条招商帖",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "锚点:网盘拉新按新用户注册/转存计酬,单价约 ¥0.5-3/人。中位阅读 922 × 9 条/天 ≈ 8,300 日曝光;若 1-3% 点击、其中 5-10% 完成注册 → 日新增 4-25 人 → 月 120-750 人 → ¥100-2,000/月;取上限区间是考虑三网盘叠加与老用户复用转存。区间宽的根源:网盘 CPA 结算在各家后台,且『是否已有账号』决定能否计酬,外部完全不可见。趋势:8 月阅读中位 925 → 9 月 823、转发 3 → 2 轻微下滑,但样本跨度仅 33 天不足以判定。",
+    "est_scope": "本频道可归因"
+  },
+  "risk": {
+    "level": "high",
+    "notes": [
+      "未经授权分发商业出版物电子版是全部主业:300 条几乎每条指向一本受版权保护的图书或期刊(《看天下》《环球人物》《第一财经》等),涉《刑法》217 条侵犯著作权罪与《著作权法》53 条",
+      "三网盘并行本身即为对抗投诉下架而设计,客观上构成规避维权的主观证据;图书与期刊权利人明确、维权路径清晰",
+      "穿插破解软件(15 次)与机场推广(11 次),叠加软件著作权与翻墙服务合规问题",
+      "网盘拉新返利处于平台规则灰区",
+      "【无】样本内无博彩、无成人、无诈骗话术,故不判 criminal"
+    ]
+  }
+}

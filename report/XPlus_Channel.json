@@ -1,0 +1,181 @@
+{
+  "depth": "deep",
+  "schema_version": 3,
+  "kind": "channel",
+  "slug": "XPlus_Channel",
+  "username": "XPlus_Channel",
+  "url": "https://t.me/XPlus_Channel",
+  "title": "X Plus Channel",
+  "category": "第三方 TG 客户端 版本公告",
+  "growth_short": "产品内置入口",
+  "one_liner": "89 条消息撑起 26 万订阅、39 万中位阅读、ERR 148%——阅读量是订阅数的 1.5 倍。它不是内容号，是第三方 Telegram 客户端 com.xplus.messenger（上架 Google Play）的版本公告栏，七年只做一件事：把上游 changelog 抄一遍，末尾贴 Play 链接。零广告、零第三方域名、零表情、零评论。id 1–199 段 200 个 id 只活下来 1 条，早年波斯语/乌兹别克语历史被系统性清空。真正的信号在转发：转发即时成熟，2025 年中位 115，2026 年中位 3，97% 的塌陷与阅读成熟度无关。",
+  "analyzed_at": "2026-09-13T11:08:35Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/XPlus_Channel.jsonl",
+    "sample_size": 89,
+    "sample_range": [
+      "2019-06-26",
+      "2026-08-25"
+    ],
+    "note": "89 条为该频道全部存活消息（id 跨度 539，删除率 83.5%）"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 264454,
+    "median_views": 391560,
+    "err_pct": 148.06,
+    "mature_posts": 77,
+    "forwards_per_post": 537.6,
+    "er_pct": 0.0,
+    "posts_per_day": 0.03,
+    "views_available": true,
+    "media_mix": {
+      "empty": 82,
+      "webpage": 6,
+      "document": 1
+    },
+    "deleted_pct": 83.5,
+    "deleted_ratio_pct": 83.5,
+    "activity_note": "40 个发布会话/7 年；最大间隔 353 天；2026 年转发中位 3（2025 为 115）"
+  },
+  "implementation": {
+    "publish_identity": "channel",
+    "post_structure": "固定模板「🔰 X Plus <版本号> / ✅ Telegram changes: <上游功能列表> / ✅ Google Play: <链接> / 📢 Official Channel: @XPlus_Channel」。正文中位 291 字，纯文本 82/89。2020–2021 年还单列「X Plus changes」自有功能节，2023 年后该节消失——公告里只剩上游功能。",
+    "ad_injection": "无。89 条 0 条广告、0 个第三方域名、0 个联盟参数。",
+    "delivery": "唯一分发口是 play.google.com/store/apps/details?id=com.xplus.messenger（出现 34 次）。与本语料其他客户端号（NekogramAPKs、TAndroidAPK）直接分发 APK 的路线相反，XPlus 走官方商店，合规成本与单点故障风险因此完全不同。",
+    "curation": "无策展。内容 100% 是上游 Telegram changelog 的转述。",
+    "schedule": "无 cron 指纹（分钟 top1 占 9%、秒 top1 占 4%，完全随机）。按 600 秒切批得到 40 个批次，24 个单条批次；最大一批 2026-08-25 23:14 在 133 秒内发完 9 条版本公告（12.1.1→12.10.0）。「帖/天 0.03 极低」与「间隔中位 162 秒、<60 秒占 45% 极高」并存，是批量补录的指纹。",
+    "retention": "反应 0/89、评论 0/89，两个开关都在频道级关闭。版本公告没有讨论价值，开评论只会引来需要人力处理的 bug 报告。",
+    "note": "自动化程度接近零——文案措辞逐年不一致、emoji 体系有演化、发布靠人坐下来批量贴。本语料自动化程度最低的大号之一。"
+  },
+  "growth": {
+    "strategy": "26 万订阅是产品带来的，不是频道挣来的。ERR 148%（阅读量超过订阅数）只能由 APP 内置入口解释——这是唯一真正起作用的增长机制。频道本身零互推、零第三方 @、零内容运营。",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "APP 内置入口",
+        "evidence": "ERR 148.06%，超过 100%",
+        "note": "唯一真正起作用的机制"
+      },
+      {
+        "name": "自引用",
+        "evidence": "@XPlus_Channel 提及 38 次",
+        "note": "每条公告末尾固定带"
+      },
+      {
+        "name": "转发扩散",
+        "evidence": "转发中位 154.5、峰值 6,702",
+        "note": "2022 年前有效，现已失效"
+      },
+      {
+        "name": "互推",
+        "evidence": "0 个第三方 @、0 个第三方域名",
+        "note": "完全没有"
+      },
+      {
+        "name": "买粉/刷互动",
+        "evidence": "反应全关无从刷；转发分布 0–6,702 自然长尾",
+        "note": "无痕迹"
+      },
+      {
+        "name": "主动清理历史",
+        "evidence": "id 0–199 存活 1/200，存活率随 id 单调上升",
+        "note": "运营者删旧公告，非平台下架"
+      }
+    ],
+    "signals": {
+      "subscribers": 264454,
+      "err_pct": 148.06,
+      "forwards_per_post": 537.6
+    },
+    "assessment": "增长已停止并转为负。判据是转发数而非阅读数——转发在数小时内定型，不受帖龄干扰：逐年中位转发 2020=125、2021=269、2022=351（峰）、2023=72、2024=208、2025=115、2026=3，九条 2026 帖的转发为 7/1/0/1/3/3/4/73/19，其中一条为 0。97% 塌陷成立。衰退拐点在 2022（峰值帖 2022-03-27 的 8.6.2 公告，阅读 1,940,484），此后每年腰斩。两条原因数据都支持：一是上游吃掉差异化——2026 年 changelog 里全是 Live Stories / AI Summaries / Gift Crafting 等官方功能，fork 自有功能节已消失；二是 2025-09 到 2026-08 的 11 个月静默本身会改变读者结构。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      1500,
+      6100
+    ],
+    "onetime_cny": [
+      8180,
+      20180
+    ],
+    "items": [
+      {
+        "name": "上游 rebase + 重打包 + 上架",
+        "cny_month": 3750,
+        "note": "¥1,500–6,000；上游年约 12–15 版，每次 0.5–2 人日"
+      },
+      {
+        "name": "构建机 / CI",
+        "cny_month": 50,
+        "note": "¥0–100，本地机器即可"
+      },
+      {
+        "name": "频道运营",
+        "cny_month": 0,
+        "note": "40 个会话/7 年，摊到每月不足 10 分钟"
+      },
+      {
+        "name": "Google Play 开发者账号",
+        "cny_onetime": 180,
+        "note": "$25 一次性"
+      },
+      {
+        "name": "首次 fork + 改名 + 自有 api_id + 签名密钥",
+        "cny_onetime": 14000,
+        "note": "¥8,000–20,000，按独立 Android 开发者 2–5 人日"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      60000
+    ],
+    "est_scope": "含 APP 侧",
+    "model": "频道侧直接收入为 0，证据充分（89 条 0 广告、0 第三方域名、0 联盟参数、0 收款入口）。APP 侧不可观测，只能给边界。",
+    "streams": [
+      {
+        "name": "频道广告",
+        "cny_month": [
+          0,
+          0
+        ],
+        "evidence": "89 条 0 条，七年",
+        "confidence": "high"
+      },
+      {
+        "name": "APP 内置广告（AdMob 类）",
+        "cny_month": [
+          0,
+          60000
+        ],
+        "evidence": "按频道订阅/安装比 1:10–1:50 推 260 万–1,300 万安装，中亚/伊朗 eCPM ¥1–4/千次",
+        "confidence": "low"
+      },
+      {
+        "name": "付费去广告 / 付费功能",
+        "cny_month": [
+          0,
+          0
+        ],
+        "evidence": "七年 changelog 零付费功能提及",
+        "confidence": "medium"
+      }
+    ],
+    "note": "区间宽到接近无意义，四条原因：其一 eCPM 地域差异是数量级的，伊朗/乌兹别克斯坦属全球最低一档且伊朗支付通道受限，同样安装量在西欧能有二十倍收入；其二安装量这个锚本身是推的，频道订阅/安装比在本语料无第二样本校准，1:10 与 1:50 都合理；其三 2026 年转发塌陷说明存量正在流失，历史安装量不等于当前活跃；其四也是最关键的——七年 89 条公告、11 个月不更新、连 reactions 都不开，这不是一个在优化收入的运营者的行为模式。倾向性判断取区间下沿，依据就是行为模式与变现动机不符。趋势下行且无止跌迹象。"
+  },
+  "risk": {
+    "level": "medium",
+    "notes": [
+      "GPLv2 源码开放义务（主要风险）：Telegram 官方 Android 客户端以 GPLv2 授权，第 3 条要求分发二进制时同时提供完整对应源码或不少于三年的书面索取要约。X Plus 通过 Google Play 分发二进制，而 89 条消息无一提到源码仓库，urls 字段里也没有任何 GitHub/GitLab 域名。若 APP 内与商店页同样未提供，即构成 GPLv2 违约，著作权人（Telegram FZ-LLC 及上游贡献者）可主张授权自动终止并要求下架。这是最现实、最易触发的风险。",
+      "Telegram 第三方客户端政策与商标：Telegram 允许 fork，但要求使用自有 api_id、不得仿冒官方标识；X Plus 已改名改包名，这一条基本合规。但 Telegram 历史上曾以「注入广告 / 截获用户数据」为由公开点名封禁多个同类 fork 的 api_id，一旦被封 APP 当场无法登录。这是不由运营者控制的单点故障。",
+      "Google Play 政策：第三方 IM 客户端属重点审查类目，涉及 Data safety 声明、仿冒、广告 SDK 披露。未披露的广告注入会直接下架并可能连坐开发者账号。Play 链接是唯一分发口，下架等于业务归零。",
+      "用户数据与出口管制：IM 客户端 fork 天然可接触会话内容；若运营者位于受制裁法域（changelog 的乌兹别克语与波斯语风格指向中亚/伊朗语区），Google Play 开发者协议与结算本身即可能受限。此条为推测，证据只有语言线索。",
+      "不适用：不涉及开设赌场罪（0 条博彩内容、0 个博彩域名）；不涉及传播淫秽物品罪（0 条成人内容）；不涉及帮助信息网络犯罪活动罪（0 个收款账号、0 个第三方导流链接）；不涉及非法经营罪（无出版物、无支付业务）；不涉及侵犯公民个人信息罪（频道侧无任何个人信息处理行为）。运营者、服务器、用户均不在中国境内，中国刑法与广告法对本案无管辖连接点，列出仅为与本语料口径一致。",
+      "责任主体：com.xplus.messenger 的 Google Play 开发者账号持有人。频道本身未暴露任何自然人身份（0 个第三方 @、0 个联系方式），但 Play 开发者账号在商店页必须公示开发者名称与联系邮箱——真正的身份暴露点在商店，不在频道。"
+    ]
+  }
+}

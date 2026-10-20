@@ -1,0 +1,213 @@
+{
+  "schema_version": 3,
+  "depth": "deep",
+  "kind": "channel",
+  "slug": "AppsSweepstakesNews",
+  "username": "AppsSweepstakesNews",
+  "url": "https://t.me/AppsSweepstakesNews",
+  "title": "Apps推荐&抽奖&活动",
+  "category": "iOS应用推荐 + 抽奖驱动(含机场aff)",
+  "growth_short": "抽奖驱动涨粉",
+  "one_liner": "ERR 25.54% 是本轮所有频道里最高的一档——8,492 个订阅、单帖中位阅读 2,168,每四个订阅者就有一个真的在看。它凭什么?因为一天只发 0.47 条,两年才攒够 300 条,而且发的东西是真能拿到手的:Infuse 终身码、Secure ShellFish、S3 Files、MoneyThings——由开发者本人捐出来做抽奖。它的商业模式不收现金,收的是『曝光换兑换码』。",
+  "analyzed_at": "2026-09-13T13:00:00Z",
+  "source": {
+    "method": "telethon",
+    "script": "scripts/tg_recon.py",
+    "dump": "data/recon/AppsSweepstakesNews.jsonl",
+    "sample_size": 300,
+    "sample_range": [
+      "2024-12-10",
+      "2026-09-11"
+    ],
+    "note": "跨度 640 天、0.5 条/天"
+  },
+  "metrics": {
+    "confidence": "high",
+    "subscribers": 8492,
+    "median_views": 2168,
+    "mean_views": 2295,
+    "p10_views": 1539,
+    "p90_views": 3345,
+    "err_pct": 25.54,
+    "mature_posts": 288,
+    "reactions_total": 449,
+    "forwards_total": 1010,
+    "forwards_per_post": 3.4,
+    "forwards_median": 2,
+    "er_pct": 0.07,
+    "posts_per_day": 0.47,
+    "views_available": true,
+    "media_mix": {
+      "photo": 183,
+      "empty": 80,
+      "webpage": 31
+    },
+    "deleted_pct": 1.6,
+    "activity_note": "ERR 25.54% 与 0.47 条/天是同一件事的两面。本轮已反复验证这条规律:AI_News_CN 每天 76 条 → ERR 1.11%;awesomeRSSHub 一次性倒 200 条 → 单帖 114 阅读,分散发时 2,594。它走到另一个极端:两年发 300 条、平均两天才一条,于是每条都被看。1,536 条评论分布在 207 条帖上(69%)、单帖最高 59——对照 FinanceNewsDaily 的 504 条里 190 条是 bot 恰好 1 条、abc999222 只有 4/300 帖有评论,这里的评论是真人抽奖参与和讨论。样本跨度 640 天。",
+    "comments_total": 1536,
+    "comments_posts": 207,
+    "comments_max": 59
+  },
+  "implementation": {
+    "publish_identity": "channel",
+    "post_structure": "图片 183 条(61%)、纯文本 80、网页预览 31、文件 5(5 个 mp4,0.01GB)。正文中位 35 字——短,因为主体是截图 + 链接。标签 #限免 9、#TF 9(TestFlight)、#AS 8(App Store)、#优秀App推荐 4、#开发者自荐 2。",
+    "delivery": "外链:t.me 159(其中 t.me/c/… 127 次指向私有群/频道)、apps.apple.com 83(主业,App Store 直链)、mp.weixin.qq.com 27(同时在微信公众号分发)、firecore.com 系 25、testflight.apple.com 4、xiaohongshu 3、producthunt 3。URL 参数 ctx 26、id 26、code 26 均为 App Store 与抽奖码参数,未见 aff 标识。",
+    "curation": "人工策展的聚合器不是脚本。126 条来自转发(42%):青木蚂蚁🐜🐜🐜 35(运营者本人账号)、抽奖机器人 24、Infuse News 14 + Infuse Tips 7、APTV通知频道 6、自力 hzlzh 6、DS One发布会 5、Conflux News 3——把散落在各 App 官方频道的更新公告聚合到一处,同时用自己的账号补充点评。#开发者自荐 标签的存在说明它公开接受开发者投稿。",
+    "schedule": "完全手工,零 cron 痕迹。分钟最高 :15 仅 19 次、秒最高 :34 仅 20 次;9 点 51 条(17%)与 22 点 35 条两个小高峰是运营者自己的作息;间隔中位 18,112 秒(5 小时),<10 秒占 32% 是成组转发。",
+    "ad_injection": "0 条明码标价的招商帖。奖品由开发者署名捐赠:一次春节活动的完整名单里,Infuse(James 开发团队)、WorkingCopy/Source Files/FTP Files/S3 Files/Secure ShellFish(Anders)、MoneyThings(Felix Li)、Tomemo(le0zh0u)、APTV(希望人没事)、Fileball(DennyWang99)——每个奖品后面都跟着一个具体的开发者署名。这不是频道去买的兑换码,是 iOS 独立开发者主动送来的。",
+    "retention": "用第三方通用抽奖 bot。抽奖帖是机器生成的结构化文本(UUID 格式抽奖 ID、创建者数字 user id 224464442、精确到秒的时间戳、参与设置/开奖方式/自动开奖时间),转发来源里『抽奖机器人』出现 24 次证实这一点。开奖帖给出真实概率:『当前中奖概率：30/179=16.76%』——179 人抢 30 份,中奖率相当高,这是维持 ERR 25% 的直接原因,参与不是白参与。规则有反羊毛党条款:『无用户名用户中奖无效』(过滤新注册小号)、『活动展开期间禁止加群』(防临时涌入)、『不能私聊请自行解决且不作为超越领奖限制的理由』——三条合起来说明它被薅过而且吃过亏。"
+  },
+  "growth": {
+    "strategy": "实物激励 + 低频高质 + 开发者关系网",
+    "paid_acquisition": "none",
+    "mechanisms": [
+      {
+        "name": "实物激励",
+        "evidence": "抽奖 134 次命中、中奖率 16.76%",
+        "note": "最强的留存与拉新手段"
+      },
+      {
+        "name": "低频高质",
+        "evidence": "0.47 条/天 → ERR 25.54%",
+        "note": "稀缺性本身就是价值"
+      },
+      {
+        "name": "开发者关系网",
+        "evidence": "转发来自 Infuse News / APTV / DS One 等官方频道",
+        "note": "上游主动供稿"
+      },
+      {
+        "name": "微信双分发",
+        "evidence": "mp.weixin.qq.com 27 次",
+        "note": "跨平台引流"
+      },
+      {
+        "name": "群频道联动",
+        "evidence": "t.me/c/… 127 次",
+        "note": "抽奖参与在群里完成"
+      },
+      {
+        "name": "开发者自荐",
+        "evidence": "#开发者自荐 标签",
+        "note": "供给侧自动上门"
+      }
+    ],
+    "signals": {
+      "subscribers": 8492,
+      "err_pct": 25.54,
+      "forwards_per_post": 3.4
+    },
+    "assessment": "转发 3.4/帖(中位 2,最高 38)说明抽奖信息会被主动传播——这是它最健康的增长通道:想中奖的人会叫上朋友一起参与。ERR 25.54%、id 缺口 1.6%、640 天连续运营,没有任何买粉或刷量特征。8,492 这个数字很小,但它是本轮质量最高的 8,492。"
+  },
+  "cost": {
+    "recurring_cny_month": [
+      0,
+      0
+    ],
+    "onetime_cny": [
+      0,
+      0
+    ],
+    "items": [
+      {
+        "name": "【启动】建频道 + 群",
+        "cny_onetime": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "【启动】抽奖 bot",
+        "cny_onetime": [
+          0,
+          0
+        ],
+        "note": "用的是现成的第三方通用 bot"
+      },
+      {
+        "name": "【启动】开发者关系",
+        "cny_onetime": [
+          0,
+          0
+        ],
+        "note": "不可计价,真正的门槛在这里:十几个 iOS 独立开发者愿意持续免费送出终身授权码,需要长期口碑积累,两年 300 条的运营历史本身就是那份资产"
+      },
+      {
+        "name": "策展 + 联络开发者",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "15-30 小时/月。挑 App、写推荐、谈奖品、办活动"
+      },
+      {
+        "name": "抽奖执行与发码",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "5-15 小时/月。『零点前承兑,过时不候』意味着要在特定时间窗口内手工处理几十个私聊"
+      },
+      {
+        "name": "bot / 托管",
+        "cny_month": [
+          0,
+          0
+        ],
+        "note": "全部用现成设施"
+      }
+    ]
+  },
+  "revenue": {
+    "est_cny_month": [
+      0,
+      0
+    ],
+    "est_scope": "现金收入",
+    "model": "不收现金,收实物与曝光的交换",
+    "streams": [
+      {
+        "name": "现金广告",
+        "evidence": "0 条明码标价招商帖;『广告 2、合作 2』为正常语境",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      },
+      {
+        "name": "实物置换(主要)",
+        "evidence": "每次抽奖 20-30 份授权码,单价 ¥30-500(Infuse lifetime 约 ¥600+)",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high",
+        "note": "等价 ¥1,000-5,000/次活动,但不产生现金流"
+      },
+      {
+        "name": "联盟 / aff",
+        "evidence": "apps.apple.com 83 个链接,URL 参数未见 aff 标识",
+        "cny_month": [
+          0,
+          0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "note": "若按现金折算商业价值:8,492 订阅、中位阅读 2,168、ERR 25.54%,iOS 工具类是中文 TG 里付费意愿最高的受众之一,CPM 可达 ¥100-250;按每月 14 条推送计月曝光约 3 万次,承载力约 ¥3,000-7,500/月。区间宽的三个原因:(1)无任何报价信息;(2)曝光量小但质量极高,ERR 25% 的受众定价可以远高于 CPM 均值,也可能因为总量太小而根本卖不出去,这两种可能样本无法区分;(3)640 天跨度里商业形态可能已经变过。一个值得注意的取舍:它有本轮最好的用户质量却选择完全不收现金——原因很可能是收了现金就要接非 iOS 工具类的广告,而那会立刻破坏『这个号推荐的东西都值得抢』的信任,那份信任正是开发者愿意免费送码的前提。它在保护自己唯一的资产。",
+    "ad_capacity_cny_month": [
+      3000,
+      7500
+    ]
+  },
+  "risk": {
+    "level": "medium",
+    "notes": [
+      "抽奖活动合规(主要项):《反不正当竞争法》第十条规定有奖销售最高奖金额不得超过五万元,《规范促销行为暂行规定》要求公示奖项设置、开奖方式、兑奖条件。本频道公示做得相当完整(奖品清单、中奖概率 30/179、开奖时间、参与规则均明示),单份奖品价值最高约 ¥600(Infuse 终身),远低于五万元上限。但规则里有『零点前承兑,过时不候』『无用户名用户中奖无效』等对中奖人不利的条款,若发生纠纷,这类单方设定的失权条款效力存疑。责任主体为活动组织者,整体风险很轻",
+      "奖品中包含代理工具与『机场』订阅:样本内一次抽奖的奖池里出现『神秘机场 × 3』,另有 Pharos pro(支持 mieru/anytls 协议的代理客户端)与 StashLink(内网穿透代理)作为推荐内容。《计算机信息网络国际联网管理暂行规定》第六条禁止自行建立或使用其他信道进行国际联网;情节严重的可依《刑法》第二百八十五条提供侵入、非法控制计算机信息系统程序、工具罪追究,实践中对『机场』经营者的判例多以非法经营罪处理。本频道是推荐与转赠方不是经营方,责任层级明显低于机场运营者,但『赠送机场订阅』已越过单纯软件推荐的边界。这是本频道唯一实质性的风险点",
+      "著作权与商标:转发各 App 官方频道的更新公告、使用 App 图标与截图,属推荐语境下的合理引用,且多数内容经开发者本人同意(他们在送奖品),风险可忽略",
+      "不适用:不涉及帮助信息网络犯罪活动罪与开设赌场罪——样本内 0 个收款账号、0 条博彩导流、0 条诈骗要素;『抽奖』是免费参与、无投注、无对价,与射幸性赌博在法律构成上没有交集"
+    ]
+  }
+}
