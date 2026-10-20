@@ -7,6 +7,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -36,6 +37,14 @@ class Settings(BaseSettings):
     # bot 读不了没被拉进去的频道，也读不了开了内容保护的频道正文。
     tg_api_id: int = 0
     tg_api_hash: str = ""
+
+    @field_validator("tg_api_id", mode="before")
+    @classmethod
+    def _blank_is_zero(cls, v):
+        """.env 里写成 `TG_API_ID=` 是很自然的占位写法，但空串过不了 int 解析，
+        整个进程会在 import settings 时就炸——而且只想起展示站、根本用不到抓取
+        凭据的时候也会炸。空串一律当 0，由 tg_recon 自己在用之前报错。"""
+        return 0 if isinstance(v, str) and not v.strip() else v
 
     # ---- 展示站 ----
     # 默认只绑本机。这里的报告含 criminal 级样本和个人信息警示，

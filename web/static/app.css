@@ -314,3 +314,11 @@ ol.spaced li:last-child, ul.spaced li:last-child { margin-bottom: 0; }
 .md-body li { margin-bottom: 5px; }
 .md-body hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
 
+
+/* 品牌：英文主名 + 中文副名 */
+header.top .brand-cn {
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 13px;
+  margin-left: 2px;
+}
